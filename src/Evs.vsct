@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+  <Include href="KnownImageIds.vsct"/>
+
+  <Commands package="EvsPackage">
+    <Groups>
+      <Group guid="EvsCommandSet" id="CodeEditorGroup" priority="0x0000">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN"/>
+      </Group>
+
+      <Group guid="EvsCommandSet" id="RestartGroup" priority="0x0001" />
+      <Group guid="EvsCommandSet" id="RestartCommands" priority="0x0002" />
+    </Groups>
+
+    <Menus>
+      <Menu guid="EvsCommandSet" id="EvsToolbar" type="Toolbar" priority="0x0000">
+        <CommandFlag>AlwaysCreate</CommandFlag>
+        <Strings>
+          <ButtonText>Essentials for VS</ButtonText>
+        </Strings>
+      </Menu>
+
+      <Menu guid="EvsCommandSet" id="MainMenu" type="Menu" priority="0x0701">
+        <Parent guid="guidSHLMainMenu" id="IDG_VS_MM_TOOLSADDINS"/>
+        <CommandFlag>AlwaysCreate</CommandFlag>
+        <Strings>
+          <ButtonText>Essentials</ButtonText>
+        </Strings>
+      </Menu>
+
+      <Menu guid="EvsCommandSet" id="EvsMenu" type="Menu" priority="0x0000">
+        <Parent guid="EvsCommandSet" id="CodeEditorGroup" />
+        <CommandFlag>AlwaysCreate</CommandFlag>
+        <Strings>
+          <ButtonText>Essentials for VS</ButtonText>
+        </Strings>
+      </Menu>
+
+      <Menu guid="EvsCommandSet" id="RestartDropDown" type="MenuController" priority="0x0000">
+        <Strings>
+          <ButtonText>Restart Commands</ButtonText>
+        </Strings>
+      </Menu>
+    </Menus>
+
+    <Buttons>
+      <Button guid="EvsCommandSet" id="RestartNormalCommand" type="Button" priority="0x0001">
+        <Parent guid="EvsCommandSet" id="RestartCommands" />
+        <Icon guid="ImageCatalogGuid" id="VisualStudio"/>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>FixMenuController</CommandFlag>
+        <Strings>
+          <ButtonText>Restart Visual Studio</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="EvsCommandSet" id="RestartElevatedCommand" type="Button" priority="0x0001">
+        <Parent guid="EvsCommandSet" id="RestartCommands" />
+        <Icon guid="ImageCatalogGuid" id="VisualStudioExpressWindowsPhone"/>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>Restart Visual Studio</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <CommandPlacements>
+    <!--~~~ EvsToolbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+    <CommandPlacement guid="EvsCommandSet" id="RestartGroup" priority="0x9000">
+      <Parent guid="EvsCommandSet" id="EvsToolbar" />
+    </CommandPlacement>
+
+    <!--~~~ MainMenu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+    <CommandPlacement guid="EvsCommandSet" id="RestartCommands" priority="0x0010">
+      <Parent guid="EvsCommandSet" id="MainMenu" />
+    </CommandPlacement>
+
+    <!--~~~ EvsMenu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+    <CommandPlacement guid="EvsCommandSet" id="RestartCommands" priority="0x0010">
+      <Parent guid="EvsCommandSet" id="EvsMenu" />
+    </CommandPlacement>
+
+    <!--~~~ Restart Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+    <CommandPlacement guid="EvsCommandSet" id="RestartDropDown" priority="0x0000">
+      <Parent guid="EvsCommandSet" id="RestartGroup" />
+    </CommandPlacement>
+
+    <CommandPlacement guid="EvsCommandSet" id="RestartCommands" priority="0x0000">
+      <Parent guid="EvsCommandSet" id="RestartDropDown" />
+    </CommandPlacement>
+
+  </CommandPlacements>
+
+  <Symbols>
+    <GuidSymbol name="EvsPackage" value="{6359DA17-6477-4E9C-8E73-7D05EA8A33A1}" />
+
+    <GuidSymbol name="EvsCommandSet" value="{4EAC4E23-4909-4DAC-9D6E-819BDC861480}">
+      <IDSymbol name="CodeEditorGroup" value="0x0000" />
+
+      <IDSymbol name="MainMenu" value="0xA000" />
+      <IDSymbol name="EvsToolbar" value="0xA001" />
+      <IDSymbol name="EvsMenu" value="0xA002" />
+
+      <IDSymbol name="RestartGroup" value="0x0100" />
+      <IDSymbol name="RestartDropDown" value="0x0101" />
+      <IDSymbol name="RestartCommands" value="0x0102" />
+
+      <IDSymbol name="RestartNormalCommand" value="0x0105" />
+      <IDSymbol name="RestartElevatedCommand" value="0x106" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
