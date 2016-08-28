@@ -32,7 +32,7 @@ namespace Essentials.VS.Commands
         //---
 
         private CommandResult ExecuteCommand()
-            => Package?.RebuildSolution(problem: "Unable to rebuild the solution");
+            => Package?.BuildSolution(rebuild: true);
 
         //***
     }
