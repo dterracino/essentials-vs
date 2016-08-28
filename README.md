@@ -1,86 +1,59 @@
-# Yann's Essentials - Restart Visual Studio
+# Essentials for VS
 
-[![Build status](https://ci.appveyor.com/api/projects/status/ghwvajcd2wifg4cm/branch/develop?svg=true)](https://ci.appveyor.com/project/YannDuran/restart-visual-studio/branch/develop)
+[![Build status](https://ci.appveyor.com/api/projects/status/8b3m15mw756dfdtc?svg=true)](https://ci.appveyor.com/project/YannDuran/essentials-vs)
 
-Download this extension from the [VS Gallery](https://visualstudiogallery.msdn.microsoft.com/ccdafa1f-0f4c-4d9b-afff-a53d30ec966a)
-, or get the [CI build](http://vsixgallery.com/extension/YD.Essentials.VS/).
+Download this extension from the [VS Gallery](https://visualstudiogallery.msdn.microsoft.com/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd)
+or get the [CI build](http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/).
 
 ---------------------------------------
 
-**The easiest and simplest way of restarting Visual Studio (both normal and as admin)**.
 
-- *If you like this extension, please come back and add add a *Review* (either with or without text), so people will know what users think of it.*
+- *If you **like** this extension, please come back and add add a **review** (either with or without text), so people will know what users think of it.*
 
-- *If for some reason you didn't like it, or have any suggestions for improving it, just let me know via the *Q AND A* section.*
+- *If for some reason you **didn't like** it, or have any **suggestions** for improving it, just let me know via the **Q&A** section.*
 
-See the [changelog](https://github.com/yannduran/restart-visual-studio/blob/master/CHANGELOG.md) for changes and the roadmap for the future.
+See the [changelog](https://github.com/yannduran/essentials-vs/blob/master/CHANGELOG.md) for changes and the roadmap for the future.
 
 ## Features
-- Restart Visual Studio
-- Restart Visual Studio As Admin
+Most features are available on the *Essentials for VS* toolbar 
+(don't forget to right-click in a blank spot on the toolbar to make the new toolbar visible). 
+It's much easier to click a toolbar button than to have to go hunting for
+the command you want in a menu somewhere.
 
-#### Restart Visual Studio
-To restart Visual Studio **without** this extension, you would have to:
+For convenience, most features are also available via the *Essentials for VS* menu, 
+found in the right-click context menu of any code window.
+This allows you to access nearly all of the features 
+without moving your mouse from the code you're working on.
 
->- Close the running instance of Visual Studio
->- Open Visual Studio again
->- Open the solution you were working on
+The commands are all grouped in the *Essentials for VS* menu because the code window's context menu
+is already pretty clogged up, and it's growing all the time as Microsoft, 
+or 3rd-party extensions, add more and more commands to it. 
+It's one more click than I'd like, 
+but I've found it much easier to find the commands in a dedicated menu 
+than having to search through one gigantic menu.
 
-To restart Visual Studio **using** this extension:
+**A more in-depth description of these features can be found 
+[here](https://yannduran.github.io/essentials-vs/), 
+including a comparison of the steps required both with and without the extension installed, 
+as well as images of the extension in action.**
 
->- Click the *Restart Visual Studio* button on the *Yann's Essentials Toolbar* 
-(if you've enabled the toolbar)
+#### Rebuild Project
+- rebuilds the currently selected project in one click of a button on the *Essentials for VS* toolbar
+- the command is also available from the *Essentials for VS* menu
+- only enabled when a build/rebuild *is not running*
 
+#### Rebuild Solution
+- rebuilds the solution in one click of a button on the *Essentials for VS* toolbar
+- the command is also available from the *Essentials for VS* menu
+- only enabled when a build/rebuild *is not running*
 
-><img src="art/Restart (Normal).png" alt="Restart (normal)" />
-
-Or
-
->- Right-click in any *code* window
->- Click on *Yann's Essentials* in the context menu
->- Click on *Restart Visual Studio*
-
-><img src="art/Restart (code).png" alt="Restart (from code)" />
-
-Visual Studio restarts and you'll find yourself with the same solution 
-that you were previously working on opened for you automatically.
-
-One thing to note is that clicking *Restart Visual Studio* will restart in whichever mode it's in when you clicked it.
-So if you're currently running *As Admin*, clicking this button will not return you to running in *Normal* mode.
-
-#### Restart Visual Studio As Admin
-To restart Visual Studio as administrator **without** this extension, 
-you would have to:
-
->- Close the running instance of Visual Studio
->- Open Visual Studio again, by
->>- right-clicking the *Visual Studio icon* in your *Taskbar*, *Desktop* or *Start Menu*
->>- clicking on *Run As Administrator*
->- Open the solution you were working on
-
-To restart Visual Studio as administrator **using** this extension:
-
->- Click the *Restart Visual Studio* button on the *Yann's Essentials Toolbar* 
-(if you've enabled the toolbar)
-
-><img src="art/Restart (elevated).png" alt="Restart (as Admin)" />
-
-Or
-
->- Right-click in any *code* window
->- Click on *Yann's Essentials* in the context menu
->- Click on *Restart Visual Studio*
-
-><img src="art/Restart (code).png" alt="Restart (from code)" />
-
-Visual Studio restarts (as admin) and you'll find yourself with the same solution 
-that you were previously working on opened for you automatically.
-
-*Restart Visual Studio As Admin* will **always** restart in *As Admin* mode, 
-whether you were already running in *As Admin* mode or *Normal* mode.
+#### Cancel Build
+- cancels a currently running build/rebuild in one click of a button on the *Essentials for VS* toolbar
+- the command is also available from the *Essentials for VS* menu
+- only enabled when a build/rebuild *is running*
 
 ## Contribute
-Check out the [contribution guidelines](https://github.com/yannduran/restart-visual-studio/blob/master/CONTRIBUTING.md)
+Check out the [contribution guidelines](https://github.com/yannduran/essentials-vs/blob/master/CONTRIBUTING.md)
 if you want to contribute to this project.
 
 For cloning and building this project yourself, make sure to install the
@@ -89,3 +62,5 @@ extension for Visual Studio which enables some features used by this project.
 
 ## License
 [Apache 2.0](LICENSE)
+
+![Vsp](art/lss-vsip.png)
