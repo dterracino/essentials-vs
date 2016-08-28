@@ -9,7 +9,7 @@ namespace Essentials.VS
     using static PackageGuids;
     using static Vsix;
 
-    [InstalledProductRegistration(Name, Description, Version, IconResourceID = 400)]
+    [InstalledProductRegistration("110", "112", Version, IconResourceID = 400)]
     [Guid(EvsPackageString)]
 
     public sealed class EvsPackage : PackageBase

@@ -11,7 +11,7 @@ on theofficial Visual Studio extension gallery.
 
 ## v0.1.0
 
-**2016-08-23**
+**2016-08-28**
 - Initial release
 - [x] open-sourced this extension and the libraries it depends on
 - [x] rewrote the foundation of the extension from scratch

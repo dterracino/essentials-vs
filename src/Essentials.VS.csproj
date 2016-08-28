@@ -69,11 +69,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\CHANGELOG.html">
-      <Link>Resources\CHANGELOG.html</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
     <Content Include="..\LICENSE">
       <Link>Resources\LICENSE</Link>
       <IncludeInVSIX>true</IncludeInVSIX>
@@ -92,11 +87,6 @@
       <LastGenOutput>Evs.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </VSCTCompile>
-    <Content Include="..\README.html">
-      <Link>Resources\README.html</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
     <Content Include="Resources\package.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
