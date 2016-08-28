@@ -11,8 +11,9 @@
         <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN"/>
       </Group>
 
-      <Group guid="EvsCommandSet" id="RestartGroup" priority="0x0001" />
-      <Group guid="EvsCommandSet" id="RestartCommands" priority="0x0002" />
+      <Group guid="EvsCommandSet" id="BuildGroup" priority="0x0000" />
+      <Group guid="EvsCommandSet" id="RestartGroup" priority="0x0000" />
+      <Group guid="EvsCommandSet" id="RestartCommands" priority="0x0000" />
     </Groups>
 
     <Menus>
@@ -47,6 +48,46 @@
     </Menus>
 
     <Buttons>
+      <!--~~~ Build Commands ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <Button guid="EvsCommandSet" id="RebuildProjectCommand" type="Button" priority="0x0001">
+        <Parent guid="EvsCommandSet" id="BuildGroup" />
+        <Icon guid="ImageCatalogGuid" id="BuildSelection"/>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <CommandName>RebuildProject</CommandName>
+          <CanonicalName>RebuildProject</CanonicalName>
+          <LocCanonicalName>RebuildProject</LocCanonicalName>
+          <ButtonText>Rebuild Project</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="EvsCommandSet" id="RebuildSolutionCommand" type="Button" priority="0x0001">
+        <Parent guid="EvsCommandSet" id="BuildGroup" />
+        <Icon guid="ImageCatalogGuid" id="BuildSolution"/>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <CommandName>RebuildSolution</CommandName>
+          <CanonicalName>RebuildSolution</CanonicalName>
+          <LocCanonicalName>RebuildSolution</LocCanonicalName>
+          <ButtonText>Rebuild Solution</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="EvsCommandSet" id="CancelBuildCommand" type="Button" priority="0x0002">
+        <Parent guid="EvsCommandSet" id="BuildGroup" />
+        <Icon guid="ImageCatalogGuid" id="CancelBuild"/>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <CommandName>CancelBuild</CommandName>
+          <CanonicalName>CancelBuild</CanonicalName>
+          <LocCanonicalName>CancelBuild</LocCanonicalName>
+          <ButtonText>Cancel Build</ButtonText>
+        </Strings>
+      </Button>
+
+      <!--~~~ Restart Commands ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
       <Button guid="EvsCommandSet" id="RestartNormalCommand" type="Button" priority="0x0001">
         <Parent guid="EvsCommandSet" id="RestartCommands" />
         <Icon guid="ImageCatalogGuid" id="VisualStudio"/>
@@ -73,17 +114,29 @@
   <CommandPlacements>
     <!--~~~ EvsToolbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
+    <CommandPlacement guid="EvsCommandSet" id="BuildGroup" priority="0x0400">
+      <Parent guid="EvsCommandSet" id="EvsToolbar" />
+    </CommandPlacement>
+
     <CommandPlacement guid="EvsCommandSet" id="RestartGroup" priority="0x9000">
       <Parent guid="EvsCommandSet" id="EvsToolbar" />
     </CommandPlacement>
 
     <!--~~~ MainMenu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
+    <CommandPlacement guid="EvsCommandSet" id="BuildGroup" priority="0x0400">
+      <Parent guid="EvsCommandSet" id="EvsToolbar" />
+    </CommandPlacement>
+
     <CommandPlacement guid="EvsCommandSet" id="RestartCommands" priority="0x0010">
       <Parent guid="EvsCommandSet" id="MainMenu" />
     </CommandPlacement>
 
     <!--~~~ EvsMenu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+    <CommandPlacement guid="EvsCommandSet" id="BuildGroup" priority="0x0400">
+      <Parent guid="EvsCommandSet" id="EvsToolbar" />
+    </CommandPlacement>
 
     <CommandPlacement guid="EvsCommandSet" id="RestartCommands" priority="0x0010">
       <Parent guid="EvsCommandSet" id="EvsMenu" />
@@ -105,11 +158,23 @@
     <GuidSymbol name="EvsPackage" value="{6359DA17-6477-4E9C-8E73-7D05EA8A33A1}" />
 
     <GuidSymbol name="EvsCommandSet" value="{4EAC4E23-4909-4DAC-9D6E-819BDC861480}">
-      <IDSymbol name="CodeEditorGroup" value="0x0000" />
+    <!-- don't change any of these symbol values-->
+
+      <IDSymbol name="CodeEditorGroup" value="0xB000" />
 
       <IDSymbol name="MainMenu" value="0xA000" />
       <IDSymbol name="EvsToolbar" value="0xA001" />
       <IDSymbol name="EvsMenu" value="0xA002" />
+
+      <!--~~~ Build ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <IDSymbol name="BuildGroup" value="0x4010" />
+
+      <IDSymbol name="RebuildProjectCommand" value="0x4015" />
+      <IDSymbol name="RebuildSolutionCommand" value="0x4016" />
+      <IDSymbol name="CancelBuildCommand" value="0x4017" />
+
+      <!--~~~ Restart ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <IDSymbol name="RestartGroup" value="0x0100" />
       <IDSymbol name="RestartDropDown" value="0x0101" />

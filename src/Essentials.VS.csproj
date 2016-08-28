@@ -53,6 +53,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Commands\RebuildSolutionCommand.cs" />
+    <Compile Include="Commands\CancelBuildCommand.cs" />
+    <Compile Include="Commands\RebuildProjectCommand.cs" />
     <Compile Include="Commands\RestartElevatedCommand.cs" />
     <Compile Include="Commands\RestartNormalCommand.cs" />
     <Compile Include="Evs.cs">
