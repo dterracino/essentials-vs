@@ -9,7 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		appveyor.yml = appveyor.yml
 		CHANGELOG.md = CHANGELOG.md
 		essentials-vs.favdoc = essentials-vs.favdoc
-		..\Projects.txt = ..\Projects.txt
+		docs\index.md = docs\index.md
+		..\..\Projects.txt = ..\..\Projects.txt
 		README.md = README.md
 	EndProjectSection
 EndProject
