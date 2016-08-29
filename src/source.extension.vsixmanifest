@@ -2,7 +2,7 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
     <Identity Id="049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd" Version="0.1.3" Language="en-US" Publisher="Yann Duran" />
-    <DisplayName>Essentials for VS</DisplayName>
+    <DisplayName>Yann's Essentials for VS</DisplayName>
     <Description xml:space="preserve">A collection of essential productivity enhancements for day-to-day developing in Visual Studio.</Description>
     <MoreInfo>https://yannduran.github.io/essentials-vs/</MoreInfo>
     <License>Resources\LICENSE</License>
