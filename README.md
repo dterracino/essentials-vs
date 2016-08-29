@@ -38,19 +38,31 @@ including a comparison of the steps required both with and without the extension
 as well as images of the extension in action.**
 
 #### Rebuild Project
-- rebuilds the currently selected project in one click of a button on the *Essentials for VS* toolbar
-- the command is also available from the *Essentials for VS* menu
+- rebuilds the currently selected project with a single click of a button on the *Essentials for VS* toolbar
+- the command is also available from:
+  -  the *Essentials* menu in the main menu bar
+  -  the right-click context menu in any code window
 - only enabled when a build/rebuild *is not running*
 
 #### Rebuild Solution
-- rebuilds the solution in one click of a button on the *Essentials for VS* toolbar
-- the command is also available from the *Essentials for VS* menu
+- rebuilds the solution with a single click of a button on the *Essentials for VS* toolbar
+- the command is also available from:
+  -  the *Essentials* menu in the main menu bar
+  -  the right-click context menu in any code window
 - only enabled when a build/rebuild *is not running*
 
 #### Cancel Build
-- cancels a currently running build/rebuild in one click of a button on the *Essentials for VS* toolbar
-- the command is also available from the *Essentials for VS* menu
+- cancels a currently running build/rebuild with a single click of a button on the *Essentials for VS* toolbar
+- the command is also available from:
+  -  the *Essentials* menu in the main menu bar
+  -  the right-click context menu in any code window
 - only enabled when a build/rebuild *is running*
+
+#### Restart Visual Studio
+- restarts Visual Studio with a single click of a button on the *Essentials for VS* toolbar
+- the command is also available from:
+  -  the *Essentials* menu in the main menu bar
+  -  the right-click context menu in any code window
 
 ## Contribute
 Check out the [contribution guidelines](https://github.com/yannduran/essentials-vs/blob/master/CONTRIBUTING.md)

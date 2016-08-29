@@ -9,6 +9,15 @@ download in the
 These are the changes to each version that has been released
 on theofficial Visual Studio extension gallery.
 
+## v0.2.0
+
+**2016-08-29**
+- [x] Added Rebuild Project command
+- [x] Added Rebuild Solution command
+- [x] Added Cancel Build command
+- [x] Added Restart Visual Studio command
+- [x] Added Restart VisualStudio as Admin command
+
 ## v0.1.0
 
 **2016-08-28**
