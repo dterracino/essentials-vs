@@ -5,20 +5,24 @@ namespace Essentials.VS.Commands
     using YD.Framework.VisualStudio.Commands;
     using YD.Framework.VisualStudio.Packages;
 
-    internal sealed class RestartNormalCommand : DynamicCommand
+    internal sealed class CancelBuildCommand : DynamicCommand
     {
         //***
         //===M
 
-        private RestartNormalCommand(PackageBase package) : base(package, PackageIds.RestartNormalCommand)
+        private CancelBuildCommand(PackageBase package) : base(package, PackageIds.CancelBuildCommand)
         { }
 
         //===M
 
         public static void Instantiate(PackageBase package)
-            => Instantiate(new RestartNormalCommand(package));
+            => Instantiate(new CancelBuildCommand(package));
 
         //---
+
+        //protected override bool IsActive
+        //    => base.IsActive && SolutionIsNotBuilding; //&& SolutionHasProject;
+
 
         protected override void OnExecute(OleMenuCommand command)
             => ExecuteCommand()
@@ -28,7 +32,7 @@ namespace Essentials.VS.Commands
         //---
 
         private CommandResult ExecuteCommand()
-            => Package?.RestartVisualStudio();
+            => Package?.CancelBuild();
 
         //***
     }

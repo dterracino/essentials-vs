@@ -5,6 +5,7 @@ using Microsoft.VisualStudio.Shell;
 namespace Essentials.VS
 {
     using YD.Framework.VisualStudio.Packages;
+    using Commands;
 
     using static PackageGuids;
     using static Vsix;
@@ -20,6 +21,10 @@ namespace Essentials.VS
         protected override void Initialize()
         {
             base.Initialize();
+
+            RebuildProjectCommand.Instantiate(this);
+            RebuildSolutionCommand.Instantiate(this);
+            CancelBuildCommand.Instantiate(this);
 
             RestartNormalCommand.Instantiate(this);
             RestartElevatedCommand.Instantiate(this);
