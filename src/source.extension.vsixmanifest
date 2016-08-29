@@ -2,14 +2,15 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
     <Identity Id="049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd" Version="0.1.3" Language="en-US" Publisher="Yann Duran" />
-    <DisplayName>Essentials for VS</DisplayName>
-    <Description xml:space="preserve">The simplest way of restarting VIsual Studio on demand (normal and elevated).</Description>
-    <MoreInfo>https://yannduran.github.io/restart-visual-studio/</MoreInfo>
+    <DisplayName>Yann's Essentials for VS</DisplayName>
+    <Description xml:space="preserve">A collection of essential productivity enhancements for day-to-day developing in Visual Studio.</Description>
+    <MoreInfo>https://github.com/yannduran/essentials-vs/blob/master/README.md</MoreInfo>
     <License>Resources\LICENSE</License>
-    <GettingStartedGuide>Resources\README.html</GettingStartedGuide>
-    <ReleaseNotes>Resources\CHANGELOG.html</ReleaseNotes>
+    <GettingStartedGuide>https://yannduran.github.io/essentials-vs/</GettingStartedGuide>
+    <ReleaseNotes>https://github.com/yannduran/essentials-vs/blob/master/CHANGELOG.md</ReleaseNotes>
     <Icon>Resources\package.ico</Icon>
     <PreviewImage>Resources\preview.png</PreviewImage>
+    <Tags>&gt;visual studio, productivity enhancements, essentials, yannduran, yd</Tags>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />

@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.Shell;
 
-namespace Essentials.VS
+namespace Essentials.VS.Commands
 {
     using YD.Framework.VisualStudio.Commands;
     using YD.Framework.VisualStudio.Packages;
@@ -8,13 +8,9 @@ namespace Essentials.VS
     internal sealed class RestartElevatedCommand : DynamicCommand
     {
         //***
-
-        private static int CommandId
-            => PackageIds.RestartElevatedCommand;
-
         //===M
 
-        private RestartElevatedCommand(PackageBase package) : base(package, CommandId)
+        private RestartElevatedCommand(PackageBase package) : base(package, PackageIds.RestartElevatedCommand)
         { }
 
         //===M

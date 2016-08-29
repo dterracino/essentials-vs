@@ -5,11 +5,12 @@ using Microsoft.VisualStudio.Shell;
 namespace Essentials.VS
 {
     using YD.Framework.VisualStudio.Packages;
+    using Commands;
 
     using static PackageGuids;
     using static Vsix;
 
-    [InstalledProductRegistration(Name, Description, Version, IconResourceID = 400)]
+    [InstalledProductRegistration("110", "112", Version, IconResourceID = 400)]
     [Guid(EvsPackageString)]
 
     public sealed class EvsPackage : PackageBase
@@ -20,6 +21,10 @@ namespace Essentials.VS
         protected override void Initialize()
         {
             base.Initialize();
+
+            RebuildProjectCommand.Instantiate(this);
+            RebuildSolutionCommand.Instantiate(this);
+            CancelBuildCommand.Instantiate(this);
 
             RestartNormalCommand.Instantiate(this);
             RestartElevatedCommand.Instantiate(this);
