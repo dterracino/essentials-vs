@@ -4,7 +4,7 @@
     <Identity Id="049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd" Version="0.2.1" Language="en-US" Publisher="Yann Duran" />
     <DisplayName>Yann's Essentials for VS</DisplayName>
     <Description xml:space="preserve">A collection of essential productivity enhancements for day-to-day developing in Visual Studio.</Description>
-    <MoreInfo>https://github.com/yannduran/essentials-vs/blob/master/README.md</MoreInfo>
+    <MoreInfo>https://github.com/yannduran/essentials-vs</MoreInfo>
     <License>Resources\LICENSE</License>
     <GettingStartedGuide>https://yannduran.github.io/essentials-vs/</GettingStartedGuide>
     <ReleaseNotes>https://github.com/yannduran/essentials-vs/blob/master/CHANGELOG.md</ReleaseNotes>
