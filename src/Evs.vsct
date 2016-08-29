@@ -54,10 +54,12 @@
         <Parent guid="EvsCommandSet" id="BuildGroup" />
         <Icon guid="ImageCatalogGuid" id="BuildSelection"/>
         <CommandFlag>IconIsMoniker</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DontCache</CommandFlag>
+        <CommandFlag>DefaultDisabled</CommandFlag>
         <Strings>
           <CommandName>RebuildProject</CommandName>
           <CanonicalName>RebuildProject</CanonicalName>
-          <LocCanonicalName>RebuildProject</LocCanonicalName>
           <ButtonText>Rebuild Project</ButtonText>
         </Strings>
       </Button>
@@ -66,10 +68,12 @@
         <Parent guid="EvsCommandSet" id="BuildGroup" />
         <Icon guid="ImageCatalogGuid" id="BuildSolution"/>
         <CommandFlag>IconIsMoniker</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DontCache</CommandFlag>
+        <CommandFlag>DefaultDisabled</CommandFlag>
         <Strings>
           <CommandName>RebuildSolution</CommandName>
           <CanonicalName>RebuildSolution</CanonicalName>
-          <LocCanonicalName>RebuildSolution</LocCanonicalName>
           <ButtonText>Rebuild Solution</ButtonText>
         </Strings>
       </Button>
@@ -78,10 +82,12 @@
         <Parent guid="EvsCommandSet" id="BuildGroup" />
         <Icon guid="ImageCatalogGuid" id="CancelBuild"/>
         <CommandFlag>IconIsMoniker</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DontCache</CommandFlag>
+        <CommandFlag>DefaultDisabled</CommandFlag>
         <Strings>
           <CommandName>CancelBuild</CommandName>
           <CanonicalName>CancelBuild</CanonicalName>
-          <LocCanonicalName>CancelBuild</LocCanonicalName>
           <ButtonText>Cancel Build</ButtonText>
         </Strings>
       </Button>
@@ -95,6 +101,8 @@
         <CommandFlag>DynamicVisibility</CommandFlag>
         <CommandFlag>FixMenuController</CommandFlag>
         <Strings>
+          <CommandName>RestartVisualStudio</CommandName>
+          <CanonicalName>RestartVisualStudio</CanonicalName>
           <ButtonText>Restart Visual Studio</ButtonText>
         </Strings>
       </Button>
@@ -105,7 +113,9 @@
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
-          <ButtonText>Restart Visual Studio</ButtonText>
+          <CommandName>RestartVisualStudioAsAdministrator</CommandName>
+          <CanonicalName>RestartVisualStudioAsAdministrator</CanonicalName>
+          <ButtonText>Restart Visual Studio As Administrator</ButtonText>
         </Strings>
       </Button>
     </Buttons>
@@ -151,9 +161,13 @@
     <CommandPlacement guid="EvsCommandSet" id="RestartCommands" priority="0x0000">
       <Parent guid="EvsCommandSet" id="RestartDropDown" />
     </CommandPlacement>
-
   </CommandPlacements>
 
+  <KeyBindings>
+    <KeyBinding guid="EvsCommandSet" id="RebuildSolutionCommand" editor="guidVSStd97" key1="0" mod1="Control"/>
+    <KeyBinding guid="EvsCommandSet" id="RebuildSolutionCommand" editor="guidVSStd97" key1="9" mod1="Control"/>
+  </KeyBindings>
+  
   <Symbols>
     <GuidSymbol name="EvsPackage" value="{6359DA17-6477-4E9C-8E73-7D05EA8A33A1}" />
 

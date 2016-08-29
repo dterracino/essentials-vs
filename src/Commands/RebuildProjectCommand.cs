@@ -20,9 +20,8 @@ namespace Essentials.VS.Commands
 
         //---
 
-        //protected override bool IsActive
-        //    => base.IsActive && SolutionIsNotBuilding; //&& SolutionHasProject;
-
+        protected override bool IsActive
+            => base.IsActive && SolutionHasProjects && SolutionIsNotBuilding;
 
         protected override void OnExecute(OleMenuCommand command)
             => ExecuteCommand()
