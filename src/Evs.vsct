@@ -17,7 +17,7 @@
     </Groups>
 
     <Menus>
-      <Menu guid="EvsCommandSet" id="EvsToolbar" type="Toolbar" priority="0x0000">
+      <Menu guid="EvsCommandSet" id="EvsToolbar" type="Toolbar" priority="0xFFFF">
         <CommandFlag>AlwaysCreate</CommandFlag>
         <Strings>
           <ButtonText>Essentials for VS</ButtonText>
