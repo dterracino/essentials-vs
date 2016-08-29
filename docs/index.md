@@ -79,9 +79,45 @@ To cancel a running build/rebuild **using** this extension
 (if you've made the *Essentials for VS* toolbar visible,
 and a build/rebuild is **not** currently in progress):
 
-- click the *Cancel Cuild* button on the *Essentials for VS* **toolbar**
+- click the *Cancel Build* button on the *Essentials for VS* **toolbar**
 
 <img src="art/Cancel Build (toolbar).png" alt="Cancel Build (from toolbar)" />
+
+Or
+
+- right-click in any **code window**
+- select on *Essentials for VS* in the context menu
+- select on *Cancel Build*
+
+<img src="art/Cancel Build (code).png" alt="Cancel Build (from code)" />
+
+#### Restart Visual Studio
+Have you ever wished there was a way to restart Visual Studio, 
+just like the *Extensions and Updates* window does 
+after installing/uninstalling an extension?
+
+To restart Visual Studio on demand **without** this extension you have to:
+
+- close *Visual Studio*
+- reopen *Visual Studio*
+- move your cursor to the *File Menu*
+- click it
+- select *Recent Projects and Solutions*
+- select the project that you were working on before the restart
+
+To restart *Visual Studio* **using** this extension
+(if you've made the *Essentials for VS* toolbar visible):
+
+- click the *Restart Visual Studio* button on the *Yann's Essentials for VS* **toolbar**
+
+<img src="art/Restart Normal (toolbar).png" alt="Restart Normal (from toolbar)" />
+
+Or
+
+- click on the *Essentials* **menu** in *Visual Studio*'s main menu bar
+- select *Restart Visual Studio*
+
+<img src="art/Restart Normal (Essentials menu).png" alt="Restart Normal (from Essentials menu)" />
 
 Or
 
@@ -89,4 +125,42 @@ Or
 - click on *Essentials for VS* in the context menu
 - click on *Cancel Build*
 
-<img src="art/Cancel Build (code).png" alt="Cancel Build (from code)" />
+<img src="art/Restart Normal (code).png" alt="Restart Elevated (from code)" />
+
+Visual Studio restarts and automatically re-opens the project you were working on.
+
+#### Restart Visual Studio as Administrator
+To restart Visual Studio as administrator **without** this extension you have to:
+
+- close *Visual Studio*
+- right-click *Visual Studio* (on the Start menu, or on the Taskbar etc)
+- select *Run as administrator*
+- accept the User Control prompt
+- move your cursor to the *File Menu*
+- click it
+- select *Recent Projects and Solutions*
+- select the project that you were working on before the restart
+
+To restart *Visual Studio* **using** this extension
+(if you've made the *Essentials for VS* toolbar visible):
+
+- click the *Restart Visual Studio As Administrator* button on the *Yann's Essentials for VS* **toolbar**
+
+<img src="art/Restart Elevated (toolbar).png" alt="Restart Elevated (from toolbar)" />
+
+Or
+
+- click on the *Essentials* **menu** in *Visual Studio*'s main menu bar
+- select *Restart Visual Studio As Administrator*
+
+<img src="art/Restart Elevated (Essentials menu).png" alt="Restart Elevated (from Essentials menu)" />
+
+Or
+
+- right-click in any **code window**
+- select on *Essentials for VS* in the context menu
+- select on *Restart Visual Studio As Administrator*
+
+<img src="art/Restart Elevated (code).png" alt="Restart Elevated (from code)" />
+
+Visual Studio restarts and automatically re-opens the project you were working on.
