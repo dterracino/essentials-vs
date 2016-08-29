@@ -9,6 +9,11 @@ download in the
 These are the changes to each version that has been released
 on theofficial Visual Studio extension gallery.
 
+## v0.2.1
+
+**2016-08-30**
+- [x] Added dynamic enable/disable to build commands
+
 ## v0.2.0
 
 **2016-08-29**
