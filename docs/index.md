@@ -91,6 +91,34 @@ Or
 
 <img src="art/Cancel Build (code).png" alt="Cancel Build (from code)" />
 
+#### Extensions and Updates
+This one's about pure convenience for me.
+When I'm working on an extension, I find myself needing to open this many times a day. 
+And I don't know how many times I **accidentally** end up clicking on *Options* 
+instead of *Extensions and Updates*.
+Or find myself looking up and down the menu trying to find it in the Tools menu.
+
+To open *Extensions and Updates* **without** this extension you have to:
+
+- move your mouse up to the *Tools* menu
+- click it
+- find and select *Extensions and Options*
+
+To open *Extensions and Updates* **using** this extension:
+
+- click the *Extensions and Updates* button on the *Essentials for VS* **toolbar**
+
+<img src="art/Extensions and Updates (toolbar).png" alt="Extensions and Updates (from toolbar)" />
+
+Or
+
+- right-click in any **code window**
+- select on *Essentials for VS* in the context menu
+- select on *Extensions and Updates*
+
+<img src="art/Extensions and Updates (code).png" alt="Extensions and Updates (from code)" />
+
+
 #### Restart Visual Studio
 Have you ever wished there was a way to restart Visual Studio, 
 just like the *Extensions and Updates* window does 

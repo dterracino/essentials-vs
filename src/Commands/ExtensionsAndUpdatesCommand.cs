@@ -5,23 +5,20 @@ namespace Essentials.VS.Commands
     using YD.Framework.VisualStudio.Commands;
     using YD.Framework.VisualStudio.Packages;
 
-    internal sealed class RebuildProjectCommand : DynamicCommand
+    internal sealed class ExtensionsAndUpdatesCommand : DynamicCommand
     {
         //***
         //===M
 
-        private RebuildProjectCommand(PackageBase package) : base(package, PackageIds.RebuildProjectCommand)
+        private ExtensionsAndUpdatesCommand(PackageBase package) : base(package, PackageIds.ExtensionsAndUpdatesCommand)
         { }
 
         //===M
 
         public static void Instantiate(PackageBase package)
-            => Instantiate(new RebuildProjectCommand(package));
+            => Instantiate(new ExtensionsAndUpdatesCommand(package));
 
         //---
-
-        protected override bool IsActive
-            => base.IsActive && SolutionHasProjects && SolutionIsNotBuilding;// && ProjectSelected();
 
         protected override void OnExecute(OleMenuCommand command)
             => ExecuteCommand()
@@ -31,7 +28,7 @@ namespace Essentials.VS.Commands
         //---
 
         private CommandResult ExecuteCommand()
-            => Package?.BuildProject(rebuild: true);
+            => Package?.OpenExtensionsAndUpdates();
 
         //***
     }
