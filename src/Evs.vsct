@@ -11,6 +11,8 @@
         <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN"/>
       </Group>
 
+      <Group guid="EvsCommandSet" id="VisualStudioGroup"/>
+
       <Group guid="EvsCommandSet" id="BuildGroup" priority="0x0000" />
       <Group guid="EvsCommandSet" id="RestartGroup" priority="0x0000" />
       <Group guid="EvsCommandSet" id="RestartCommands" priority="0x0000" />
@@ -92,6 +94,21 @@
         </Strings>
       </Button>
 
+      <!--~~~ Visual Studio Commands ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <Button guid="EvsCommandSet" id="ExtensionsAndUpdatesCommand" type="Button" priority="0x0001">
+        <Parent guid="EvsCommandSet" id="VisualStudioGroup" />
+        <Icon guid="ImageCatalogGuid" id="CSExtension"/>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <CommandName>ExtensionsAndUpdates</CommandName>
+          <CanonicalName>ExtensionsAndUpdates</CanonicalName>
+          <LocCanonicalName>ExtensionsAndUpdates</LocCanonicalName>
+          <ButtonText>Open Extensions And Updates</ButtonText>
+        </Strings>
+      </Button>
+
       <!--~~~ Restart Commands ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Button guid="EvsCommandSet" id="RestartNormalCommand" type="Button" priority="0x0001">
@@ -132,6 +149,10 @@
       <Parent guid="EvsCommandSet" id="EvsToolbar" />
     </CommandPlacement>
 
+    <CommandPlacement guid="EvsCommandSet" id="VisualStudioGroup" priority="0x0500">
+      <Parent guid="EvsCommandSet" id="EvsToolbar" />
+    </CommandPlacement>
+
     <!--~~~ MainMenu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
     <CommandPlacement guid="EvsCommandSet" id="BuildGroup" priority="0x0400">
@@ -142,6 +163,10 @@
       <Parent guid="EvsCommandSet" id="MainMenu" />
     </CommandPlacement>
 
+    <CommandPlacement guid="EvsCommandSet" id="VisualStudioGroup" priority="0x0500">
+      <Parent guid="EvsCommandSet" id="EvsToolbar" />
+    </CommandPlacement>
+
     <!--~~~ EvsMenu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
     <CommandPlacement guid="EvsCommandSet" id="BuildGroup" priority="0x0400">
@@ -150,6 +175,10 @@
 
     <CommandPlacement guid="EvsCommandSet" id="RestartCommands" priority="0x0010">
       <Parent guid="EvsCommandSet" id="EvsMenu" />
+    </CommandPlacement>
+
+    <CommandPlacement guid="EvsCommandSet" id="VisualStudioGroup" priority="0x0500">
+      <Parent guid="EvsCommandSet" id="EvsToolbar" />
     </CommandPlacement>
 
     <!--~~~ Restart Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -167,12 +196,12 @@
     <KeyBinding guid="EvsCommandSet" id="RebuildSolutionCommand" editor="guidVSStd97" key1="0" mod1="Control"/>
     <KeyBinding guid="EvsCommandSet" id="RebuildSolutionCommand" editor="guidVSStd97" key1="9" mod1="Control"/>
   </KeyBindings>
-  
+
   <Symbols>
     <GuidSymbol name="EvsPackage" value="{6359DA17-6477-4E9C-8E73-7D05EA8A33A1}" />
 
     <GuidSymbol name="EvsCommandSet" value="{4EAC4E23-4909-4DAC-9D6E-819BDC861480}">
-    <!-- don't change any of these symbol values-->
+      <!-- don't change any of these symbol values-->
 
       <IDSymbol name="CodeEditorGroup" value="0xB000" />
 
@@ -187,6 +216,12 @@
       <IDSymbol name="RebuildProjectCommand" value="0x4015" />
       <IDSymbol name="RebuildSolutionCommand" value="0x4016" />
       <IDSymbol name="CancelBuildCommand" value="0x4017" />
+
+      <!--~~~ Visual Studio ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <IDSymbol name="VisualStudioGroup" value="0x4040" />
+
+      <IDSymbol name="ExtensionsAndUpdatesCommand" value="0x4045" />
 
       <!--~~~ Restart ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 

@@ -31,6 +31,8 @@ namespace Essentials.VS
             RebuildSolutionCommand.Instantiate(this);
             CancelBuildCommand.Instantiate(this);
 
+            ExtensionsAndUpdatesCommand.Instantiate(this);
+
             RestartNormalCommand.Instantiate(this);
             RestartElevatedCommand.Instantiate(this);
         }
