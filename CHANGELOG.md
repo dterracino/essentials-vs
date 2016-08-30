@@ -1,4 +1,23 @@
- Roadmap
+# Roadmap
+
+### Soon
+- [ ] Edit Solution command
+- [ ] Close Solution command
+- [ ] Insert Guid command
+- [ ] Keyboard Options command
+
+### Future
+
+- [ ] Essentials Options command
+- [ ] Copy Solution command
+- [ ] Delete Solution command
+- [ ] Edit Project command
+- [ ] Copy Project command
+- [ ] Delete Project command
+- [ ] Duplicate Text command
+- [ ] Duplicate File command
+- [ ] Copy References command
+- [ ] Paste References
 
 Features that have a checkmark are complete and available for
 download in the
@@ -8,6 +27,11 @@ download in the
 
 These are the changes to each version that has been released
 on theofficial Visual Studio extension gallery.
+
+## v0.3.0
+
+**2016-08-30**
+- [x] Added Extensions And Updates command
 
 ## v0.2.1
 
