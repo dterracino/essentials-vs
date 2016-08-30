@@ -58,6 +58,11 @@ as well as images of the extension in action.**
   -  the right-click context menu in any code window
 - only enabled when a build/rebuild *is running*
 
+#### Extensions and Updates
+- opens the *Extensions and Updates* dialog with a single click of a button 
+on the *Essentials for VS* toolbar
+- the command is also available from the right-click context menu in any code window
+
 #### Restart Visual Studio
 - restarts Visual Studio with a single click of a button on the *Essentials for VS* toolbar
 - the command is also available from:
