@@ -1,7 +1,7 @@
 # Roadmap
 
 ### Coming Soon
-- [ ] Edit Solution command
+- [x] Edit Solution command
 - [ ] Close Solution command
 - [ ] Edit Project command
 - [ ] Insert Guid command
