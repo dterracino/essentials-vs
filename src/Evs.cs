@@ -22,10 +22,11 @@ namespace Essentials.VS
     /// </summary>
     internal sealed partial class PackageIds
     {
-        public const int CodeEditorGroup = 0xB000;
         public const int MainMenu = 0xA000;
         public const int EvsToolbar = 0xA001;
         public const int EvsMenu = 0xA002;
+        public const int CodeEditorGroup = 0xB000;
+        public const int SolutionGroup = 0xC000;
         public const int BuildGroup = 0x4010;
         public const int RebuildProjectCommand = 0x4015;
         public const int RebuildSolutionCommand = 0x4016;
@@ -37,5 +38,6 @@ namespace Essentials.VS
         public const int RestartCommands = 0x0102;
         public const int RestartNormalCommand = 0x0105;
         public const int RestartElevatedCommand = 0x0106;
+        public const int EditSolutionCommand = 0xC001;
     }
 }

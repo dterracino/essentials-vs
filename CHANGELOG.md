@@ -1,22 +1,27 @@
 # Roadmap
 
-### Soon
+### Coming Soon
 - [ ] Edit Solution command
 - [ ] Close Solution command
+- [ ] Edit Project command
 - [ ] Insert Guid command
 - [ ] Keyboard Options command
 
-### Future
+### Planned
 
 - [ ] Essentials Options command
 - [ ] Copy Solution command
 - [ ] Delete Solution command
-- [ ] Edit Project command
 - [ ] Copy Project command
 - [ ] Delete Project command
 - [ ] Duplicate Text command
 - [ ] Duplicate File command
 - [ ] Copy References command
+- [ ] Paste References
+- [ ] Activity Log
+- [ ] Diagnostic Log
+- [ ] Path Variables
+- [ ] Copy References
 - [ ] Paste References
 
 Features that have a checkmark are complete and available for
