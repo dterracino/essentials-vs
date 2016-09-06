@@ -1,11 +1,11 @@
 # Essentials for VS
 
-[![Build status](https://ci.appveyor.com/api/projects/status/8b3m15mw756dfdtc?svg=true)](https://ci.appveyor.com/project/YannDuran/essentials-vs)
+[![Build status](https://ci.appveyor.com/api/projects/status/la50f40vw7qys7b3?svg=true)](https://ci.appveyor.com/project/YannDuran/essentials-vs)
 
 Download this extension from the [VS Gallery](https://visualstudiogallery.msdn.microsoft.com/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd)
 or get the [CI build](http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/).
 
----------------------------------------
+---
 
 
 - *If you **like** this extension, please come back and add add a **review** (either with or without text), so people will know what users think of it.*
