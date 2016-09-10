@@ -2,7 +2,7 @@
 
 ### Coming Soon
 - [x] Edit Solution command
-- [ ] Close Solution command
+- [X] Close Solution command
 - [ ] Edit Project command
 - [ ] Insert Guid command
 - [ ] Keyboard Options command
@@ -32,6 +32,12 @@ download in the
 
 These are the changes to each version that has been released
 on theofficial Visual Studio extension gallery.
+
+## v0.4.0
+
+**2016-09-dd**
+- [x] Added *Edit Solution* command
+- [x] Added *Close Solution* command
 
 ## v0.3.0
 

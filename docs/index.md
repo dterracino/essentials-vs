@@ -169,26 +169,42 @@ To restart Visual Studio as administrator **without** this extension you have to
 - select *Recent Projects and Solutions*
 - select the project that you were working on before the restart
 
-To restart *Visual Studio* **using** this extension
+Visual Studio restarts and automatically re-opens the project you were working on.
+
+#### Edit Solution command
+To edit the solution file *without* this extension, you have to:
+
+- move your mouse up to the *Solution Name* mode
+- click it
+- move your mouse up to the *File* menu
+- ....
+
+Or
+
+- ....
+- ....
+- ....
+
+To edit the current solution **using** this extension
 (if you've made the *Essentials for VS* toolbar visible):
 
-- click the *Restart Visual Studio As Administrator* button on the *Yann's Essentials for VS* **toolbar**
+- right-click on any *Solution Name* node
+- click on *Yann's Essentials* in the context menu
+- click on *Rebuild Project*
 
-<img src="art/Restart Elevated (toolbar).png" alt="Restart Elevated (from toolbar)" />
+<img src="art/Edit Solution (code).png" alt="Edit Solution (from code)" />
 
-Or
+The solution opens in an XML window.
 
-- click on the *Essentials* **menu** in *Visual Studio*'s main menu bar
-- select *Restart Visual Studio As Administrator*
 
-<img src="art/Restart Elevated (Essentials menu).png" alt="Restart Elevated (from Essentials menu)" />
 
-Or
+- edits the Solution file with a single right-click on a solution node in the *Solution Explorer* window
+- the command is also available from:
+  -  the *Yann's Essentials* menu in the main menu bar
+  -  the right-click context menu in any code window
 
-- right-click in any **code window**
-- select on *Essentials for VS* in the context menu
-- select on *Restart Visual Studio As Administrator*
-
-<img src="art/Restart Elevated (code).png" alt="Restart Elevated (from code)" />
-
-Visual Studio restarts and automatically re-opens the project you were working on.
+#### Close Solution command
+- ....
+- the command is also available from:
+  -  the *Yann's Essentials* menu in the main menu bar
+  -  the right-click context menu in any code window

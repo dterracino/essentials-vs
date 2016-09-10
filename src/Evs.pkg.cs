@@ -37,6 +37,7 @@ namespace Essentials.VS
             RestartElevatedCommand.Instantiate(this);
 
             EditSolutionCommand.Instantiate(this);
+            CloseSolutionCommand.Instantiate(this);
         }
     }
 }
