@@ -153,6 +153,18 @@
           <ButtonText>Edit Solution</ButtonText>
         </Strings>
       </Button>
+
+      <Button guid="EvsCommandSet" id="CloseSolutionCommand" type="Button" priority="0x0020">
+        <Parent guid="EvsCommandSet" id="SolutionGroup" />
+        <Icon guid="ImageCatalogGuid" id="CloseSolution"/>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <CommandName>CloseSolution</CommandName>
+          <CanonicalName>CloseSolution</CanonicalName>
+          <LocCanonicalName>CloseSolution</LocCanonicalName>
+          <ButtonText>Close Solution</ButtonText>
+        </Strings>
+      </Button>
     </Buttons>
   </Commands>
 
@@ -265,6 +277,7 @@
       <!--~~~ Solution ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <IDSymbol name="EditSolutionCommand" value="0xC001" />
+      <IDSymbol name="CloseSolutionCommand" value="0xC002" />
 
     </GuidSymbol>
   </Symbols>

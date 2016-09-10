@@ -53,6 +53,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Commands\CloseSolutionCommand.cs" />
     <Compile Include="Commands\EditSolutionCommand.cs" />
     <Compile Include="Commands\ExtensionsAndUpdatesCommand.cs" />
     <Compile Include="Commands\RebuildSolutionCommand.cs" />

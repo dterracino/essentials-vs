@@ -39,5 +39,6 @@ namespace Essentials.VS
         public const int RestartNormalCommand = 0x0105;
         public const int RestartElevatedCommand = 0x0106;
         public const int EditSolutionCommand = 0xC001;
+        public const int CloseSolutionCommand = 0xC002;
     }
 }
