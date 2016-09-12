@@ -185,7 +185,11 @@
 
     <!--~~~ MainMenu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-    <CommandPlacement guid="EvsCommandSet" id="BuildGroup" priority="0x0100">
+    <CommandPlacement guid="EvsCommandSet" id="SolutionGroup" priority="0x0100">
+      <Parent guid="EvsCommandSet" id="MainMenu" />
+    </CommandPlacement>
+
+    <CommandPlacement guid="EvsCommandSet" id="BuildGroup" priority="0x0300">
       <Parent guid="EvsCommandSet" id="MainMenu" />
     </CommandPlacement>
 
@@ -194,16 +198,16 @@
     </CommandPlacement>
 
     <CommandPlacement guid="EvsCommandSet" id="RestartCommands" priority="0x0900">
-      <Parent guid="EvsCommandSet" id="MainMenu" />
-    </CommandPlacement>
-
-    <CommandPlacement guid="EvsCommandSet" id="SolutionGroup" priority="0x0C00">
       <Parent guid="EvsCommandSet" id="MainMenu" />
     </CommandPlacement>
 
     <!--~~~ EvsMenu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-    <CommandPlacement guid="EvsCommandSet" id="BuildGroup" priority="0x0100">
+    <CommandPlacement guid="EvsCommandSet" id="SolutionGroup" priority="0x0100">
+      <Parent guid="EvsCommandSet" id="EvsMenu" />
+    </CommandPlacement>
+
+    <CommandPlacement guid="EvsCommandSet" id="BuildGroup" priority="0x0300">
       <Parent guid="EvsCommandSet" id="EvsMenu" />
     </CommandPlacement>
 
@@ -212,10 +216,6 @@
     </CommandPlacement>
 
     <CommandPlacement guid="EvsCommandSet" id="RestartCommands" priority="0x0900">
-      <Parent guid="EvsCommandSet" id="EvsMenu" />
-    </CommandPlacement>
-
-    <CommandPlacement guid="EvsCommandSet" id="SolutionGroup" priority="0x0C00">
       <Parent guid="EvsCommandSet" id="EvsMenu" />
     </CommandPlacement>
 
