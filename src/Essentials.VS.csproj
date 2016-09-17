@@ -56,6 +56,7 @@
     <Compile Include="Commands\CloseSolutionCommand.cs" />
     <Compile Include="Commands\EditSolutionCommand.cs" />
     <Compile Include="Commands\ExtensionsAndUpdatesCommand.cs" />
+    <Compile Include="Commands\InsertGuidCommand.cs" />
     <Compile Include="Commands\RebuildSolutionCommand.cs" />
     <Compile Include="Commands\CancelBuildCommand.cs" />
     <Compile Include="Commands\RebuildProjectCommand.cs" />

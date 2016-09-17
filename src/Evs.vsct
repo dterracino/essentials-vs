@@ -9,9 +9,16 @@
     <Groups>
       <Group guid="EvsCommandSet" id="VisualStudioGroup"/>
 
+      <!--~~~ Restart Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
       <Group guid="EvsCommandSet" id="BuildGroup" priority="0x0000" />
       <Group guid="EvsCommandSet" id="RestartGroup" priority="0x0000" />
-      <Group guid="EvsCommandSet" id="RestartCommands" priority="0x0000" />
+
+      <Group guid="EvsCommandSet" id="RestartCommands" priority="0x0000">
+        <Parent guid="EvsCommandSet" id="RestartDropDown" />
+      </Group>
+
+      <Group guid="EvsCommandSet" id="InsertGroup" priority="0x0000" />
 
       <Group guid="EvsCommandSet" id="SolutionGroup" priority="0x0000">
         <!--<Parent guid="guidSHLMainMenu" id="IDG_VS_CTXT_SOLUTION_BUILD" />-->
@@ -48,6 +55,7 @@
       </Menu>
 
       <Menu guid="EvsCommandSet" id="RestartDropDown" type="MenuController" priority="0x0000">
+        <Parent guid="EvsCommandSet" id="RestartGroup" />
         <Strings>
           <ButtonText>Restart Commands</ButtonText>
         </Strings>
@@ -141,6 +149,21 @@
         </Strings>
       </Button>
 
+      <!--~~~ Insert Commands ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <Button guid="EvsCommandSet" id="InsertGuidCommand" type="Button" priority="0x0001">
+        <Parent guid="EvsCommandSet" id="InsertGroup" />
+        <Icon guid="ImageCatalogGuid" id="InsertSpan"/>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <CommandName>InsertGuid</CommandName>
+          <CanonicalName>InsertGuid</CanonicalName>
+          <LocCanonicalName>InsertGuid</LocCanonicalName>
+          <ButtonText>Insert Guid</ButtonText>
+        </Strings>
+      </Button>
+
       <!--~~~ Solution Explorer Commands ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Button guid="EvsCommandSet" id="EditSolutionCommand" type="Button" priority="0x0010">
@@ -189,6 +212,10 @@
       <Parent guid="EvsCommandSet" id="MainMenu" />
     </CommandPlacement>
 
+    <CommandPlacement guid="EvsCommandSet" id="InsertGroup" priority="0x0200">
+      <Parent guid="EvsCommandSet" id="MainMenu" />
+    </CommandPlacement>
+
     <CommandPlacement guid="EvsCommandSet" id="BuildGroup" priority="0x0300">
       <Parent guid="EvsCommandSet" id="MainMenu" />
     </CommandPlacement>
@@ -207,6 +234,10 @@
       <Parent guid="EvsCommandSet" id="EvsMenu" />
     </CommandPlacement>
 
+    <CommandPlacement guid="EvsCommandSet" id="InsertGroup" priority="0x0200">
+      <Parent guid="EvsCommandSet" id="EvsMenu" />
+    </CommandPlacement>
+
     <CommandPlacement guid="EvsCommandSet" id="BuildGroup" priority="0x0300">
       <Parent guid="EvsCommandSet" id="EvsMenu" />
     </CommandPlacement>
@@ -219,23 +250,18 @@
       <Parent guid="EvsCommandSet" id="EvsMenu" />
     </CommandPlacement>
 
-    <!--~~~ Restart Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-    <CommandPlacement guid="EvsCommandSet" id="RestartDropDown" priority="0x0000">
-      <Parent guid="EvsCommandSet" id="RestartGroup" />
-    </CommandPlacement>
-
-    <CommandPlacement guid="EvsCommandSet" id="RestartCommands" priority="0x0000">
-      <Parent guid="EvsCommandSet" id="RestartDropDown" />
-    </CommandPlacement>
-
     <!--~~~ Solution Node ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   </CommandPlacements>
 
   <KeyBindings>
-    <KeyBinding guid="EvsCommandSet" id="RebuildSolutionCommand" editor="guidVSStd97" key1="0" mod1="Control"/>
-    <KeyBinding guid="EvsCommandSet" id="RebuildSolutionCommand" editor="guidVSStd97" key1="9" mod1="Control"/>
+    <KeyBinding guid="EvsCommandSet" id="RebuildProjectCommand" editor="guidVSStd97" 
+                mod1="Control" key1="9"/>
+    <KeyBinding guid="EvsCommandSet" id="RebuildSolutionCommand" editor="guidVSStd97" 
+                mod1="Control" key1="0"/>
+
+    <KeyBinding guid="EvsCommandSet" id="InsertGuidCommand" editor="GUID_TextEditorFactory" 
+                mod1="Control Shift" key1="I" mod2="Control Shift" key2="G"/>
   </KeyBindings>
 
   <Symbols>
@@ -259,7 +285,7 @@
       <IDSymbol name="RebuildSolutionCommand" value="0x4016" />
       <IDSymbol name="CancelBuildCommand" value="0x4017" />
 
-      <!--~~~ Visual Studio ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Visual Studio ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <IDSymbol name="VisualStudioGroup" value="0x4040" />
 
@@ -274,7 +300,12 @@
       <IDSymbol name="RestartNormalCommand" value="0x0105" />
       <IDSymbol name="RestartElevatedCommand" value="0x106" />
 
-      <!--~~~ Solution ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Insert Guid ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <IDSymbol name="InsertGroup" value="0x0500" />
+      <IDSymbol name="InsertGuidCommand" value="0x0501" />
+
+      <!--~~~ Solution ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <IDSymbol name="EditSolutionCommand" value="0xC001" />
       <IDSymbol name="CloseSolutionCommand" value="0xC002" />
