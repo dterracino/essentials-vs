@@ -40,6 +40,8 @@ namespace Essentials.VS
 
             EditSolutionCommand.Instantiate(this);
             CloseSolutionCommand.Instantiate(this);
+
+            EditProjectCommand.Instantiate(this);
         }
     }
 }

@@ -1,194 +1,414 @@
-﻿<h2 id="features">Features</h2>
-<h4 id="rebuild-project">Rebuild Project</h4>
-<p>To rebuild the current project <strong>without</strong> this extension you have to:</p>
+﻿<h1 id="yanns-essentials-for-vs">Yann's Essentials for VS</h1>
+<h2 id="features">Features</h2>
+<p>This Extension Installed's features can be accessed via one or more of the following methods:</p>
 <ul>
-<li>move your mouse to the currently selected project's node in <em>Solution Explorer</em></li>
-<li>right-click it</li>
-<li>select <em>Rebuild Project</em></li>
+<li>clicking on a button on the <em>Yann's Essentials</em> toolbar</li>
+<li>selecting a command from the <em>Yann's Essentials</em> menu</li>
+<li>selecting a command from the <em>Yann's Essentials</em> menu in the context menu of any code window</li>
 </ul>
-<p>Or</p>
+<p>Some features are available via all three methods, whereas as others may not be able to be
+accessed via all of the methods.</p>
+<hr />
+<h4 id="insert-guids">Insert Guid(s)</h4>
+<p>Insert a guid directly into your code without the use of any <strong>external</strong> tool
+by placing the cursor where you want the guid and invoking the command.</p>
+<p>Insert <strong>multiple unique guids</strong> at the same time by making a multi-line selection before invoking the command
+using one of the methods listed below.</p>
+<p>Replace a section of <strong>existing text</strong> with a guid by selecting it before invoking the command.
+Replace <strong>multiple lines of text</strong> by making a multi-line selection before invoking the command.</p>
+<h5 id="without-this-extension-installed">Without This Extension Installed</h5>
 <ul>
-<li>move your mouse up to the <em>Build</em> menu</li>
-<li>click it</li>
-<li>select <em>Rebuild Project</em></li>
+<li>move your mouse up to the <em>Tools</em> menu</li>
+<li>select <em>Create GUID</em></li>
+<li>click the <em>Copy</em> button, or the <em>New GUID</em> button</li>
+<li>move your cursor to where you want the guid</li>
+<li>right-click and select <em>Paste</em></li>
+<li>(repeat steps for multiple guids)</li>
 </ul>
-<p>To rebuild the current project <strong>using</strong> this extension
-(if you've made the <em>Essentials for VS</em> toolbar visible
-and a build/rebuild is <strong>not</strong> currently in progress):</p>
+<h5 id="with-this-extension-installed">With This Extension Installed</h5>
 <ul>
-<li>click the <em>Rebuild Project</em> button on the <em>Essentials for VS</em> <strong>toolbar</strong></li>
-</ul>
-<img src="art/Rebuild Project (toolbar).png" alt="Rebuild Project (from toolbar)" />
-<p>Or</p>
+<li><strong>Menu</strong>
 <ul>
-<li>right-click in any <strong>code window</strong></li>
-<li>click on <em>Essentials for VS</em> in the context menu</li>
-<li>click on <em>Rebuild Solution</em></li>
+<li>click on the <em>Yann's Essentials</em> menu in <em>Visual Studio</em>'s main menu bar</li>
+<li>select <em>Insert Guid</em></li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/insert-guid-menu.png" alt="Insert Guid (from menu)" /></li>
 </ul>
-<img src="art/Rebuild Project (code).png" alt="Rebuild Project (from code)" />
-<p>Once Visual Studio starts rebuilding the selected project
-the <em>Rebuild Project</em> and <em>Rebuild Solution</em> buttons are disabled
-and the <em>Cancel Build</em> button is enabled.</p>
+</li>
+<li><strong>Code Window</strong>
+<ul>
+<li>right-click in the code file where you want to insert the guid,
+or select some text, or multi-select some text</li>
+<li>select <em>Yann's Essentials</em></li>
+<li>select <em>Insert Guid(s)</em></li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/insert-guid-code.png" alt="Insert Guid (from code)" /></li>
+</ul>
+</li>
+<li><strong>Shortcut</strong>
+<ul>
+<li>press <em>Ctrl-Alt-I</em>, <em>Ctrl-Alt-G</em></li>
+</ul>
+</li>
+</ul>
+<hr />
 <h4 id="rebuild-solution">Rebuild Solution</h4>
-<p>To rebuild the solution <strong>without</strong> this extension you have to:</p>
+<p>Quickly rebuild the whole solution.</p>
+<h5 id="without-this-extension-installed-1">Without This Extension Installed</h5>
 <ul>
 <li>move your mouse to the solution node in <em>Solution Explorer</em></li>
 <li>right-click it</li>
 <li>select <em>Rebuild Solution</em></li>
-</ul>
-<p>Or</p>
-<ul>
+<li><strong>or</strong></li>
 <li>move your mouse up to the <em>Build</em> menu</li>
 <li>click it</li>
 <li>select <em>Rebuild Solution</em></li>
 </ul>
-<p>To rebuild the current solution <strong>using</strong> this extension
-(if you've made the <em>Essentials for VS</em> toolbar visible
-and a build/rebuild is <strong>not</strong> currently in progress):</p>
+<h5 id="with-this-extension-installed-1">With This Extension Installed</h5>
+<p>This feature is only enabled if a build/rebuild is <strong>not</strong> currently in progress.</p>
 <ul>
-<li>click the <em>Rebuild Solution</em> button on the <em>Essentials for VS</em> <strong>toolbar</strong></li>
+<li><strong>Toolbar</strong>
+<ul>
+<li>click the <em>Rebuild Solution</em> button on the <em>Yann's Essentials</em> toolbar</li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/rebuild-solution-toolbar.png" alt="Rebuild Solution (from toolbar)" /></li>
 </ul>
-<img src="art/Rebuild Solution (toolbar).png" alt="Rebuild Solution (from toolbar)" />
-<p>Or</p>
+</li>
+<li><strong>Menu</strong>
 <ul>
-<li>right-click in any <strong>code window</strong></li>
-<li>click on <em>Essentials for VS</em> in the context menu</li>
+<li>click on the <em>Yann's Essentials</em> menu in <em>Visual Studio</em>'s main menu bar</li>
+<li>select <em>Rebuild Solution</em></li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/rebuild-solution-menu.png" alt="Rebuild Solution (from menu)" /></li>
+</ul>
+</li>
+<li><strong>Code Window</strong>
+<ul>
+<li>right-click in any code window</li>
+<li>click on <em>Yann's Essentials</em> in the context menu</li>
+<li>click on <em>Rebuild Solution</em></li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/rebuild-solution-code.png" alt="Rebuild Solution (from code)" /></li>
+</ul>
+</li>
+<li><strong>Shortcut</strong>
+<ul>
+<li>press <em>Ctrl-Alt-0</em></li>
+</ul>
+</li>
+</ul>
+<p>Once Visual Studio starts rebuilding the solution,
+the <em>Rebuild Solution</em> and <em>Rebuild Project</em> buttons are <strong>disabled</strong>,
+and the <em>Cancel Build</em> button is <strong>enabled</strong>.</p>
+<hr />
+<h4 id="rebuild-project">Rebuild Project</h4>
+<p>Quickly rebuild the current project.</p>
+<h5 id="without-this-extension-installed-2">Without This Extension Installed</h5>
+<ul>
+<li>move your mouse to the currently selected project's node in <em>Solution Explorer</em></li>
+<li>right-click it</li>
+<li>select <em>Rebuild Project</em></li>
+<li><strong>or</strong></li>
+<li>move your mouse up to the <em>Build</em> menu</li>
+<li>click it</li>
+<li>select <em>Rebuild Project</em></li>
+</ul>
+<h5 id="with-this-extension-installed-2">With This Extension Installed</h5>
+<p>This feature is only enabled if a build/rebuild is <strong>not</strong> currently in progress.</p>
+<ul>
+<li><strong>Toolbar</strong>
+<ul>
+<li>click the <em>Rebuild Project</em> button on the <em>Yann's Essentials</em> toolbar</li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/rebuild-project-toolbar.png" alt="Rebuild Project (from toolbar)" /></li>
+</ul>
+</li>
+<li><strong>Menu</strong>
+<ul>
+<li>click on the <em>Yann's Essentials</em> menu in <em>Visual Studio</em>'s main menu bar</li>
+<li>select <em>Rebuild Project</em></li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/rebuild-project-menu.png" alt="Rebuild Project (from menu)" /></li>
+</ul>
+</li>
+<li><strong>Code Window</strong>
+<ul>
+<li>right-click in any code window</li>
+<li>click on <em>Yann's Essentials</em> in the context menu</li>
 <li>click on <em>Rebuild Project</em></li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/rebuild-project-code.png" alt="Rebuild Project (from code)" /></li>
 </ul>
-<img src="art/Rebuild Solution (code).png" alt="Rebuild Solution (from code)" />
-<p>Once Visual Studio starts rebuilding the solution
-the <em>Rebuild Solution</em> and <em>Rebuild Project</em> buttons are disabled
-and the <em>Cancel Build</em> button is enabled.</p>
+</li>
+<li><strong>Shortcut</strong>
+<ul>
+<li>press <em>Ctrl-Alt-0</em></li>
+</ul>
+</li>
+</ul>
+<p>Once Visual Studio starts rebuilding the selected project,
+the <em>Rebuild Project</em> and <em>Rebuild Solution</em> buttons are <strong>disabled</strong>,
+and the <em>Cancel Build</em> button is <strong>enabled</strong>.</p>
+<hr />
 <h4 id="cancel-build">Cancel Build</h4>
-<p>To cancel a running build/rebuild <strong>without</strong> this extension you have to:</p>
+<p>Quickly cancel a running build/rebuild.</p>
+<h5 id="without-this-extension-installed-3">Without This Extension Installed</h5>
 <ul>
 <li>move your mouse up to the <em>Build</em> menu</li>
 <li>click it</li>
 <li>select <em>Cancel</em></li>
 </ul>
-<p>To cancel a running build/rebuild <strong>using</strong> this extension
-(if you've made the <em>Essentials for VS</em> toolbar visible,
-and a build/rebuild is <strong>not</strong> currently in progress):</p>
+<h5 id="with-this-extension-installed-3">With This Extension Installed</h5>
+<p>This feature is only enabled if a build/rebuild <strong>is</strong> currently in progress.</p>
 <ul>
-<li>click the <em>Cancel Build</em> button on the <em>Essentials for VS</em> <strong>toolbar</strong></li>
-</ul>
-<img src="art/Cancel Build (toolbar).png" alt="Cancel Build (from toolbar)" />
-<p>Or</p>
+<li><strong>Toolbar</strong>
 <ul>
-<li>right-click in any <strong>code window</strong></li>
-<li>select on <em>Essentials for VS</em> in the context menu</li>
-<li>select on <em>Cancel Build</em></li>
+<li>click the <em>Cancel Build</em> button on the <em>Yann's Essentials</em> toolbar</li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/cancel-build-toolbar.png" alt="Cancel Build (from toolbar)" /></li>
 </ul>
-<img src="art/Cancel Build (code).png" alt="Cancel Build (from code)" />
+</li>
+<li><strong>Menu</strong>
+<ul>
+<li>click on the <em>Yann's Essentials</em> menu in <em>Visual Studio</em>'s main menu bar</li>
+<li>select <em>Rebuild Project</em></li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/cancel-build-menu.png" alt="Cancel Build (from menu)" /></li>
+</ul>
+</li>
+<li><strong>Code Window</strong>
+<ul>
+<li>right-click in any code window</li>
+<li>select <em>Yann's Essentials</em> in the context menu</li>
+<li>select <em>Cancel Build</em></li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/cancel-build-code.png" alt="Cancel Build (from code)" /></li>
+</ul>
+</li>
+</ul>
+<p>Once the build/rebuild has been cancelled,
+the <em>Rebuild Project</em> and <em>Rebuild Solution</em> buttons are <strong>enabled</strong>,
+and the <em>Cancel Build</em> button is <strong>disabled</strong>.</p>
+<hr />
 <h4 id="extensions-and-updates">Extensions and Updates</h4>
-<p>This one's about pure convenience for me.
-When I'm working on an extension, I find myself needing to open this many times a day.
-And I don't know how many times I <strong>accidentally</strong> end up clicking on <em>Options</em>
+<p>Open the <em>Extensions and Updates</em> dialog.</p>
+<p>This one's about pure convenience.
+I often find myself needing to open dialog this multiple times a day.</p>
+<p>I've lost count of how many times I've <strong>accidentally</strong> ended up clicking on <em>Options</em>
 instead of <em>Extensions and Updates</em>.
-Or find myself looking up and down the menu trying to find it in the Tools menu.</p>
-<p>To open <em>Extensions and Updates</em> <strong>without</strong> this extension you have to:</p>
+Or found myself looking up and down the menu trying to find it in the <em>Tools</em> menu.</p>
+<h5 id="without-this-extension-installed-4">Without This Extension Installed</h5>
 <ul>
 <li>move your mouse up to the <em>Tools</em> menu</li>
 <li>click it</li>
 <li>find and select <em>Extensions and Options</em></li>
 </ul>
-<p>To open <em>Extensions and Updates</em> <strong>using</strong> this extension:</p>
+<h5 id="with-this-extension-installed-4">With This Extension Installed</h5>
 <ul>
-<li>click the <em>Extensions and Updates</em> button on the <em>Essentials for VS</em> <strong>toolbar</strong></li>
-</ul>
-<img src="art/Extensions and Updates (toolbar).png" alt="Extensions and Updates (from toolbar)" />
-<p>Or</p>
+<li><strong>Toolbar</strong>
 <ul>
-<li>right-click in any <strong>code window</strong></li>
-<li>select on <em>Essentials for VS</em> in the context menu</li>
-<li>select on <em>Extensions and Updates</em></li>
+<li>click the <em>Extensions and Updates</em> button on the <em>Yann's Essentials</em> toolbar</li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/extensions-toolbar.png" alt="Extensions and Updates" /></li>
 </ul>
-<img src="art/Extensions and Updates (code).png" alt="Extensions and Updates (from code)" />
+</li>
+<li><strong>Menu</strong>
+<ul>
+<li>click on the <em>Yann's Essentials</em> menu in <em>Visual Studio</em>'s main menu bar</li>
+<li>select <em>Rebuild Project</em></li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/extensions-menu.png" alt="Extensions and Updates (from menu)" /></li>
+</ul>
+</li>
+<li><strong>Code Window</strong>
+<ul>
+<li>right-click in any code window</li>
+<li>select <em>Yann's Essentials</em> in the context menu</li>
+<li>select <em>Extensions and Updates</em></li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/extensions-code.png" alt="Extensions and Updates" /></li>
+</ul>
+</li>
+</ul>
+<hr />
 <h4 id="restart-visual-studio">Restart Visual Studio</h4>
-<p>Have you ever wished there was a way to restart Visual Studio,
-just like the <em>Extensions and Updates</em> window does
+<p>Instantly restart Visual Studio.</p>
+<p>Have you ever wished there was an <strong>easy</strong> way to restart Visual Studio,
+just like the <em>Extensions and Updates</em> dialog does
 after installing/uninstalling an extension?</p>
-<p>To restart Visual Studio on demand <strong>without</strong> this extension you have to:</p>
+<h5 id="without-this-extension-installed-5">Without This Extension Installed</h5>
 <ul>
 <li>close <em>Visual Studio</em></li>
 <li>reopen <em>Visual Studio</em></li>
+<li>wait for Visual Studio to load</li>
 <li>move your cursor to the <em>File Menu</em></li>
 <li>click it</li>
 <li>select <em>Recent Projects and Solutions</em></li>
 <li>select the project that you were working on before the restart</li>
 </ul>
-<p>To restart <em>Visual Studio</em> <strong>using</strong> this extension
-(if you've made the <em>Essentials for VS</em> toolbar visible):</p>
+<h5 id="with-this-extension-installed-5">With This Extension Installed</h5>
 <ul>
-<li>click the <em>Restart Visual Studio</em> button on the <em>Yann's Essentials for VS</em> <strong>toolbar</strong></li>
+<li><strong>Toolbar</strong>
+<ul>
+<li>click the <em>Restart Visual Studio</em> button on the toolbar</li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/restart-vs-toolbar.png" alt="Restart Visual Studio (from toolbar)" /></li>
 </ul>
-<img src="art/Restart Normal (toolbar).png" alt="Restart Normal (from toolbar)" />
-<p>Or</p>
+</li>
+<li><strong>Menu</strong>
 <ul>
-<li>click on the <em>Essentials</em> <strong>menu</strong> in <em>Visual Studio</em>'s main menu bar</li>
+<li>click on the <em>Essentials</em> menu in <em>Visual Studio</em>'s main menu bar</li>
 <li>select <em>Restart Visual Studio</em></li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/restart-vs-menu.png" alt="Restart Visual Studio (from menu)" /></li>
 </ul>
-<img src="art/Restart Normal (Essentials menu).png" alt="Restart Normal (from Essentials menu)" />
-<p>Or</p>
+</li>
+<li><strong>Code Window</strong>
 <ul>
-<li>right-click in any <strong>code window</strong></li>
-<li>click on <em>Essentials for VS</em> in the context menu</li>
+<li>right-click in any code window</li>
+<li>click on <em>Yann's Essentials</em> in the context menu</li>
 <li>click on <em>Cancel Build</em></li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/restart-vs-code.png" alt="Restart Visual Studio (from code)" /></li>
 </ul>
-<img src="art/Restart Normal (code).png" alt="Restart Elevated (from code)" />
-<p>Visual Studio restarts and automatically re-opens the project you were working on.</p>
+</li>
+</ul>
+<p>Visual Studio restarts and automatically re-opens the solution that you were working on.</p>
+<hr />
 <h4 id="restart-visual-studio-as-administrator">Restart Visual Studio as Administrator</h4>
-<p>To restart Visual Studio as administrator <strong>without</strong> this extension you have to:</p>
+<p>Instantly restart Visual Studio as administrator (elevated session).</p>
+<h5 id="without-this-extension-installed-6">Without This Extension Installed</h5>
 <ul>
 <li>close <em>Visual Studio</em></li>
 <li>right-click <em>Visual Studio</em> (on the Start menu, or on the Taskbar etc)</li>
 <li>select <em>Run as administrator</em></li>
 <li>accept the User Control prompt</li>
+<li>wait for Visual Studio to load</li>
 <li>move your cursor to the <em>File Menu</em></li>
 <li>click it</li>
 <li>select <em>Recent Projects and Solutions</em></li>
 <li>select the project that you were working on before the restart</li>
 </ul>
-<p>Visual Studio restarts and automatically re-opens the project you were working on.</p>
-<h4 id="edit-solution-command">Edit Solution command</h4>
-<p>To edit the solution file <em>without</em> this extension, you have to:</p>
+<h5 id="with-this-extension-installed-6">With This Extension Installed</h5>
 <ul>
-<li>move your mouse up to the <em>Solution Name</em> mode</li>
+<li><strong>Toolbar</strong>
+<ul>
+<li>click the <em>Restart Visual Studio as Administrator</em> button on the toolbar</li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/restart-vs-admin-toolbar.png" alt="Restart Visual Studio as Administrator (from toolbar)" /></li>
+</ul>
+</li>
+<li><strong>Menu</strong>
+<ul>
+<li>click on the <em>Yann's Essentials</em> menu</li>
+<li>select <em>Restart Visual Studio as Administrator</em></li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/restart-vs-admin-menu.png" alt="Restart Visual Studio as Administrator (from menu)" /></li>
+</ul>
+</li>
+<li><strong>Code Window</strong>
+<ul>
+<li>right-click in any code window</li>
+<li>select <em>Yann's Essentials</em> in the context menu</li>
+<li>select <em>Restart Visual Studio as Administrator</em></li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/restart-vs-admin-code.png" alt="Restart Visual Studio as Administrator (from code)" /></li>
+</ul>
+</li>
+</ul>
+<p>Visual Studio restarts an elevated session
+and automatically re-opens the solution that you were previously working on.</p>
+<hr />
+<h4 id="edit-solution">Edit Solution</h4>
+<p>Open the solution file in an xml editor.</p>
+<h5 id="without-this-extension-installed-7">Without This Extension Installed</h5>
+<ul>
+<li>move your mouse up to the <em>Solution</em> node</li>
 <li>click it</li>
 <li>move your mouse up to the <em>File</em> menu</li>
-<li>....</li>
+<li>select <em>Close Solution</em></li>
+<li>(explorer window)</li>
+<li>(text editor)</li>
+<li>(reopen solution)</li>
 </ul>
-<p>Or</p>
+<h5 id="with-this-extension-installed-7">With This Extension Installed</h5>
 <ul>
-<li>....</li>
-<li>....</li>
-<li>....</li>
+<li><strong>Solution Node</strong>
+<ul>
+<li>right-click on the <em>Solution Name</em> node</li>
+<li>click on <em>Edit Solution</em></li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/edit-solution-node.png" alt="Edit Solution (from solution node)" /></li>
 </ul>
-<p>To edit the current solution <strong>using</strong> this extension
-(if you've made the <em>Essentials for VS</em> toolbar visible):</p>
+</li>
+<li><strong>Menu</strong>
 <ul>
-<li>right-click on any <em>Solution Name</em> node</li>
-<li>click on <em>Yann's Essentials</em> in the context menu</li>
-<li>click on <em>Rebuild Project</em></li>
+<li>click on the <em>Yann's Essentials</em> menu</li>
+<li>select <em>Edit Solution</em></li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/edit-solution-menu.png" alt="Edit Solution (from menu)" /></li>
 </ul>
-<img src="art/Edit Solution (code).png" alt="Edit Solution (from code)" />
-<p>The solution opens in an XML window.</p>
+</li>
+<li><strong>Code Window</strong>
 <ul>
-<li>edits the Solution file with a single right-click on a solution node in the <em>Solution Explorer</em> window</li>
-<li>the command is also available from:
-<ul>
-<li>the <em>Yann's Essentials</em> menu in the main menu bar</li>
-<li>the right-click context menu in any code window</li>
+<li>right-click in any code window</li>
+<li>select <em>Yann's Essentials</em> from the context menu</li>
+<li>select <em>Edit Solution</em></li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/edit-solution-code.png" alt="Edit Solution (from code)" /></li>
 </ul>
 </li>
 </ul>
-<h4 id="close-solution-command">Close Solution command</h4>
+<p>The solution file opens in an XML window, ready for editing.</p>
+<hr />
+<h4 id="close-solution">Close Solution</h4>
+<p>Close the current solution.</p>
+<h5 id="without-this-extension-installed-8">Without This Extension Installed</h5>
 <ul>
-<li>....</li>
-<li>the command is also available from:
+<li>move your mouse up to the <em>Solution</em> node</li>
+<li>click it</li>
+<li>move your mouse up to the <em>File</em> menu</li>
+<li>select <em>Close Solution</em></li>
+</ul>
+<h5 id="with-this-extension-installed-8">With This Extension Installed</h5>
 <ul>
-<li>the <em>Yann's Essentials</em> menu in the main menu bar</li>
-<li>the right-click context menu in any code window</li>
+<li><strong>Solution Node</strong>
+<ul>
+<li>right-click on the <em>Solution Name</em> node</li>
+<li>select <em>Close Solution</em></li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/close-solution-node.png" alt="Close Solution (from solution node)" /></li>
+</ul>
+</li>
+<li><strong>Menu</strong>
+<ul>
+<li>click on the <em>Yann's Essentials</em> menu</li>
+<li>select <em>Close Solution</em></li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/close-solution-menu.png" alt="Close Solution (from menu)" /></li>
+</ul>
+</li>
+<li><strong>Code Window</strong>
+<ul>
+<li>right-click in any code window</li>
+<li>select <em>Yann's Essentials</em> in the context menu</li>
+<li>select <em>Close Solution</em></li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/close-solution-code.png" alt="Close Solution (from code)" /></li>
 </ul>
 </li>
 </ul>
+<hr />
+<h4 id="edit-project-command">Edit Project command</h4>
+<p>Open a project's <em>csproj</em> file in an xml editor.</p>
+<h5 id="without-this-extension-installed-9">Without This Extension Installed</h5>
+<ul>
+<li>move your mouse up to the <em>Project</em> node</li>
+<li>click it</li>
+<li>move your mouse up to the <em>Project</em> menu</li>
+<li>select <em>Unload Project</em></li>
+<li>move cursor back to the <em>Project</em> mode</li>
+<li>right-click it</li>
+<li>select <em>Edit [ProjectName].csproj</em></li>
+</ul>
+<h5 id="with-this-extension-installed-9">With This Extension Installed</h5>
+<ul>
+<li><strong>Project Node</strong>
+<ul>
+<li>right-click on the <em>Project</em> node</li>
+<li>click on <em>Edit Project</em></li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/edit-project-node.png" alt="Edit Project (from project node)" /></li>
+</ul>
+</li>
+<li><strong>Menu</strong>
+<ul>
+<li>click on the <em>Yann's Essentials</em> menu</li>
+<li>select <em>Edit Project</em></li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/edit-project-menu.png" alt="Edit Project (from menu)" /></li>
+</ul>
+</li>
+<li><strong>Code Window</strong>
+<ul>
+<li>right-click in any code window</li>
+<li>select <em>Yann's Essentials</em> in the context menu</li>
+<li>select <em>Edit Project</em></li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/edit-project-code.png" alt="Edit Project (from code)" /></li>
+</ul>
+</li>
+</ul>
+<p>The project file opens in an XML window.</p>
+<hr />
