@@ -1,32 +1,48 @@
 # Roadmap
+Features that have a checkmark are complete and available for
+download/test in the
+[CI build](http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/).
 
-### Soon
-- [ ] Edit Solution command
-- [ ] Close Solution command
-- [ ] Insert Guid command
-- [ ] Keyboard Options command
+### Sprint 2
+- [ ] Activity Log
+- [ ] Diagnostic Log
+- [ ] Path Variables
+- [ ] *Keyboard Options* command
+- [ ] *Yann's Essentials Options* command
 
-### Future
-
-- [ ] Essentials Options command
-- [ ] Copy Solution command
-- [ ] Delete Solution command
-- [ ] Edit Project command
-- [ ] Copy Project command
-- [ ] Delete Project command
+### Sprint 3
 - [ ] Duplicate Text command
 - [ ] Duplicate File command
 - [ ] Copy References command
-- [ ] Paste References
+- [ ] Paste References command
 
-Features that have a checkmark are complete and available for
-download in the
-[CI build](http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/).
+### Sprint 4
+- [ ] Copy Solution command
+- [ ] Delete Solution command
+- [ ] Copy Project command
+- [ ] Delete Project command
+
+---
 
 # Changelog
 
 These are the changes to each version that has been released
 on theofficial Visual Studio extension gallery.
+
+## v0.5.0
+
+**2016-09-02**
+- [x] Added *Edit Project* command
+- [x] Added *Insert Guid* command
+
+## v0.4.0
+
+**2016-09-02**
+- [x] Added *Edit Solution* command
+- [x] Added *Close Solution* command
+- [x] renamed the extension
+  - from *Essentials for VS* (a non open-source extension)
+  - to *Yann's Essentials for VS* (now an open-source extension)
 
 ## v0.3.0
 

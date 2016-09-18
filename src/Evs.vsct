@@ -7,42 +7,78 @@
 
   <Commands package="EvsPackage">
     <Groups>
-      <Group guid="EvsCommandSet" id="CodeEditorGroup" priority="0x0000">
-        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN"/>
-      </Group>
+      <!--~~~ Build Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      
+      <Group guid="EvsCommandSet" id="BuildGroup" priority="0x0000" />
+
+      <!--~~~ VS Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Group guid="EvsCommandSet" id="VisualStudioGroup"/>
 
-      <Group guid="EvsCommandSet" id="BuildGroup" priority="0x0000" />
+      <!--~~~ Restart Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
       <Group guid="EvsCommandSet" id="RestartGroup" priority="0x0000" />
-      <Group guid="EvsCommandSet" id="RestartCommands" priority="0x0000" />
+
+      <Group guid="EvsCommandSet" id="RestartCommands" priority="0x0000">
+        <Parent guid="EvsCommandSet" id="RestartDropDown" />
+      </Group>
+
+      <!--~~~ Insert Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      
+      <Group guid="EvsCommandSet" id="InsertGroup" priority="0x0000" />
+
+      <!--~~~ Solution Node Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <Group guid="EvsCommandSet" id="SolutionNodeGroup" priority="0x0000">
+        <!--<Parent guid="guidSHLMainMenu" id="IDG_VS_CTXT_SOLUTION_BUILD" />-->
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_SOLNNODE" />
+      </Group>
+
+      <!--~~~ Project Node Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <Group guid="EvsCommandSet" id="ProjectGroup" priority="0x0000">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE" />
+      </Group>
+
+      <Group guid="EvsCommandSet" id="CodeEditorGroup" priority="0x0000">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN"/>
+      </Group>
     </Groups>
 
     <Menus>
+      <!--~~~ Toolbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      
       <Menu guid="EvsCommandSet" id="EvsToolbar" type="Toolbar" priority="0xFFFF">
         <CommandFlag>AlwaysCreate</CommandFlag>
         <Strings>
-          <ButtonText>Essentials for VS</ButtonText>
+          <ButtonText>Yann's Essentials for VS</ButtonText>
         </Strings>
       </Menu>
+
+      <!--~~~ Main Menu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Menu guid="EvsCommandSet" id="MainMenu" type="Menu" priority="0x0701">
         <Parent guid="guidSHLMainMenu" id="IDG_VS_MM_TOOLSADDINS"/>
         <CommandFlag>AlwaysCreate</CommandFlag>
         <Strings>
-          <ButtonText>Essentials</ButtonText>
+          <ButtonText>Yann's Essentials</ButtonText>
         </Strings>
       </Menu>
+
+      <!--~~~ Evs Menu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Menu guid="EvsCommandSet" id="EvsMenu" type="Menu" priority="0x0000">
         <Parent guid="EvsCommandSet" id="CodeEditorGroup" />
         <CommandFlag>AlwaysCreate</CommandFlag>
         <Strings>
-          <ButtonText>Essentials for VS</ButtonText>
+          <ButtonText>Yann's Essentials</ButtonText>
         </Strings>
       </Menu>
 
+      <!--~~~ Restart Dropdown ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
       <Menu guid="EvsCommandSet" id="RestartDropDown" type="MenuController" priority="0x0000">
+        <Parent guid="EvsCommandSet" id="RestartGroup" />
         <Strings>
           <ButtonText>Restart Commands</ButtonText>
         </Strings>
@@ -105,7 +141,7 @@
           <CommandName>ExtensionsAndUpdates</CommandName>
           <CanonicalName>ExtensionsAndUpdates</CanonicalName>
           <LocCanonicalName>ExtensionsAndUpdates</LocCanonicalName>
-          <ButtonText>Open Extensions And Updates</ButtonText>
+          <ButtonText>Extensions And Updates</ButtonText>
         </Strings>
       </Button>
 
@@ -135,66 +171,138 @@
           <ButtonText>Restart Visual Studio As Administrator</ButtonText>
         </Strings>
       </Button>
+
+      <!--~~~ Insert Commands ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <Button guid="EvsCommandSet" id="InsertGuidCommand" type="Button" priority="0x0001">
+        <Parent guid="EvsCommandSet" id="InsertGroup" />
+        <Icon guid="ImageCatalogGuid" id="InsertSpan"/>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <CommandName>InsertGuid</CommandName>
+          <CanonicalName>InsertGuid</CanonicalName>
+          <LocCanonicalName>InsertGuid</LocCanonicalName>
+          <ButtonText>Insert Guid</ButtonText>
+        </Strings>
+      </Button>
+
+      <!--~~~ Solution Node Commands ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <Button guid="EvsCommandSet" id="EditSolutionCommand" type="Button" priority="0x0010">
+        <Parent guid="EvsCommandSet" id="SolutionNodeGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <CommandName>EditSolution</CommandName>
+          <CanonicalName>EditSolution</CanonicalName>
+          <LocCanonicalName>EditSolution</LocCanonicalName>
+          <ButtonText>Edit Solution</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="EvsCommandSet" id="CloseSolutionCommand" type="Button" priority="0x0020">
+        <Parent guid="EvsCommandSet" id="SolutionNodeGroup" />
+        <Icon guid="ImageCatalogGuid" id="CloseSolution"/>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <CommandName>CloseSolution</CommandName>
+          <CanonicalName>CloseSolution</CanonicalName>
+          <LocCanonicalName>CloseSolution</LocCanonicalName>
+          <ButtonText>Close Solution</ButtonText>
+        </Strings>
+      </Button>
+      
+      <!--~~~ Project Node Commands ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <Button guid="EvsCommandSet" id="EditProjectCommand" type="Button" priority="0x0010">
+        <Parent guid="EvsCommandSet" id="ProjectGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <CommandName>EditProject</CommandName>
+          <CanonicalName>EditProject</CanonicalName>
+          <LocCanonicalName>EditProject</LocCanonicalName>
+          <ButtonText>Edit Project</ButtonText>
+        </Strings>
+      </Button>
     </Buttons>
   </Commands>
 
   <CommandPlacements>
     <!--~~~ EvsToolbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-    <CommandPlacement guid="EvsCommandSet" id="BuildGroup" priority="0x0400">
+    <CommandPlacement guid="EvsCommandSet" id="BuildGroup" priority="0x0100">
       <Parent guid="EvsCommandSet" id="EvsToolbar" />
     </CommandPlacement>
 
-    <CommandPlacement guid="EvsCommandSet" id="RestartGroup" priority="0x9000">
+    <CommandPlacement guid="EvsCommandSet" id="VisualStudioGroup" priority="0x0800">
       <Parent guid="EvsCommandSet" id="EvsToolbar" />
     </CommandPlacement>
 
-    <CommandPlacement guid="EvsCommandSet" id="VisualStudioGroup" priority="0x0500">
+    <CommandPlacement guid="EvsCommandSet" id="RestartGroup" priority="0x0900">
       <Parent guid="EvsCommandSet" id="EvsToolbar" />
     </CommandPlacement>
 
     <!--~~~ MainMenu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-    <CommandPlacement guid="EvsCommandSet" id="BuildGroup" priority="0x0400">
-      <Parent guid="EvsCommandSet" id="EvsToolbar" />
-    </CommandPlacement>
-
-    <CommandPlacement guid="EvsCommandSet" id="RestartCommands" priority="0x0010">
+    <CommandPlacement guid="EvsCommandSet" id="BuildGroup" priority="0x0300">
       <Parent guid="EvsCommandSet" id="MainMenu" />
     </CommandPlacement>
 
-    <CommandPlacement guid="EvsCommandSet" id="VisualStudioGroup" priority="0x0500">
-      <Parent guid="EvsCommandSet" id="EvsToolbar" />
+    <CommandPlacement guid="EvsCommandSet" id="VisualStudioGroup" priority="0x0800">
+      <Parent guid="EvsCommandSet" id="MainMenu" />
+    </CommandPlacement>
+
+    <CommandPlacement guid="EvsCommandSet" id="RestartCommands" priority="0x0900">
+      <Parent guid="EvsCommandSet" id="MainMenu" />
+    </CommandPlacement>
+
+    <CommandPlacement guid="EvsCommandSet" id="InsertGroup" priority="0x0A00">
+      <Parent guid="EvsCommandSet" id="MainMenu" />
+    </CommandPlacement>
+
+    <CommandPlacement guid="EvsCommandSet" id="SolutionNodeGroup" priority="0x0B00">
+      <Parent guid="EvsCommandSet" id="MainMenu" />
+    </CommandPlacement>
+
+    <CommandPlacement guid="EvsCommandSet" id="ProjectGroup" priority="0x0C00">
+      <Parent guid="EvsCommandSet" id="MainMenu" />
     </CommandPlacement>
 
     <!--~~~ EvsMenu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-    <CommandPlacement guid="EvsCommandSet" id="BuildGroup" priority="0x0400">
-      <Parent guid="EvsCommandSet" id="EvsToolbar" />
-    </CommandPlacement>
-
-    <CommandPlacement guid="EvsCommandSet" id="RestartCommands" priority="0x0010">
+    <CommandPlacement guid="EvsCommandSet" id="BuildGroup" priority="0x0300">
       <Parent guid="EvsCommandSet" id="EvsMenu" />
     </CommandPlacement>
 
-    <CommandPlacement guid="EvsCommandSet" id="VisualStudioGroup" priority="0x0500">
-      <Parent guid="EvsCommandSet" id="EvsToolbar" />
+    <CommandPlacement guid="EvsCommandSet" id="VisualStudioGroup" priority="0x0800">
+      <Parent guid="EvsCommandSet" id="EvsMenu" />
     </CommandPlacement>
 
-    <!--~~~ Restart Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-    <CommandPlacement guid="EvsCommandSet" id="RestartDropDown" priority="0x0000">
-      <Parent guid="EvsCommandSet" id="RestartGroup" />
+    <CommandPlacement guid="EvsCommandSet" id="RestartCommands" priority="0x0900">
+      <Parent guid="EvsCommandSet" id="EvsMenu" />
     </CommandPlacement>
 
-    <CommandPlacement guid="EvsCommandSet" id="RestartCommands" priority="0x0000">
-      <Parent guid="EvsCommandSet" id="RestartDropDown" />
+    <CommandPlacement guid="EvsCommandSet" id="InsertGroup" priority="0x0A00">
+      <Parent guid="EvsCommandSet" id="EvsMenu" />
+    </CommandPlacement>
+
+    <CommandPlacement guid="EvsCommandSet" id="SolutionNodeGroup" priority="0x0B00">
+      <Parent guid="EvsCommandSet" id="EvsMenu" />
+    </CommandPlacement>
+
+    <CommandPlacement guid="EvsCommandSet" id="ProjectGroup" priority="0x0C00">
+      <Parent guid="EvsCommandSet" id="EvsMenu" />
     </CommandPlacement>
   </CommandPlacements>
 
   <KeyBindings>
-    <KeyBinding guid="EvsCommandSet" id="RebuildSolutionCommand" editor="guidVSStd97" key1="0" mod1="Control"/>
-    <KeyBinding guid="EvsCommandSet" id="RebuildSolutionCommand" editor="guidVSStd97" key1="9" mod1="Control"/>
+    <KeyBinding guid="EvsCommandSet" id="RebuildProjectCommand" editor="guidVSStd97" 
+                mod1="Control Alt" key1="9"/>
+    <KeyBinding guid="EvsCommandSet" id="RebuildSolutionCommand" editor="guidVSStd97" 
+                mod1="Control Alt" key1="0"/>
+
+    <KeyBinding guid="EvsCommandSet" id="InsertGuidCommand" editor="GUID_TextEditorFactory" 
+                mod1="Control Alt" key1="I" mod2="Control Alt" key2="G"/>
   </KeyBindings>
 
   <Symbols>
@@ -203,34 +311,51 @@
     <GuidSymbol name="EvsCommandSet" value="{4EAC4E23-4909-4DAC-9D6E-819BDC861480}">
       <!-- don't change any of these symbol values-->
 
-      <IDSymbol name="CodeEditorGroup" value="0xB000" />
-
       <IDSymbol name="MainMenu" value="0xA000" />
       <IDSymbol name="EvsToolbar" value="0xA001" />
       <IDSymbol name="EvsMenu" value="0xA002" />
 
+      <IDSymbol name="CodeEditorGroup" value="0xB000" />
+      <IDSymbol name="SolutionNodeGroup" value="0xC000" />
+      <IDSymbol name="ProjectGroup" value="0xD000" />
+
       <!--~~~ Build ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-      <IDSymbol name="BuildGroup" value="0x4010" />
+      <IDSymbol name="BuildGroup" value="0x0310" />
 
-      <IDSymbol name="RebuildProjectCommand" value="0x4015" />
-      <IDSymbol name="RebuildSolutionCommand" value="0x4016" />
-      <IDSymbol name="CancelBuildCommand" value="0x4017" />
+      <IDSymbol name="RebuildProjectCommand" value="0x0315" />
+      <IDSymbol name="RebuildSolutionCommand" value="0x0316" />
+      <IDSymbol name="CancelBuildCommand" value="0x0317" />
 
-      <!--~~~ Visual Studio ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Visual Studio ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-      <IDSymbol name="VisualStudioGroup" value="0x4040" />
+      <IDSymbol name="VisualStudioGroup" value="0x0840" />
 
-      <IDSymbol name="ExtensionsAndUpdatesCommand" value="0x4045" />
+      <IDSymbol name="ExtensionsAndUpdatesCommand" value="0x0845" />
 
       <!--~~~ Restart ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-      <IDSymbol name="RestartGroup" value="0x0100" />
-      <IDSymbol name="RestartDropDown" value="0x0101" />
-      <IDSymbol name="RestartCommands" value="0x0102" />
+      <IDSymbol name="RestartGroup" value="0x0900" />
+      <IDSymbol name="RestartDropDown" value="0x0901" />
+      <IDSymbol name="RestartCommands" value="0x0902" />
 
-      <IDSymbol name="RestartNormalCommand" value="0x0105" />
-      <IDSymbol name="RestartElevatedCommand" value="0x106" />
+      <IDSymbol name="RestartNormalCommand" value="0x0905" />
+      <IDSymbol name="RestartElevatedCommand" value="0x0906" />
+
+      <!--~~~ Insert Guid ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <IDSymbol name="InsertGroup" value="0x0A00" />
+      <IDSymbol name="InsertGuidCommand" value="0x0A01" />
+
+      <!--~~~ Solution Node ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <IDSymbol name="EditSolutionCommand" value="0x0B01" />
+      <IDSymbol name="CloseSolutionCommand" value="0x0B02" />
+
+      <!--~~~ Project Node ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <IDSymbol name="EditProjectCommand" value="0x0C01" />
+
     </GuidSymbol>
   </Symbols>
 </CommandTable>

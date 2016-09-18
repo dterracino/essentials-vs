@@ -27,6 +27,8 @@ namespace Essentials.VS
         {
             base.Initialize();
 
+            InsertGuidCommand.Instantiate(this);
+
             RebuildProjectCommand.Instantiate(this);
             RebuildSolutionCommand.Instantiate(this);
             CancelBuildCommand.Instantiate(this);
@@ -35,6 +37,11 @@ namespace Essentials.VS
 
             RestartNormalCommand.Instantiate(this);
             RestartElevatedCommand.Instantiate(this);
+
+            EditSolutionCommand.Instantiate(this);
+            CloseSolutionCommand.Instantiate(this);
+
+            EditProjectCommand.Instantiate(this);
         }
     }
 }
