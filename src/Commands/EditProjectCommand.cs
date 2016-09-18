@@ -41,9 +41,7 @@ namespace Essentials.VS.Commands
 
         private CommandResult ExecuteCommand()
         {
-            var package = Package;
-
-            return package?.EditSelectedProject();
+            return Package?.EditSelectedProject();
             //return EditSelectedProject_();
         }
 
