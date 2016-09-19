@@ -359,6 +359,10 @@ The project file opens in an XML window.
 
 ---
 
+<div style="text-align:center">
+  <img src="art/lss-vsip.png" />
+</div>
+
 [insert-guid-menu]: https://github.com/yannduran/essentials-vs/raw/master/art/insert-guid-menu.png
 [insert-guid-menu]: https://github.com/yannduran/essentials-vs/raw/master/art/insert-guid-menu.png
 [insert-guid-code]: https://github.com/yannduran/essentials-vs/raw/master/art/insert-guid-code.png
