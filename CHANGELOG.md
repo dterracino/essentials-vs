@@ -4,23 +4,25 @@ download/test in the
 [CI build](http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/).
 
 ### Sprint 2
+- [ ] Keyboard Options
 - [ ] Activity Log
 - [ ] Diagnostic Log
 - [ ] Path Variables
-- [ ] *Keyboard Options* command
-- [ ] *Yann's Essentials Options* command
+- [ ] Yann's Essentials Options
 
 ### Sprint 3
-- [ ] Duplicate Text command
-- [ ] Duplicate File command
-- [ ] Copy References command
-- [ ] Paste References command
+- [ ] Duplicate Text
+- [ ] Duplicate File
+- [ ] Copy References
+- [ ] Paste References
 
-### Sprint 4
-- [ ] Copy Solution command
-- [ ] Delete Solution command
-- [ ] Copy Project command
-- [ ] Delete Project command
+### Also Planned
+- [ ] Copy Solution
+- [ ] Delete Solution
+- [ ] Reload Solution
+- [ ] Copy Project
+- [ ] Delete Project
+- [ ] Reload Project
 
 ---
 

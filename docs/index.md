@@ -1,25 +1,26 @@
 # Yann's Essentials for VS
 ## Features
-This Extension Installed's features can be accessed via one or more of the following methods:
+Each one of this extension's features can be accessed via one or more of the following methods:
 
-- clicking on a button on the *Yann's Essentials* toolbar
-- selecting a command from the *Yann's Essentials* menu
-- selecting a command from the *Yann's Essentials* menu in the context menu of any code window
+- the *Yann's Essentials* toolbar
+- the *Yann's Essentials* main menu
+- the *Yann's Essentials* context menu
+- a keyboard shortcut
 
-Some features are available via all three methods, whereas as others may not be able to be
-accessed via all of the methods.
+Some shortcut key combinations may have already been in use by Visual Studio
+(but I've tried to only use ones that have less chance of people needing)
+
+Most of the features are available via all of the methods, whereas as others may only be available via some of them.
 
 ---
 
 #### Insert Guid(s)
-Insert a guid directly into your code without the use of any **external** tool
-by placing the cursor where you want the guid and invoking the command.
+Insert a single guid, or multiple guids directly into your code without the use of any **external** tool.
 
-Insert **multiple unique guids** at the same time by making a multi-line selection before invoking the command
-using one of the methods listed below.
-
-Replace a section of **existing text** with a guid by selecting it before invoking the command.
-Replace **multiple lines of text** by making a multi-line selection before invoking the command.
+- insert **a single guid**, by simply moving the cursor to where you want to insert it and invoke the command
+- insert **multiple unique guids** at the same time by making a multi-line selection before invoking the command
+- replace **some existing text** with a guid by selecting it then invoke the command
+- replace **multiple lines of text** by making a multi-line selection before invoking the command
 
 ##### Without This Extension Installed
 
@@ -28,17 +29,21 @@ Replace **multiple lines of text** by making a multi-line selection before invok
 - click the *Copy* button, or the *New GUID* button
 - move your cursor to where you want the guid
 - right-click and select *Paste*
-- (repeat steps for multiple guids)
+- (repeat these steps for multiple guids)
 
 ##### With This Extension Installed
 
-* **Menu**
+* **Main Menu**
     - click on the *Yann's Essentials* menu in *Visual Studio*'s main menu bar
     - select *Insert Guid*
     - ![Insert Guid (from menu)][insert-guid-menu]
-* **Code Window**
-    - right-click in the code file where you want to insert the guid,
-    or select some text, or multi-select some text
+* **Context Menu**
+    - in the code file where you want the guid(s)
+      - move the cursor to the desired location
+      - **or** make a muliple-line insertion
+      - **or** select some text that you want to replace
+      - **or** make a muliple-line selection of text to replace
+    - right click
     - select *Yann's Essentials*
     - select *Insert Guid(s)*
     - ![Insert Guid (from code)][insert-guid-code]
@@ -48,14 +53,14 @@ Replace **multiple lines of text** by making a multi-line selection before invok
 ---
 
 #### Rebuild Solution
-Quickly rebuild the whole solution.
+A convenient way to rebuild the whole solution.
 
 ##### Without This Extension Installed
 
 - move your mouse to the solution node in *Solution Explorer*
 - right-click it
-- select *Rebuild Solution*
-- **or**
+- select *Rebuild Solution*  
+**or**
 - move your mouse up to the *Build* menu
 - click it
 - select *Rebuild Solution*
@@ -67,33 +72,36 @@ This feature is only enabled if a build/rebuild is **not** currently in progress
 * **Toolbar**
     - click the *Rebuild Solution* button on the *Yann's Essentials* toolbar
     - ![Rebuild Solution (from toolbar)][rebuild-solution-toolbar]
-* **Menu**
+* **Main Menu**
     - click on the *Yann's Essentials* menu in *Visual Studio*'s main menu bar
     - select *Rebuild Solution*
     - ![Rebuild Solution (from menu)][rebuild-solution-menu]
-* **Code Window**
+* **Context Menu**
     - right-click in any code window
-    - click on *Yann's Essentials* in the context menu
-    - click on *Rebuild Solution*
+    - select *Yann's Essentials* in the context menu
+    - select *Rebuild Solution*
     - ![Rebuild Solution (from code)][rebuild-solution-code]
 * **Shortcut**
     - press *Ctrl-Alt-0*
 
-Once Visual Studio starts rebuilding the solution,
-the *Rebuild Solution* and *Rebuild Project* buttons are **disabled**,
-and the *Cancel Build* button is **enabled**.
+Once Visual Studio starts rebuilding the solution:
+- the *Rebuild Solution* and *Rebuild Project* buttons are **disabled**
+- the *Cancel Build* button is **enabled**
 
 ---
 
 #### Rebuild Project
-Quickly rebuild the current project.
+A convenient way to rebuild the just the current project
+(either a selected project, or the project to which the active code document belongs).
 
 ##### Without This Extension Installed
 
-- move your mouse to the currently selected project's node in *Solution Explorer*
+- move your mouse to a project node in *Solution Explorer*
 - right-click it
-- select *Rebuild Project*
-- **or**
+- select *Rebuild Project*  
+**or**
+- move your mouse to a project node in *Solution Explorer*
+- click it
 - move your mouse up to the *Build* menu
 - click it
 - select *Rebuild Project*
@@ -105,11 +113,11 @@ This feature is only enabled if a build/rebuild is **not** currently in progress
 * **Toolbar**
     - click the *Rebuild Project* button on the *Yann's Essentials* toolbar
     - ![Rebuild Project (from toolbar)][rebuild-project-toolbar]
-* **Menu**
+* **Main Menu**
     - click on the *Yann's Essentials* menu in *Visual Studio*'s main menu bar
     - select *Rebuild Project*
     - ![Rebuild Project (from menu)][rebuild-project-menu]
-* **Code Window**
+* **Context Menu**
     - right-click in any code window
     - click on *Yann's Essentials* in the context menu
     - click on *Rebuild Project*
@@ -117,15 +125,15 @@ This feature is only enabled if a build/rebuild is **not** currently in progress
 * **Shortcut**
     - press *Ctrl-Alt-0*
 
-Once Visual Studio starts rebuilding the selected project,
-the *Rebuild Project* and *Rebuild Solution* buttons are **disabled**,
-and the *Cancel Build* button is **enabled**.
+Once Visual Studio starts rebuilding the current project:
+- the *Rebuild Solution* and *Rebuild Project* buttons are **disabled**
+- the *Cancel Build* button is **enabled**
 
 ---
 
 #### Cancel Build
 
-Quickly cancel a running build/rebuild.
+A convenient way to cancel a running build/rebuild.
 
 ##### Without This Extension Installed
 
@@ -140,28 +148,31 @@ This feature is only enabled if a build/rebuild **is** currently in progress.
 * **Toolbar**
     - click the *Cancel Build* button on the *Yann's Essentials* toolbar
     - ![Cancel Build (from toolbar)][cancel-build-toolbar]
-* **Menu**
+* **Main Menu**
     - click on the *Yann's Essentials* menu in *Visual Studio*'s main menu bar
     - select *Rebuild Project*
     - ![Cancel Build (from menu)][cancel-build-menu]
-* **Code Window**
+* **Context Menu**
     - right-click in any code window
     - select *Yann's Essentials* in the context menu
     - select *Cancel Build*
     - ![Cancel Build (from code)][cancel-build-code]
+* **Keyboard Shortcut**
+    - Ctrl-Alt-X
 
-Once the build/rebuild has been cancelled,
-the *Rebuild Project* and *Rebuild Solution* buttons are **enabled**,
-and the *Cancel Build* button is **disabled**.
+Once the build/rebuild has been cancelled:
+- the *Rebuild Project* and *Rebuild Solution* buttons are **enabled**
+- the *Cancel Build* button is **disabled**
 
 ---
 
 #### Extensions and Updates
 
-Open the *Extensions and Updates* dialog.
+A easy way to open the *Extensions and Updates* dialog.
 
-This one's about pure convenience.
-I often find myself needing to open dialog this multiple times a day.
+This one's about pure personal convenience.
+I often find myself needing to open dialog this multiple times a day
+(installing or uninstalling extension(s), looking up versions etc).
 
 I've lost count of how many times I've **accidentally** ended up clicking on *Options*
 instead of *Extensions and Updates*.
@@ -178,11 +189,11 @@ Or found myself looking up and down the menu trying to find it in the *Tools* me
 * **Toolbar**
     - click the *Extensions and Updates* button on the *Yann's Essentials* toolbar
     - ![Extensions and Updates][extensions-updates-toolbar]
-* **Menu**
+* **Main Menu**
     - click on the *Yann's Essentials* menu in *Visual Studio*'s main menu bar
     - select *Rebuild Project*
     - ![Extensions and Updates (from menu)][extensions-updates-menu]
-* **Code Window**
+* **Context Menu**
     - right-click in any code window
     - select *Yann's Essentials* in the context menu
     - select *Extensions and Updates*
@@ -191,11 +202,11 @@ Or found myself looking up and down the menu trying to find it in the *Tools* me
 ---
 
 #### Restart Visual Studio
-Instantly restart Visual Studio.
+Unlock Visual Studio's built-in ability to restart itself.
 
 Have you ever wished there was an **easy** way to restart Visual Studio,
 just like the *Extensions and Updates* dialog does
-after installing/uninstalling an extension?
+after installing/uninstalling an extension, and ending up back in the same project that you were working on?
 
 ##### Without This Extension Installed
 
@@ -212,23 +223,23 @@ after installing/uninstalling an extension?
 * **Toolbar**
     - click the *Restart Visual Studio* button on the toolbar
     - ![Restart Visual Studio (from toolbar)][restart-vs-toolbar]
-* **Menu**
+* **Main Menu**
     - click on the *Essentials* menu in *Visual Studio*'s main menu bar
     - select *Restart Visual Studio*
     - ![Restart Visual Studio (from menu)][restart-vs-menu]
-* **Code Window**
+* **Context Menu**
     - right-click in any code window
     - click on *Yann's Essentials* in the context menu
     - click on *Cancel Build*
     - ![Restart Visual Studio (from code)][restart-vs-code]
 
-Visual Studio restarts and automatically re-opens the solution that you were working on.
+Visual Studio restarts and automatically re-opens the project that you were working on.
 
 ---
 
 #### Restart Visual Studio as Administrator
 
-Instantly restart Visual Studio as administrator (elevated session).
+Restart Visual Studio as administrator (elevated session).
 
 ##### Without This Extension Installed
 
@@ -245,26 +256,27 @@ Instantly restart Visual Studio as administrator (elevated session).
 ##### With This Extension Installed
 
 * **Toolbar**
-    - click the *Restart Visual Studio as Administrator* button on the toolbar
+    - click the *Restart* dropdown on the toolbar
+    - select *Restart Visual Studio as Administrator*
     - ![Restart Visual Studio as Administrator (from toolbar)][restart-vs-admin-toolbar]
-* **Menu**
+* **Main Menu**
     - click on the *Yann's Essentials* menu
     - select *Restart Visual Studio as Administrator*
     - ![Restart Visual Studio as Administrator (from menu)][restart-vs-admin-menu]
-* **Code Window**
+* **Context Menu**
     - right-click in any code window
     - select *Yann's Essentials* in the context menu
     - select *Restart Visual Studio as Administrator*
     - ![Restart Visual Studio as Administrator (from code)][restart-vs-admin-code]
 
-Visual Studio restarts an elevated session 
-and automatically re-opens the solution that you were previously working on.
+Visual Studio restarts an elevated session
+and automatically re-opens the project that you were working on.
 
 ---
 
 #### Edit Solution
 
-Open the solution file in an xml editor.
+Open a solution's *.sln* file in an xml editor.
 
 ##### Without This Extension Installed
 
@@ -282,17 +294,17 @@ Open the solution file in an xml editor.
     - right-click on the *Solution Name* node
     - click on *Edit Solution*
     - ![Edit Solution (from solution node)][edit-solution-node]
-* **Menu**
+* **Main Menu**
     - click on the *Yann's Essentials* menu
     - select *Edit Solution*
     - ![Edit Solution (from menu)][edit-solution-menu]
-* **Code Window**
+* **Context Menu**
     - right-click in any code window
     - select *Yann's Essentials* from the context menu
     - select *Edit Solution*
     - ![Edit Solution (from code)][edit-solution-code]
 
-The solution file opens in an XML window, ready for editing.
+The solution file opens in an XML window.
 
 ---
 
@@ -313,11 +325,11 @@ Close the current solution.
     - right-click on the *Solution Name* node
     - select *Close Solution*
     - ![Close Solution (from solution node)][close-solution-node]
-* **Menu**
+* **Main Menu**
     - click on the *Yann's Essentials* menu
     - select *Close Solution*
     - ![Close Solution (from menu)][close-solution-menu]
-* **Code Window**
+* **Context Menu**
     - right-click in any code window
     - select *Yann's Essentials* in the context menu
     - select *Close Solution*
@@ -345,22 +357,22 @@ Open a project's *csproj* file in an xml editor.
     - right-click on the *Project* node
     - click on *Edit Project*
     - ![Edit Project (from project node)][edit-project-node]
-* **Menu**
+* **Main Menu**
     - click on the *Yann's Essentials* menu
     - select *Edit Project*
     - ![Edit Project (from menu)][edit-project-menu]
-* **Code Window**
+* **Context Menu**
     - right-click in any code window
     - select *Yann's Essentials* in the context menu
     - select *Edit Project*
     - ![Edit Project (from code)][edit-project-code]
 
-The project file opens in an XML window.
+The project file opens in an XML window, ready for editing.
 
 ---
 
 <div style="text-align:center">
-  <img src="art/lss-vsip.png" />
+    <img src="art/lss-vsip.png" />
 </div>
 
 [insert-guid-menu]: https://github.com/yannduran/essentials-vs/raw/master/art/insert-guid-menu.png

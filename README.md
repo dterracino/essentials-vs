@@ -60,56 +60,57 @@ as well as images of the features in action.
 ## Features
 
 #### Insert Guid(s)
-Instantly insert/replace guid(s) directly in your code without the use of any **external** tool.
+Insert a single guid, or multiple guids directly into your code without the use of any **external** tool.
 
 toolbar | main menu | context menu | shortcut
 :---:   | :---:     | :---:        | :---:
 no      | yes       | yes          | Shift-Alt-I, Shift-Alt-G
 
 #### Rebuild Solution
-Instantly rebuild the whole solution.
+A convenient way to rebuild the whole solution.
 
 toolbar | main menu | context menu | shortcut
 :---:   | :---:     | :---:        | :---:
 yes     | yes       | yes          | Ctrl-Alt-0 
 
 #### Rebuild Project
-Instantly rebuild the current project.
+A convenient way to rebuild the just the current project
+(either a selected project, or the project to which the active code document belongs).
 
 toolbar | main menu | context menu | shortcut
 :---:   | :---:     | :---:        | :---:
 yes     | yes       | yes          | Ctrl-Alt-9 
 
 #### Cancel Build
-Quickly cancel a running build/rebuild.
+A convenient way to cancel a running build/rebuild.
 
 toolbar | main menu | context menu
 :---:   | :---:     | :---:
 yes     | yes       | yes
 
 #### Extensions and Updates
-Open the *Extensions and Updates* dialog.
+A convenient way to open the *Extensions and Updates* dialog.
 
 toolbar | main menu | context menu
 :---:   | :---:     | :---:
 yes     | yes       | yes
 
 #### Restart Visual Studio
-Instantly restart Visual Studio.
+Unlock Visual Studio's built-in ability to restart itself.
 
 toolbar | main menu | context menu
 :---:   | :---:     | :---:
 yes     | yes       | yes
 
 #### Restart Visual Studio as Administrator
-Instantly restart Visual Studio as administrator (elevated).
+Restart Visual Studio as administrator (elevated session).
 
 toolbar | main menu | context menu
 :---:   | :---:     | :---:
 yes     | yes       | yes
 
 #### Edit Solution
-Open the solution file in an xml editor.
+Open a solution's *.sln* file in an xml editor.
 
 toolbar | main menu | context menu
 :---:   | :---:     | :---:

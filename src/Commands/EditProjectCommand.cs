@@ -1,13 +1,11 @@
-﻿//using System;
-using Microsoft.VisualStudio.Shell;
+﻿using Microsoft.VisualStudio.Shell;
 
 namespace Essentials.VS.Commands
 {
     using YD.Framework.VisualStudio.Commands;
     using YD.Framework.VisualStudio.Packages;
-    //using YD.Framework.VisualStudio.Solutions;
-    //using YD.Framework.VisualStudio.SelectedItemsExtensions;
-    //using YD.Framework.Exceptions.ExceptionExtensions;
+    using YD.Framework.VisualStudio.SelectedItemsExtensions;
+    using YD.Framework.VisualStudio.Solutions;
 
     internal sealed class EditProjectCommand : DynamicCommand
     {
@@ -34,10 +32,20 @@ namespace Essentials.VS.Commands
                 .ShowInformation();
 
         protected override bool IsActive
-            => base.IsActive
-                && SolutionIsNotBuilding;
+        {
+            get
+            {
+                if (!base.IsActive)
+                    return false;
 
-        //---
+                if (!Package.ProjectSelected())
+                    return false;
+
+                return base.IsActive && SolutionIsNotBuilding;
+            }
+        }
+
+       //---
 
         private CommandResult ExecuteCommand()
         {
