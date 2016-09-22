@@ -7,15 +7,15 @@
 
   <Commands package="EvsPackage">
     <Groups>
-      <!--~~~ Build Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      
+      <!--~~~ Build ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
       <Group guid="EvsCommandSet" id="BuildGroup" priority="0x0000" />
 
-      <!--~~~ VS Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Visual Studio ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Group guid="EvsCommandSet" id="VisualStudioGroup"/>
 
-      <!--~~~ Restart Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Restart ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Group guid="EvsCommandSet" id="RestartGroup" priority="0x0000" />
 
@@ -23,18 +23,25 @@
         <Parent guid="EvsCommandSet" id="RestartDropDown" />
       </Group>
 
-      <!--~~~ Insert Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      
+      <!--~~~ Options ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <Group guid="EvsCommandSet" id="OptionsGroup" priority="0x0950" />
+      <Group guid="EvsCommandSet" id="OptionsCommands" priority="0x0951">
+        <Parent guid="EvsCommandSet" id="OptionsDropDown" priority="0x0000"/>
+      </Group>
+
+      <!--~~~ Insert ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
       <Group guid="EvsCommandSet" id="InsertGroup" priority="0x0000" />
 
-      <!--~~~ Solution Node Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Solution Node ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Group guid="EvsCommandSet" id="SolutionNodeGroup" priority="0x0000">
         <!--<Parent guid="guidSHLMainMenu" id="IDG_VS_CTXT_SOLUTION_BUILD" />-->
         <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_SOLNNODE" />
       </Group>
 
-      <!--~~~ Project Node Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Project Node ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Group guid="EvsCommandSet" id="ProjectGroup" priority="0x0000">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE" />
@@ -46,8 +53,8 @@
     </Groups>
 
     <Menus>
-      <!--~~~ Toolbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      
+      <!--~~~ Toolbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
       <Menu guid="EvsCommandSet" id="EvsToolbar" type="Toolbar" priority="0xFFFF">
         <CommandFlag>AlwaysCreate</CommandFlag>
         <Strings>
@@ -55,7 +62,7 @@
         </Strings>
       </Menu>
 
-      <!--~~~ Main Menu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Main Menu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Menu guid="EvsCommandSet" id="MainMenu" type="Menu" priority="0x0701">
         <Parent guid="guidSHLMainMenu" id="IDG_VS_MM_TOOLSADDINS"/>
@@ -65,7 +72,7 @@
         </Strings>
       </Menu>
 
-      <!--~~~ Evs Menu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Evs Menu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Menu guid="EvsCommandSet" id="EvsMenu" type="Menu" priority="0x0000">
         <Parent guid="EvsCommandSet" id="CodeEditorGroup" />
@@ -75,7 +82,7 @@
         </Strings>
       </Menu>
 
-      <!--~~~ Restart Dropdown ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Restart ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Menu guid="EvsCommandSet" id="RestartDropDown" type="MenuController" priority="0x0000">
         <Parent guid="EvsCommandSet" id="RestartGroup" />
@@ -83,10 +90,20 @@
           <ButtonText>Restart Commands</ButtonText>
         </Strings>
       </Menu>
+
+      <!--~~~ Options ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <Menu guid="EvsCommandSet" id="OptionsDropDown" type="MenuController" priority="0x0000">
+        <Parent guid="EvsCommandSet" id="OptionsGroup" />
+        <CommandFlag>NotInTBList</CommandFlag>
+        <Strings>
+          <ButtonText>Options</ButtonText>
+        </Strings>
+      </Menu>
     </Menus>
 
     <Buttons>
-      <!--~~~ Build Commands ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Build ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Button guid="EvsCommandSet" id="RebuildProjectCommand" type="Button" priority="0x0001">
         <Parent guid="EvsCommandSet" id="BuildGroup" />
@@ -130,7 +147,7 @@
         </Strings>
       </Button>
 
-      <!--~~~ Visual Studio Commands ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Visual Studio ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Button guid="EvsCommandSet" id="ExtensionsAndUpdatesCommand" type="Button" priority="0x0001">
         <Parent guid="EvsCommandSet" id="VisualStudioGroup" />
@@ -145,7 +162,22 @@
         </Strings>
       </Button>
 
-      <!--~~~ Restart Commands ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Options ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <Button guid="EvsCommandSet" id="KeyboardOptionsCommand" type="Button" priority="0x0002">
+        <Parent guid="EvsCommandSet" id="OptionsCommands" />
+        <Icon guid="ImageCatalogGuid" id="Keyboard"/>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <CommandName>KeyboardOptions</CommandName>
+          <CanonicalName>KeyboardOptions</CanonicalName>
+          <LocCanonicalName>KeyboardOptions</LocCanonicalName>
+          <ButtonText>Keyboard Options</ButtonText>
+        </Strings>
+      </Button>
+
+      <!--~~~ Restart ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Button guid="EvsCommandSet" id="RestartNormalCommand" type="Button" priority="0x0001">
         <Parent guid="EvsCommandSet" id="RestartCommands" />
@@ -172,7 +204,7 @@
         </Strings>
       </Button>
 
-      <!--~~~ Insert Commands ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Insert ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Button guid="EvsCommandSet" id="InsertGuidCommand" type="Button" priority="0x0001">
         <Parent guid="EvsCommandSet" id="InsertGroup" />
@@ -187,7 +219,7 @@
         </Strings>
       </Button>
 
-      <!--~~~ Solution Node Commands ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Solution Node ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Button guid="EvsCommandSet" id="EditSolutionCommand" type="Button" priority="0x0010">
         <Parent guid="EvsCommandSet" id="SolutionNodeGroup" />
@@ -211,8 +243,8 @@
           <ButtonText>Close Solution</ButtonText>
         </Strings>
       </Button>
-      
-      <!--~~~ Project Node Commands ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <!--~~~ Project Node ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Button guid="EvsCommandSet" id="EditProjectCommand" type="Button" priority="0x0010">
         <Parent guid="EvsCommandSet" id="ProjectGroup" />
@@ -242,6 +274,10 @@
       <Parent guid="EvsCommandSet" id="EvsToolbar" />
     </CommandPlacement>
 
+    <CommandPlacement guid="EvsCommandSet" id="OptionsGroup" priority="0x0900">
+      <Parent guid="EvsCommandSet" id="EvsToolbar" />
+    </CommandPlacement>
+
     <!--~~~ MainMenu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
     <CommandPlacement guid="EvsCommandSet" id="BuildGroup" priority="0x0300">
@@ -253,6 +289,10 @@
     </CommandPlacement>
 
     <CommandPlacement guid="EvsCommandSet" id="RestartCommands" priority="0x0900">
+      <Parent guid="EvsCommandSet" id="MainMenu" />
+    </CommandPlacement>
+
+    <CommandPlacement guid="EvsCommandSet" id="OptionsGroup" priority="0x0900">
       <Parent guid="EvsCommandSet" id="MainMenu" />
     </CommandPlacement>
 
@@ -282,6 +322,10 @@
       <Parent guid="EvsCommandSet" id="EvsMenu" />
     </CommandPlacement>
 
+    <CommandPlacement guid="EvsCommandSet" id="OptionsGroup" priority="0x0950">
+      <Parent guid="EvsCommandSet" id="EvsMenu" />
+    </CommandPlacement>
+
     <CommandPlacement guid="EvsCommandSet" id="InsertGroup" priority="0x0A00">
       <Parent guid="EvsCommandSet" id="EvsMenu" />
     </CommandPlacement>
@@ -296,12 +340,12 @@
   </CommandPlacements>
 
   <KeyBindings>
-    <KeyBinding guid="EvsCommandSet" id="RebuildProjectCommand" editor="guidVSStd97" 
+    <KeyBinding guid="EvsCommandSet" id="RebuildProjectCommand" editor="guidVSStd97"
                 mod1="Control Alt" key1="9"/>
-    <KeyBinding guid="EvsCommandSet" id="RebuildSolutionCommand" editor="guidVSStd97" 
+    <KeyBinding guid="EvsCommandSet" id="RebuildSolutionCommand" editor="guidVSStd97"
                 mod1="Control Alt" key1="0"/>
 
-    <KeyBinding guid="EvsCommandSet" id="InsertGuidCommand" editor="GUID_TextEditorFactory" 
+    <KeyBinding guid="EvsCommandSet" id="InsertGuidCommand" editor="GUID_TextEditorFactory"
                 mod1="Control Alt" key1="I" mod2="Control Alt" key2="G"/>
   </KeyBindings>
 
@@ -319,7 +363,7 @@
       <IDSymbol name="SolutionNodeGroup" value="0xC000" />
       <IDSymbol name="ProjectGroup" value="0xD000" />
 
-      <!--~~~ Build ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Build ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <IDSymbol name="BuildGroup" value="0x0310" />
 
@@ -327,13 +371,13 @@
       <IDSymbol name="RebuildSolutionCommand" value="0x0316" />
       <IDSymbol name="CancelBuildCommand" value="0x0317" />
 
-      <!--~~~ Visual Studio ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Visual Studio ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <IDSymbol name="VisualStudioGroup" value="0x0840" />
 
       <IDSymbol name="ExtensionsAndUpdatesCommand" value="0x0845" />
 
-      <!--~~~ Restart ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Restart ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <IDSymbol name="RestartGroup" value="0x0900" />
       <IDSymbol name="RestartDropDown" value="0x0901" />
@@ -342,17 +386,25 @@
       <IDSymbol name="RestartNormalCommand" value="0x0905" />
       <IDSymbol name="RestartElevatedCommand" value="0x0906" />
 
-      <!--~~~ Insert Guid ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Options ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <IDSymbol name="OptionsGroup" value="0x0950" />
+      <IDSymbol name="OptionsDropDown" value="0x0951" />
+      <IDSymbol name="OptionsCommands" value="0x0952" />
+
+      <IDSymbol name="KeyboardOptionsCommand" value="0x0955" />
+
+      <!--~~~ Insert Guid ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <IDSymbol name="InsertGroup" value="0x0A00" />
       <IDSymbol name="InsertGuidCommand" value="0x0A01" />
 
-      <!--~~~ Solution Node ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Solution Node ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <IDSymbol name="EditSolutionCommand" value="0x0B01" />
       <IDSymbol name="CloseSolutionCommand" value="0x0B02" />
 
-      <!--~~~ Project Node ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Project Node ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <IDSymbol name="EditProjectCommand" value="0x0C01" />
 

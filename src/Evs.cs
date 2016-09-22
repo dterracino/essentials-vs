@@ -39,6 +39,10 @@ namespace Essentials.VS
         public const int RestartCommands = 0x0902;
         public const int RestartNormalCommand = 0x0905;
         public const int RestartElevatedCommand = 0x0906;
+        public const int OptionsGroup = 0x0950;
+        public const int OptionsDropDown = 0x0951;
+        public const int OptionsCommands = 0x0952;
+        public const int KeyboardOptionsCommand = 0x0955;
         public const int InsertGroup = 0x0A00;
         public const int InsertGuidCommand = 0x0A01;
         public const int EditSolutionCommand = 0x0B01;

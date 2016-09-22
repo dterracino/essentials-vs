@@ -38,6 +38,8 @@ namespace Essentials.VS
             RestartNormalCommand.Instantiate(this);
             RestartElevatedCommand.Instantiate(this);
 
+            KeyboardOptionsCommand.Instantiate(this);
+
             EditSolutionCommand.Instantiate(this);
             CloseSolutionCommand.Instantiate(this);
 
