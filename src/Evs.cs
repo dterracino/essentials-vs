@@ -32,9 +32,9 @@ namespace Essentials.VS
         public const int RebuildProjectCommand = 0x0315;
         public const int RebuildSolutionCommand = 0x0316;
         public const int CancelBuildCommand = 0x0317;
-        public const int DeveloperGroup = 0x0830;
-        public const int DeveloperDropdown = 0x0831;
-        public const int DeveloperCommands = 0x0832;
+        public const int DeveloperGroup = 0x0700;
+        public const int DeveloperDropdown = 0x0701;
+        public const int DeveloperCommands = 0x0702;
         public const int VisualStudioGroup = 0x0840;
         public const int ExtensionsAndUpdatesCommand = 0x0845;
         public const int RestartGroup = 0x0900;
