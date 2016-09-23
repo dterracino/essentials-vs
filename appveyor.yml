@@ -10,7 +10,7 @@ version: 1.0.{build}
 #  - develop
 
 install:
-- ps: (new-object Net.WebClient).DownloadString("https://raw.github.com/madskristensen/ExtensionScripts/master/AppVeyor/vsix.ps1") | iex
+  - ps: (new-object Net.WebClient).DownloadString("https://raw.github.com/madskristensen/ExtensionScripts/master/AppVeyor/vsix.ps1") | iex
 
 before_build:
   - ps: Vsix-IncrementVsixVersion -versionType revision | Vsix-UpdateBuildVersion
@@ -19,6 +19,10 @@ before_build:
 
 build_script:
   - msbuild /p:configuration=Release /p:DeployExtension=false /p:ZipPackageCompressionLevel=normal /v:m
+
+nuget:
+  account_feed: true
+  project_feed: false
 
 build:
   verbosity: minimal
