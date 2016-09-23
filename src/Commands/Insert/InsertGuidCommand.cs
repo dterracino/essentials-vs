@@ -1,27 +1,29 @@
 ﻿using Microsoft.VisualStudio.Shell;
+using static System.Guid;
 
-namespace Essentials.VS.Commands
+namespace Essentials.VS.Commands.Insert
 {
     using YD.Framework.VisualStudio.Commands;
     using YD.Framework.VisualStudio.Packages;
 
-    internal sealed class CancelBuildCommand : DynamicCommand
+    internal sealed class InsertGuidCommand : DynamicCommand
     {
         //***
+
+        private static int CommandId
+            => PackageIds.InsertGuidCommand;
+
         //===M
 
-        private CancelBuildCommand(PackageBase package) : base(package, PackageIds.CancelBuildCommand)
+        private InsertGuidCommand(PackageBase package) : base(package, CommandId)
         { }
 
         //===M
 
         public static void Instantiate(PackageBase package)
-            => Instantiate(new CancelBuildCommand(package));
+            => Instantiate(new InsertGuidCommand(package));
 
         //---
-
-        protected override bool IsActive
-            => base.IsActive && BuildingOrDebugging;
 
         protected override void OnExecute(OleMenuCommand command)
             => ExecuteCommand()
@@ -31,7 +33,8 @@ namespace Essentials.VS.Commands
         //---
 
         private CommandResult ExecuteCommand()
-            => Package?.CancelBuild();
+            => Package?.ReplaceSelectedText(
+                () => NewGuid().ToString(), problem: "Unable to insert guid");
 
         //***
     }

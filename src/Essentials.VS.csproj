@@ -53,17 +53,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Commands\CloseSolutionCommand.cs" />
-    <Compile Include="Commands\EditProjectCommand.cs" />
-    <Compile Include="Commands\EditSolutionCommand.cs" />
-    <Compile Include="Commands\ExtensionsAndUpdatesCommand.cs" />
-    <Compile Include="Commands\InsertGuidCommand.cs" />
-    <Compile Include="Commands\KeyboardOptionsCommand.cs" />
-    <Compile Include="Commands\RebuildSolutionCommand.cs" />
-    <Compile Include="Commands\CancelBuildCommand.cs" />
-    <Compile Include="Commands\RebuildProjectCommand.cs" />
-    <Compile Include="Commands\RestartElevatedCommand.cs" />
-    <Compile Include="Commands\RestartNormalCommand.cs" />
+    <Compile Include="Commands\Solution Node\CloseSolutionCommand.cs" />
+    <Compile Include="Commands\Project Node\EditProjectCommand.cs" />
+    <Compile Include="Commands\Solution Node\EditSolutionCommand.cs" />
+    <Compile Include="Commands\VisualStudio\ExtensionsAndUpdatesCommand.cs" />
+    <Compile Include="Commands\Insert\InsertGuidCommand.cs" />
+    <Compile Include="Commands\Options\KeyboardOptionsCommand.cs" />
+    <Compile Include="Commands\Build\RebuildSolutionCommand.cs" />
+    <Compile Include="Commands\Build\CancelBuildCommand.cs" />
+    <Compile Include="Commands\Build\RebuildProjectCommand.cs" />
+    <Compile Include="Commands\Restart\RestartElevatedCommand.cs" />
+    <Compile Include="Commands\Restart\RestartNormalCommand.cs" />
     <Compile Include="Evs.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

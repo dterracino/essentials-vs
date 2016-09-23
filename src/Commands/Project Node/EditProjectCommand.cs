@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.Shell;
 
-namespace Essentials.VS.Commands
+namespace Essentials.VS.Commands.ProjectNode
 {
     using YD.Framework.VisualStudio.Commands;
     using YD.Framework.VisualStudio.Packages;
@@ -45,7 +45,7 @@ namespace Essentials.VS.Commands
             }
         }
 
-       //---
+        //---
 
         private CommandResult ExecuteCommand()
         {

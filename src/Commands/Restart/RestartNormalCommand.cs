@@ -1,27 +1,22 @@
 ﻿using Microsoft.VisualStudio.Shell;
-using static System.Guid;
 
-namespace Essentials.VS.Commands
+namespace Essentials.VS.Commands.Restart
 {
     using YD.Framework.VisualStudio.Commands;
     using YD.Framework.VisualStudio.Packages;
 
-    internal sealed class InsertGuidCommand : DynamicCommand
+    internal sealed class RestartNormalCommand : DynamicCommand
     {
         //***
-
-        private static int CommandId
-            => PackageIds.InsertGuidCommand;
-
         //===M
 
-        private InsertGuidCommand(PackageBase package) : base(package, CommandId)
+        private RestartNormalCommand(PackageBase package) : base(package, PackageIds.RestartNormalCommand)
         { }
 
         //===M
 
         public static void Instantiate(PackageBase package)
-            => Instantiate(new InsertGuidCommand(package));
+            => Instantiate(new RestartNormalCommand(package));
 
         //---
 
@@ -33,8 +28,7 @@ namespace Essentials.VS.Commands
         //---
 
         private CommandResult ExecuteCommand()
-            => Package?.ReplaceSelectedText(
-                () => NewGuid().ToString(), problem: "Unable to insert guid");
+            => Package?.RestartVisualStudio();
 
         //***
     }

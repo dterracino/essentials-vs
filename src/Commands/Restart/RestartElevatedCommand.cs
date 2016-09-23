@@ -1,22 +1,22 @@
 ﻿using Microsoft.VisualStudio.Shell;
 
-namespace Essentials.VS.Commands
+namespace Essentials.VS.Commands.Restart
 {
     using YD.Framework.VisualStudio.Commands;
     using YD.Framework.VisualStudio.Packages;
 
-    internal sealed class KeyboardOptionsCommand : DynamicCommand
+    internal sealed class RestartElevatedCommand : DynamicCommand
     {
         //***
         //===M
 
-        private KeyboardOptionsCommand(PackageBase package) : base(package, PackageIds.KeyboardOptionsCommand)
+        private RestartElevatedCommand(PackageBase package) : base(package, PackageIds.RestartElevatedCommand)
         { }
 
         //===M
 
         public static void Instantiate(PackageBase package)
-            => Instantiate(new KeyboardOptionsCommand(package));
+            => Instantiate(new RestartElevatedCommand(package));
 
         //---
 
@@ -28,7 +28,7 @@ namespace Essentials.VS.Commands
         //---
 
         private CommandResult ExecuteCommand()
-            => Package?.ShowOptionsPage(CommandKeys.KeyboardOptionsPage);
+            => Package?.RestartVisualStudio(elevated: true);
 
         //***
     }

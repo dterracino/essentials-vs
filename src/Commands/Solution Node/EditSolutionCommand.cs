@@ -2,7 +2,7 @@
 using YD.Framework.VisualStudio.Commands;
 using YD.Framework.VisualStudio.Packages;
 
-namespace Essentials.VS.Commands
+namespace Essentials.VS.Commands.SolutionNode
 {
     internal sealed class EditSolutionCommand : DynamicCommand
     {

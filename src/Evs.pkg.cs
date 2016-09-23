@@ -7,7 +7,13 @@ using static Microsoft.VisualStudio.Shell.Interop.UIContextGuids80;
 namespace Essentials.VS
 {
     using YD.Framework.VisualStudio.Packages;
-    using Commands;
+    using Commands.Insert;
+    using Commands.Build;
+    using Commands.VisualStudio;
+    using Commands.Restart;
+    using Commands.Options;
+    using Commands.SolutionNode;
+    using Commands.ProjectNode;
 
     using static PackageGuids;
     using static Vsix;

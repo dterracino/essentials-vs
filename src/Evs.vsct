@@ -235,6 +235,8 @@
 
       <Button guid="EvsCommandSet" id="EditSolutionCommand" type="Button" priority="0x0010">
         <Parent guid="EvsCommandSet" id="SolutionNodeGroup" />
+        <Icon guid="ImageCatalogGuid" id="EditTag"/>
+        <CommandFlag>DynamicVisibility</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
           <CommandName>EditSolution</CommandName>
@@ -260,6 +262,8 @@
 
       <Button guid="EvsCommandSet" id="EditProjectCommand" type="Button" priority="0x0010">
         <Parent guid="EvsCommandSet" id="ProjectGroup" />
+        <Icon guid="ImageCatalogGuid" id="EditTag"/>
+        <CommandFlag>DynamicVisibility</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
           <CommandName>EditProject</CommandName>
@@ -304,7 +308,7 @@
       <Parent guid="EvsCommandSet" id="MainMenu" />
     </CommandPlacement>
 
-    <CommandPlacement guid="EvsCommandSet" id="OptionsGroup" priority="0x0900">
+    <CommandPlacement guid="EvsCommandSet" id="OptionsCommands" priority="0x0900">
       <Parent guid="EvsCommandSet" id="MainMenu" />
     </CommandPlacement>
 
@@ -334,7 +338,7 @@
       <Parent guid="EvsCommandSet" id="EvsMenu" />
     </CommandPlacement>
 
-    <CommandPlacement guid="EvsCommandSet" id="OptionsGroup" priority="0x0950">
+    <CommandPlacement guid="EvsCommandSet" id="OptionsCommands" priority="0x0950">
       <Parent guid="EvsCommandSet" id="EvsMenu" />
     </CommandPlacement>
 
