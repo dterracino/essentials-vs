@@ -7,11 +7,20 @@
 
   <Commands package="EvsPackage">
     <Groups>
+<<<<<<< Updated upstream
       <!--~~~ Build ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+=======
+      <!--~~~ Build Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+>>>>>>> Stashed changes
 
       <Group guid="EvsCommandSet" id="BuildGroup" priority="0x0000" />
 
       <!--~~~ Visual Studio ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <Group guid="EvsCommandSet" id="DeveloperGroup" priority="0x0000" />
+      <Group guid="EvsCommandSet" id="DeveloperCommands" />
+
+      <!--~~~ VS Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Group guid="EvsCommandSet" id="VisualStudioGroup"/>
 
@@ -23,6 +32,7 @@
         <Parent guid="EvsCommandSet" id="RestartDropDown" />
       </Group>
 
+<<<<<<< Updated upstream
       <!--~~~ Options ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Group guid="EvsCommandSet" id="OptionsGroup" priority="0x0950" />
@@ -31,6 +41,9 @@
       </Group>
 
       <!--~~~ Insert ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+=======
+      <!--~~~ Insert Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+>>>>>>> Stashed changes
 
       <Group guid="EvsCommandSet" id="InsertGroup" priority="0x0000" />
 
@@ -53,7 +66,11 @@
     </Groups>
 
     <Menus>
+<<<<<<< Updated upstream
       <!--~~~ Toolbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+=======
+      <!--~~~ Toolbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+>>>>>>> Stashed changes
 
       <Menu guid="EvsCommandSet" id="EvsToolbar" type="Toolbar" priority="0xFFFF">
         <CommandFlag>AlwaysCreate</CommandFlag>
@@ -82,7 +99,19 @@
         </Strings>
       </Menu>
 
+<<<<<<< Updated upstream
       <!--~~~ Restart ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+=======
+      <!--~~~ Developer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <Menu guid="EvsCommandSet" id="DeveloperDropdown" type="MenuController" priority="0x0000">
+        <Strings>
+          <ButtonText>Developer Commands</ButtonText>
+        </Strings>
+      </Menu>
+
+      <!--~~~ Restart Dropdown ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+>>>>>>> Stashed changes
 
       <Menu guid="EvsCommandSet" id="RestartDropDown" type="MenuController" priority="0x0000">
         <Parent guid="EvsCommandSet" id="RestartGroup" />
@@ -103,7 +132,11 @@
     </Menus>
 
     <Buttons>
+<<<<<<< Updated upstream
       <!--~~~ Build ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+=======
+      <!--~~~ Build Commands ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+>>>>>>> Stashed changes
 
       <Button guid="EvsCommandSet" id="RebuildProjectCommand" type="Button" priority="0x0001">
         <Parent guid="EvsCommandSet" id="BuildGroup" />
@@ -244,7 +277,11 @@
         </Strings>
       </Button>
 
+<<<<<<< Updated upstream
       <!--~~~ Project Node ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+=======
+      <!--~~~ Project Node Commands ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+>>>>>>> Stashed changes
 
       <Button guid="EvsCommandSet" id="EditProjectCommand" type="Button" priority="0x0010">
         <Parent guid="EvsCommandSet" id="ProjectGroup" />
