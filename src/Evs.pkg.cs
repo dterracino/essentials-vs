@@ -14,6 +14,7 @@ namespace Essentials.VS
     using Commands.Options;
     using Commands.SolutionNode;
     using Commands.ProjectNode;
+    using Commands.Developer;
 
     using static PackageGuids;
     using static Vsix;
@@ -38,6 +39,8 @@ namespace Essentials.VS
             RebuildProjectCommand.Instantiate(this);
             RebuildSolutionCommand.Instantiate(this);
             CancelBuildCommand.Instantiate(this);
+
+            DiagnosticLogCommand.Instantiate(this);
 
             ExtensionsAndUpdatesCommand.Instantiate(this);
 

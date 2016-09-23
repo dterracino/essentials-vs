@@ -22,12 +22,18 @@ namespace Essentials.VS
     /// </summary>
     internal sealed partial class PackageIds
     {
-        public const int MainMenu = 0xA000;
         public const int EvsToolbar = 0xA001;
         public const int EvsMenu = 0xA002;
         public const int CodeEditorGroup = 0xB000;
         public const int SolutionNodeGroup = 0xC000;
-        public const int ProjectGroup = 0xD000;
+        public const int ProjectNodeGroup = 0xD000;
+        public const int SolutionGroup = 0x0C00;
+        public const int EditSolutionCommand = 0x0C05;
+        public const int CloseSolutionCommand = 0xCB06;
+        public const int ProjectGroup = 0x0D00;
+        public const int EditProjectCommand = 0x0D05;
+        public const int InsertGroup = 0x0A00;
+        public const int InsertGuidCommand = 0x0A05;
         public const int BuildGroup = 0x0310;
         public const int RebuildProjectCommand = 0x0315;
         public const int RebuildSolutionCommand = 0x0316;
@@ -35,6 +41,7 @@ namespace Essentials.VS
         public const int DeveloperGroup = 0x0700;
         public const int DeveloperDropdown = 0x0701;
         public const int DeveloperCommands = 0x0702;
+        public const int DiagnosticLogCommand = 0x0705;
         public const int VisualStudioGroup = 0x0840;
         public const int ExtensionsAndUpdatesCommand = 0x0845;
         public const int RestartGroup = 0x0900;
@@ -46,10 +53,5 @@ namespace Essentials.VS
         public const int OptionsDropDown = 0x0951;
         public const int OptionsCommands = 0x0952;
         public const int KeyboardOptionsCommand = 0x0955;
-        public const int InsertGroup = 0x0A00;
-        public const int InsertGuidCommand = 0x0A01;
-        public const int EditSolutionCommand = 0x0B01;
-        public const int CloseSolutionCommand = 0x0B02;
-        public const int EditProjectCommand = 0x0C01;
     }
 }
