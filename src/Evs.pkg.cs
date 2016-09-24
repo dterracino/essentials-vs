@@ -40,7 +40,9 @@ namespace Essentials.VS
             RebuildSolutionCommand.Instantiate(this);
             CancelBuildCommand.Instantiate(this);
 
+            ActivityLogCommand.Instantiate(this);
             DiagnosticLogCommand.Instantiate(this);
+            PathVariablesCommand.Instantiate(this);
 
             ExtensionsAndUpdatesCommand.Instantiate(this);
 

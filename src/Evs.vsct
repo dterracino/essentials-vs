@@ -46,7 +46,7 @@
 
       <Group guid="EvsCommandSet" id="DeveloperGroup" priority="0x0000" />
 
-      <Group guid="EvsCommandSet" id="DeveloperCommands">
+      <Group guid="EvsCommandSet" id="DeveloperCommands" priority="0x0000">
         <Parent guid="EvsCommandSet" id="DeveloperDropdown" />
       </Group>
 
@@ -234,6 +234,19 @@
 
       <!--~~~ Developer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
+      <Button guid="EvsCommandSet" id="ActivityLogCommand" type="Button" priority="0x0001">
+        <Parent guid="EvsCommandSet" id="DeveloperCommands" />
+        <Icon guid="ImageCatalogGuid" id="Log"/>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <CommandName>ActivityLog</CommandName>
+          <CanonicalName>ActivityLog</CanonicalName>
+          <LocCanonicalName>ActivityLog</LocCanonicalName>
+          <ButtonText>Activity Log</ButtonText>
+        </Strings>
+      </Button>
+
       <Button guid="EvsCommandSet" id="DiagnosticLogCommand" type="Button" priority="0x0001">
         <Parent guid="EvsCommandSet" id="DeveloperCommands" />
         <Icon guid="ImageCatalogGuid" id="LogWarning"/>
@@ -244,6 +257,19 @@
           <CanonicalName>DiagnosticLog</CanonicalName>
           <LocCanonicalName>DiagnosticLog</LocCanonicalName>
           <ButtonText>Diagnostic Log</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="EvsCommandSet" id="PathVariablesCommand" type="Button" priority="0x0001">
+        <Parent guid="EvsCommandSet" id="DeveloperCommands" />
+        <Icon guid="ImageCatalogGuid" id="LogWarning"/>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <CommandName>PathVariables</CommandName>
+          <CanonicalName>PathVariables</CanonicalName>
+          <LocCanonicalName>PathVariables</LocCanonicalName>
+          <ButtonText>Path Variables</ButtonText>
         </Strings>
       </Button>
 
@@ -473,7 +499,9 @@
       <IDSymbol name="DeveloperDropdown" value="0x0701" />
       <IDSymbol name="DeveloperCommands" value="0x0702" />
 
-      <IDSymbol name="DiagnosticLogCommand" value="0x0705"/>
+      <IDSymbol name="ActivityLogCommand" value="0x0705"/>
+      <IDSymbol name="DiagnosticLogCommand" value="0x0706"/>
+      <IDSymbol name="PathVariablesCommand" value="0x0707"/>
 
       <!--~~~ Visual Studio ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 

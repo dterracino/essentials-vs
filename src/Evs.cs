@@ -41,7 +41,9 @@ namespace Essentials.VS
         public const int DeveloperGroup = 0x0700;
         public const int DeveloperDropdown = 0x0701;
         public const int DeveloperCommands = 0x0702;
-        public const int DiagnosticLogCommand = 0x0705;
+        public const int ActivityLogCommand = 0x0705;
+        public const int DiagnosticLogCommand = 0x0706;
+        public const int PathVariablesCommand = 0x0707;
         public const int VisualStudioGroup = 0x0840;
         public const int ExtensionsAndUpdatesCommand = 0x0845;
         public const int RestartGroup = 0x0900;
