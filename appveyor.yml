@@ -1,5 +1,5 @@
 os: Visual Studio 2015
-    
+
 platform: Any CPU
 configuration: Release
 
@@ -9,13 +9,18 @@ version: 1.0.{build}
 #  only:
 #  - develop
 
+init:
+  - ps: Vsix-IncrementVsixVersion -versionType revision | Vsix-UpdateBuildVersion
+  - ps: Vsix-TokenReplacement src\source.extension.cs 'Version = "([0-9\\.]+)"' 'Version = "{version}"'
+
 install:
   - ps: (new-object Net.WebClient).DownloadString("https://raw.github.com/madskristensen/ExtensionScripts/master/AppVeyor/vsix.ps1") | iex
 
 before_build:
-  - ps: Vsix-IncrementVsixVersion -versionType revision | Vsix-UpdateBuildVersion
-  - ps: Vsix-TokenReplacement src\source.extension.cs 'Version = "([0-9\\.]+)"' 'Version = "{version}"'
   - nuget restore -verbosity quiet
+
+build:
+  verbosity: minimal
 
 build_script:
   - msbuild /p:configuration=Release /p:DeployExtension=false /p:ZipPackageCompressionLevel=normal /v:m
@@ -23,9 +28,6 @@ build_script:
 nuget:
   account_feed: true
   project_feed: false
-
-build:
-  verbosity: minimal
 
 after_build:
   - ps: Vsix-PushArtifacts | Vsix-PublishToGallery
