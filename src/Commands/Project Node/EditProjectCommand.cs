@@ -36,19 +36,17 @@ namespace Essentials.VS.Commands.ProjectNode
                 if (!base.IsActive)
                     return false;
 
-                if (!Package.ProjectSelected())
+                if (!Package.ProjectIsSelected)
                     return false;
 
-                return base.IsActive && SolutionIsNotBuilding;
+                return SolutionIsNotBuilding;
             }
         }
 
         //---
 
         private CommandResult ExecuteCommand()
-        {
-            return Package?.EditSelectedProject();
-        }
+            => Package?.EditSelectedProject();
 
         //***
     }

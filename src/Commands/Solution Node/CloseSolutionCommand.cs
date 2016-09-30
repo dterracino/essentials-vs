@@ -8,13 +8,9 @@ namespace Essentials.VS.Commands.SolutionNode
     internal sealed class CloseSolutionCommand : DynamicCommand
     {
         //***
-
-        private static int CommandId
-            => PackageIds.CloseSolutionCommand;
-
         //===M
 
-        private CloseSolutionCommand(PackageBase package) : base(package, CommandId)
+        private CloseSolutionCommand(PackageBase package) : base(package, PackageIds.CloseSolutionCommand)
         { }
 
         //===M

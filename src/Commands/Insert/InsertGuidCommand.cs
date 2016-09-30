@@ -9,13 +9,9 @@ namespace Essentials.VS.Commands.Insert
     internal sealed class InsertGuidCommand : DynamicCommand
     {
         //***
-
-        private static int CommandId
-            => PackageIds.InsertGuidCommand;
-
         //===M
 
-        private InsertGuidCommand(PackageBase package) : base(package, CommandId)
+        private InsertGuidCommand(PackageBase package) : base(package, PackageIds.InsertGuidCommand)
         { }
 
         //===M
@@ -33,8 +29,8 @@ namespace Essentials.VS.Commands.Insert
         //---
 
         private CommandResult ExecuteCommand()
-            => Package?.ReplaceSelectedText(
-                () => NewGuid().ToString(), problem: "Unable to insert guid");
+            => Package?.ReplaceSelectedText(() => NewGuid().ToString(),
+                problem: "Unable to insert guid");
 
         //***
     }

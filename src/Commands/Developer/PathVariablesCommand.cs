@@ -1,6 +1,5 @@
 ﻿using System;
 using Microsoft.VisualStudio.Shell;
-using EnvDTE;
 
 using static System.Environment;
 
@@ -9,19 +8,14 @@ namespace Essentials.VS.Commands.Developer
     using YD.Framework.Exceptions.ExceptionExtensions;
     using YD.Framework.VisualStudio.Commands;
     using YD.Framework.VisualStudio.Packages;
-    //using Framework.Exceptions.ExceptionExtensions;
-    //using Framework.VisualStudio.Dte.DTE2Extensions;
 
     internal sealed class PathVariablesCommand : DynamicCommand
     {
         //***
-
-        private static int CommandId
-            => PackageIds.PathVariablesCommand;
-
         //===M
 
-        private PathVariablesCommand(PackageBase package) : base(package, CommandId)
+        private PathVariablesCommand(PackageBase package)
+            : base(package, PackageIds.PathVariablesCommand)
         { }
 
         //===M
@@ -40,20 +34,19 @@ namespace Essentials.VS.Commands.Developer
 
         private CommandResult ExecuteCommand()
         {
-            CommandResult result = null;
-
             try
             {
                 const string semi_colon = ";";
+                var pane = Package?.PackageOutputPane;
                 var colonNewline = semi_colon + NewLine;
-                OutputWindowPane pane = null;// Package?.PackageOutputPane(YannsEssentials);
                 var expanded = ExpandEnvironmentVariables("%path%");
                 var text = expanded.Replace(semi_colon, colonNewline);
 
                 text += colonNewline;
 
-                //result = Package?.ActivateOutputWindow();
-                if (!result.Succeeded) return result;
+                var result = Package?.ActivateOutputWindow();
+                if (!result.Succeeded)
+                    return result;
 
                 pane.Activate();
                 pane.Clear();
@@ -61,14 +54,12 @@ namespace Essentials.VS.Commands.Developer
                 pane.OutputString("==============" + NewLine + NewLine);
                 pane.OutputString(text);
 
-                result = new SuccessResult();
+                return new SuccessResult();
             }
             catch (Exception ex)
             {
-                result = new ProblemResult(ex.ExtendedMessage());
+                return new ProblemResult(ex.ExtendedMessage());
             }
-
-            return result;
         }
 
         //***

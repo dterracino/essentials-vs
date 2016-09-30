@@ -28,7 +28,7 @@ namespace Essentials.VS.Commands.Options
         //---
 
         private CommandResult ExecuteCommand()
-            => Package?.ShowOptionsPage(CommandKeys.KeyboardOptionsPage);
+            => Package?.ShowOptions(CommandKeys.KeyboardOptions);
 
         //***
     }

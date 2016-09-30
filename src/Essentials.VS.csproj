@@ -286,12 +286,14 @@
       <HintPath>..\packages\System.Xml.XPath.XDocument.4.0.1\lib\net46\System.Xml.XPath.XDocument.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="YD.Framework.Core, Version=0.7.2.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\YD.Framework.Core.0.7.2.1\lib\net461\YD.Framework.Core.dll</HintPath>
+    <Reference Include="YD.Framework.Core, Version=0.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\YD.Framework.Core.0.8.0\lib\net461\YD.Framework.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="YD.Framework.VisualStudio, Version=0.7.2.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\YD.Framework.VisualStudio.0.7.2.1\lib\net461\YD.Framework.VisualStudio.dll</HintPath>
+    <Reference Include="YD.Framework.VisualStudio, Version=0.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\YD.Framework.VisualStudio.0.8.0\lib\net461\YD.Framework.VisualStudio.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>

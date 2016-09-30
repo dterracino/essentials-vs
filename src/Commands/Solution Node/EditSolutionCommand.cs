@@ -7,13 +7,9 @@ namespace Essentials.VS.Commands.SolutionNode
     internal sealed class EditSolutionCommand : DynamicCommand
     {
         //***
-
-        private static int CommandId
-            => PackageIds.EditSolutionCommand;
-
         //===M
 
-        private EditSolutionCommand(PackageBase package) : base(package, CommandId)
+        private EditSolutionCommand(PackageBase package) : base(package, PackageIds.EditSolutionCommand)
         { }
 
         //===M

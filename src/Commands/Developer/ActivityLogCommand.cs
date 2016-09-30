@@ -11,15 +11,13 @@ namespace Essentials.VS.Commands.Developer
     {
         //***
 
-        public static int CommandId
-            => PackageIds.ActivityLogCommand;
-
         private string Path
             => $"{Package.UserDataPath}\\ActivityLog.xml";
 
         //===M
 
-        private ActivityLogCommand(PackageBase package) : base(package, CommandId)
+        private ActivityLogCommand(PackageBase package)
+            : base(package, PackageIds.ActivityLogCommand)
         { }
 
         //===M
