@@ -21,27 +21,27 @@ Because it's usually far easier to click a toolbar button than to have to go hun
 the command you want in a menu somewhere,
 the most convenient commands have been added to the toolbar.
 
-To make the toolbar visible, right-click in a blank spot on the toolbar area, 
+To make the toolbar visible, right-click in a blank spot on the toolbar area,
 and select *Yann's Essentials*.
 
 Like all other Visual Studio toolbars, you can remove any commands that you feel you don't need,
 or even add new commands to it.
 
 ### *Yann's Essentials* Menu
-For those people who prefer a menu to a toolbar this extension also adds a new menu to 
+For those people who prefer a menu to a toolbar this extension also adds a new menu to
 Visual Studio's main menu bar. All commands are available via this menu.
 
-### Code Window Context Menu
-For the ultimate in coding convenience, most features are also available via the 
-another *Yann's Essentials* menu that's been added to the right-click context menu of any code window.
+### Context Menus
+Most features are also available via another menu that's been added to the
+right-click context menu of any code window, and to some nodes in *Solution Explorer*.
 This allows you to access nearly all of the *Yann's Essentials* features
 without moving your mouse from the code you're working on.
 
-The commands have been grouped into their own menu because the code window context menu
-is already pretty clogged up. And it's growing all the time,
-as Microsoft or 3rd-party extensions add more and more commands to it.
+The commands have been grouped into their own *Yann's Essentials* menu because most context menus
+are already pretty clogged up. And they're growing all the time,
+as Microsoft or 3rd-party extensions add more and more commands to them.
 
-It means that there is one more click than I'd prefer,
+It means that there is one more click than I'd ideally prefer,
 but I've found it much easier to find the commands in a dedicated menu
 than having to search through one gigantic menu of different commands.
 
@@ -49,15 +49,31 @@ than having to search through one gigantic menu of different commands.
 Some of the features that tend to be used frequently have also been assigned a keyboard shortcut.
 And of course you can add your own keyboard shortcut to any of the *Yann's Essentials* commands.
 
-### Feature Descriptions
+---
+
+## Features
+
 A more in-depth description of the features listed below
 [can be found here](https://yannduran.github.io/essentials-vs/),
 including a comparison of the steps required both with and without the extension installed,
 as well as images of the features in action.
 
----
+- Insert Guid(s)
+- Rebuild Solution
+- Rebuild Project
+- Cancel Build
+- Extensions and Updates
+- Restart Visual Studio
+- Restart Visual Studio as Administrator
+- Edit Solution
+- Close Solution
+- Edit Project
+- Keyboard Options
+- Activity Log
+- Diagnostics Log
+- Path Variables
 
-## Features
+---
 
 #### Insert Guid(s)
 Insert a single guid, or multiple guids directly into your code without the use of any **external** tool.
@@ -71,7 +87,7 @@ A convenient way to rebuild the whole solution.
 
 toolbar | main menu | context menu | shortcut
 :---:   | :---:     | :---:        | :---:
-yes     | yes       | yes          | Ctrl-Alt-0 
+yes     | yes       | yes          | Ctrl-Alt-0
 
 #### Rebuild Project
 A convenient way to rebuild the just the current project
@@ -79,7 +95,7 @@ A convenient way to rebuild the just the current project
 
 toolbar | main menu | context menu | shortcut
 :---:   | :---:     | :---:        | :---:
-yes     | yes       | yes          | Ctrl-Alt-9 
+yes     | yes       | yes          | Ctrl-Alt-9
 
 #### Cancel Build
 A convenient way to cancel a running build/rebuild.
@@ -131,6 +147,50 @@ toolbar | main menu | context menu | project node
 :---:   | :---:     | :---:        | :---:
 yes     | yes       | yes          | yes
 
+#### Keyboard Options
+Open the *Tools* | *Options* dialog at the *Environment* | *Keyboard* node.
+
+toolbar | main menu | context menu
+:---:   | :---:     | :---:
+yes     | yes       | yes
+
+#### Activity Log
+Open the Visual Studio activity monitor log.
+
+The activity log is a powerful tool for troubleshooting issues with *VS Packages*, *VS Extensions*,
+*MEF Components**, and *pkgdef* files, and provides useful insights into what Visual Studio is doing.
+
+When Visual Studio starts writing the log, it also writes a corresponding XSL file in the same folder
+as the XML file that makes it easy to read in a browser.
+
+>The file's path is *%APPDATA%\Microsoft\VisualStudio\version\ActivityLog.xml*
+>
+>- *%APPDATA%* represents the value in the APPDATA environment variable
+>- *version* represents the current Visual Studio version (ie 14.0 for VS 2015)
+
+toolbar | main menu | context menu
+:---:   | :---:     | :---:
+yes     | yes       | yes
+
+#### Diagnostic Log
+Open the most recent MSBuild diagnostic log file.
+
+>The file is: *%LOCALAPPDATA%\Temp\MSBuild_guid.failure.txt*
+>
+>- *%LOCALAPPDATA%* represents the value in the *LOCALAPPDATA* environment variable
+>- *guid* represents a random guid value
+
+toolbar | main menu | context menu
+:---:   | :---:     | :---:
+yes     | yes       | yes
+
+#### Path Variables
+Display the current set of Windows paths variable values.
+
+toolbar | main menu | context menu
+:---:   | :---:     | :---:
+yes     | yes       | yes
+
 ## Contribute
 Check out the [contribution guidelines](https://github.com/yannduran/essentials-vs/blob/master/CONTRIBUTING.md)
 if you want to contribute to this project.
@@ -143,5 +203,5 @@ extension for Visual Studio which enables some features used by this project.
 [Apache 2.0](LICENSE)
 
 <div style="text-align:center">
-  <img src="art/lss-vsip.png" />
+    <img src="art/lss-vsip.png" />
 </div>
