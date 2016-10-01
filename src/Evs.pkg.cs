@@ -7,7 +7,14 @@ using static Microsoft.VisualStudio.Shell.Interop.UIContextGuids80;
 namespace Essentials.VS
 {
     using YD.Framework.VisualStudio.Packages;
-    using Commands;
+    using Commands.Insert;
+    using Commands.Build;
+    using Commands.VisualStudio;
+    using Commands.Restart;
+    using Commands.Options;
+    using Commands.SolutionNode;
+    using Commands.ProjectNode;
+    using Commands.Developer;
 
     using static PackageGuids;
     using static Vsix;
@@ -33,10 +40,16 @@ namespace Essentials.VS
             RebuildSolutionCommand.Instantiate(this);
             CancelBuildCommand.Instantiate(this);
 
+            ActivityLogCommand.Instantiate(this);
+            DiagnosticLogCommand.Instantiate(this);
+            PathVariablesCommand.Instantiate(this);
+
             ExtensionsAndUpdatesCommand.Instantiate(this);
 
             RestartNormalCommand.Instantiate(this);
             RestartElevatedCommand.Instantiate(this);
+
+            KeyboardOptionsCommand.Instantiate(this);
 
             EditSolutionCommand.Instantiate(this);
             CloseSolutionCommand.Instantiate(this);

@@ -1,25 +1,41 @@
 # Yann's Essentials for VS
+Each one of this extension's features can be accessed via one or more of the following methods:
+- the *Yann's Essentials* toolbar
+- the *Yann's Essentials* main menu
+- the *Yann's Essentials* context menu
+- a keyboard shortcut
+
+Some shortcut key combinations may have already been in use by Visual Studio
+(but I've tried to only use ones that have less chance of people needing)
+
+Most of the features are available via all of the methods, whereas as others may only be available via some of them.
+
 ## Features
-This Extension Installed's features can be accessed via one or more of the following methods:
 
-- clicking on a button on the *Yann's Essentials* toolbar
-- selecting a command from the *Yann's Essentials* menu
-- selecting a command from the *Yann's Essentials* menu in the context menu of any code window
-
-Some features are available via all three methods, whereas as others may not be able to be
-accessed via all of the methods.
+- Insert Guid(s)
+- Rebuild Solution
+- Rebuild Project
+- Cancel Build
+- Extensions and Updates
+- Restart Visual Studio
+- Restart Visual Studio as Administrator
+- Edit Solution
+- Close Solution
+- Edit Project
+- Keyboard Options
+- Activity Log
+- Diagnostics Log
+- Path Variables
 
 ---
 
 #### Insert Guid(s)
-Insert a guid directly into your code without the use of any **external** tool
-by placing the cursor where you want the guid and invoking the command.
+Insert a single guid, or multiple guids directly into your code without the use of any **external** tool.
 
-Insert **multiple unique guids** at the same time by making a multi-line selection before invoking the command
-using one of the methods listed below.
-
-Replace a section of **existing text** with a guid by selecting it before invoking the command.
-Replace **multiple lines of text** by making a multi-line selection before invoking the command.
+- insert **a single guid**, by simply moving the cursor to where you want to insert it and invoke the command
+- insert **multiple unique guids** at the same time by making a multi-line selection before invoking the command
+- replace **some existing text** with a guid by selecting it then invoke the command
+- replace **multiple lines of text** by making a multi-line selection before invoking the command
 
 ##### Without This Extension Installed
 
@@ -28,34 +44,38 @@ Replace **multiple lines of text** by making a multi-line selection before invok
 - click the *Copy* button, or the *New GUID* button
 - move your cursor to where you want the guid
 - right-click and select *Paste*
-- (repeat steps for multiple guids)
+- (repeat these steps for multiple guids)
 
 ##### With This Extension Installed
 
-* **Menu**
+- **Main Menu**
     - click on the *Yann's Essentials* menu in *Visual Studio*'s main menu bar
     - select *Insert Guid*
-    - ![Insert Guid (from menu)][insert-guid-menu]
-* **Code Window**
-    - right-click in the code file where you want to insert the guid,
-    or select some text, or multi-select some text
+    - ![Insert Guid (menu)][insert-guid-menu]
+- **Context Menu**
+    - in the code file where you want the guid(s)
+      - move the cursor to the desired location
+      - **or** make a muliple-line insertion
+      - **or** select some text that you want to replace
+      - **or** make a muliple-line selection of text to replace
+    - right click
     - select *Yann's Essentials*
     - select *Insert Guid(s)*
-    - ![Insert Guid (from code)][insert-guid-code]
-* **Shortcut**
+    - ![Insert Guid (context)][insert-guid-context]
+- **Shortcut**
     - press *Ctrl-Alt-I*, *Ctrl-Alt-G*
 
 ---
 
 #### Rebuild Solution
-Quickly rebuild the whole solution.
+A convenient way to rebuild the whole solution.
 
 ##### Without This Extension Installed
 
 - move your mouse to the solution node in *Solution Explorer*
 - right-click it
 - select *Rebuild Solution*
-- **or**
+**or**
 - move your mouse up to the *Build* menu
 - click it
 - select *Rebuild Solution*
@@ -64,36 +84,39 @@ Quickly rebuild the whole solution.
 
 This feature is only enabled if a build/rebuild is **not** currently in progress.
 
-* **Toolbar**
+- **Toolbar**
     - click the *Rebuild Solution* button on the *Yann's Essentials* toolbar
-    - ![Rebuild Solution (from toolbar)][rebuild-solution-toolbar]
-* **Menu**
+    - ![Rebuild Solution (toolbar)][rebuild-solution-toolbar]
+- **Main Menu**
     - click on the *Yann's Essentials* menu in *Visual Studio*'s main menu bar
     - select *Rebuild Solution*
-    - ![Rebuild Solution (from menu)][rebuild-solution-menu]
-* **Code Window**
+    - ![Rebuild Solution (menu)][rebuild-solution-menu]
+- **Context Menu**
     - right-click in any code window
-    - click on *Yann's Essentials* in the context menu
-    - click on *Rebuild Solution*
-    - ![Rebuild Solution (from code)][rebuild-solution-code]
-* **Shortcut**
+    - select *Yann's Essentials* in the context menu
+    - select *Rebuild Solution*
+    - ![Rebuild Solution (context)][rebuild-solution-context]
+- **Shortcut**
     - press *Ctrl-Alt-0*
 
-Once Visual Studio starts rebuilding the solution,
-the *Rebuild Solution* and *Rebuild Project* buttons are **disabled**,
-and the *Cancel Build* button is **enabled**.
+Once Visual Studio starts rebuilding the solution:
+- the *Rebuild Solution* and *Rebuild Project* buttons are **disabled**
+- the *Cancel Build* button is **enabled**
 
 ---
 
 #### Rebuild Project
-Quickly rebuild the current project.
+A convenient way to rebuild the just the current project
+(either a selected project, or the project to which the active code document belongs).
 
 ##### Without This Extension Installed
 
-- move your mouse to the currently selected project's node in *Solution Explorer*
+- move your mouse to a project node in *Solution Explorer*
 - right-click it
 - select *Rebuild Project*
-- **or**
+**or**
+- move your mouse to a project node in *Solution Explorer*
+- click it
 - move your mouse up to the *Build* menu
 - click it
 - select *Rebuild Project*
@@ -102,30 +125,30 @@ Quickly rebuild the current project.
 
 This feature is only enabled if a build/rebuild is **not** currently in progress.
 
-* **Toolbar**
+- **Toolbar**
     - click the *Rebuild Project* button on the *Yann's Essentials* toolbar
-    - ![Rebuild Project (from toolbar)][rebuild-project-toolbar]
-* **Menu**
+    - ![Rebuild Project (toolbar)][rebuild-project-toolbar]
+- **Main Menu**
     - click on the *Yann's Essentials* menu in *Visual Studio*'s main menu bar
     - select *Rebuild Project*
-    - ![Rebuild Project (from menu)][rebuild-project-menu]
-* **Code Window**
+    - ![Rebuild Project (menu)][rebuild-project-menu]
+- **Context Menu**
     - right-click in any code window
     - click on *Yann's Essentials* in the context menu
     - click on *Rebuild Project*
-    - ![Rebuild Project (from code)][rebuild-project-code]
-* **Shortcut**
+    - ![Rebuild Project (context)][rebuild-project-context]
+- **Shortcut**
     - press *Ctrl-Alt-0*
 
-Once Visual Studio starts rebuilding the selected project,
-the *Rebuild Project* and *Rebuild Solution* buttons are **disabled**,
-and the *Cancel Build* button is **enabled**.
+Once Visual Studio starts rebuilding the current project:
+- the *Rebuild Solution* and *Rebuild Project* buttons are **disabled**
+- the *Cancel Build* button is **enabled**
 
 ---
 
 #### Cancel Build
 
-Quickly cancel a running build/rebuild.
+A convenient way to cancel a running build/rebuild.
 
 ##### Without This Extension Installed
 
@@ -137,31 +160,34 @@ Quickly cancel a running build/rebuild.
 
 This feature is only enabled if a build/rebuild **is** currently in progress.
 
-* **Toolbar**
+- **Toolbar**
     - click the *Cancel Build* button on the *Yann's Essentials* toolbar
-    - ![Cancel Build (from toolbar)][cancel-build-toolbar]
-* **Menu**
+    - ![Cancel Build (toolbar)][cancel-build-toolbar]
+- **Main Menu**
     - click on the *Yann's Essentials* menu in *Visual Studio*'s main menu bar
     - select *Rebuild Project*
-    - ![Cancel Build (from menu)][cancel-build-menu]
-* **Code Window**
+    - ![Cancel Build (menu)][cancel-build-menu]
+- **Context Menu**
     - right-click in any code window
     - select *Yann's Essentials* in the context menu
     - select *Cancel Build*
-    - ![Cancel Build (from code)][cancel-build-code]
+    - ![Cancel Build (context)][cancel-build-context]
+- **Keyboard Shortcut**
+    - Ctrl-Alt-X
 
-Once the build/rebuild has been cancelled,
-the *Rebuild Project* and *Rebuild Solution* buttons are **enabled**,
-and the *Cancel Build* button is **disabled**.
+Once the build/rebuild has been cancelled:
+- the *Rebuild Project* and *Rebuild Solution* buttons are **enabled**
+- the *Cancel Build* button is **disabled**
 
 ---
 
 #### Extensions and Updates
 
-Open the *Extensions and Updates* dialog.
+A easy way to open the *Extensions and Updates* dialog.
 
-This one's about pure convenience.
-I often find myself needing to open dialog this multiple times a day.
+This one's about pure personal convenience.
+I often find myself needing to open dialog this multiple times a day
+(installing or uninstalling extension(s), looking up versions etc).
 
 I've lost count of how many times I've **accidentally** ended up clicking on *Options*
 instead of *Extensions and Updates*.
@@ -175,27 +201,27 @@ Or found myself looking up and down the menu trying to find it in the *Tools* me
 
 ##### With This Extension Installed
 
-* **Toolbar**
+- **Toolbar**
     - click the *Extensions and Updates* button on the *Yann's Essentials* toolbar
     - ![Extensions and Updates][extensions-updates-toolbar]
-* **Menu**
+- **Main Menu**
     - click on the *Yann's Essentials* menu in *Visual Studio*'s main menu bar
     - select *Rebuild Project*
-    - ![Extensions and Updates (from menu)][extensions-updates-menu]
-* **Code Window**
+    - ![Extensions and Updates (menu)][extensions-updates-menu]
+- **Context Menu**
     - right-click in any code window
     - select *Yann's Essentials* in the context menu
     - select *Extensions and Updates*
-    - ![Extensions and Updates][extensions-updates-code]
+    - ![Extensions and Updates][extensions-updates-context]
 
 ---
 
 #### Restart Visual Studio
-Instantly restart Visual Studio.
+Unlock Visual Studio's built-in ability to restart itself.
 
 Have you ever wished there was an **easy** way to restart Visual Studio,
 just like the *Extensions and Updates* dialog does
-after installing/uninstalling an extension?
+after installing/uninstalling an extension, and ending up back in the same project that you were working on?
 
 ##### Without This Extension Installed
 
@@ -209,26 +235,26 @@ after installing/uninstalling an extension?
 
 ##### With This Extension Installed
 
-* **Toolbar**
+- **Toolbar**
     - click the *Restart Visual Studio* button on the toolbar
-    - ![Restart Visual Studio (from toolbar)][restart-vs-toolbar]
-* **Menu**
+    - ![Restart Visual Studio (toolbar)][restart-vs-toolbar]
+- **Main Menu**
     - click on the *Essentials* menu in *Visual Studio*'s main menu bar
     - select *Restart Visual Studio*
-    - ![Restart Visual Studio (from menu)][restart-vs-menu]
-* **Code Window**
+    - ![Restart Visual Studio (menu)][restart-vs-menu]
+- **Context Menu**
     - right-click in any code window
     - click on *Yann's Essentials* in the context menu
     - click on *Cancel Build*
-    - ![Restart Visual Studio (from code)][restart-vs-code]
+    - ![Restart Visual Studio (context)][restart-vs-context]
 
-Visual Studio restarts and automatically re-opens the solution that you were working on.
+Visual Studio restarts and automatically re-opens the project that you were working on.
 
 ---
 
 #### Restart Visual Studio as Administrator
 
-Instantly restart Visual Studio as administrator (elevated session).
+Restart Visual Studio as administrator (elevated session).
 
 ##### Without This Extension Installed
 
@@ -244,27 +270,28 @@ Instantly restart Visual Studio as administrator (elevated session).
 
 ##### With This Extension Installed
 
-* **Toolbar**
-    - click the *Restart Visual Studio as Administrator* button on the toolbar
-    - ![Restart Visual Studio as Administrator (from toolbar)][restart-vs-admin-toolbar]
-* **Menu**
+- **Toolbar**
+    - click the *Restart* dropdown on the toolbar
+    - select *Restart Visual Studio as Administrator*
+    - ![Restart Visual Studio as Administrator (toolbar)][restart-vs-admin-toolbar]
+- **Main Menu**
     - click on the *Yann's Essentials* menu
     - select *Restart Visual Studio as Administrator*
-    - ![Restart Visual Studio as Administrator (from menu)][restart-vs-admin-menu]
-* **Code Window**
+    - ![Restart Visual Studio as Administrator (menu)][restart-vs-admin-menu]
+- **Context Menu**
     - right-click in any code window
     - select *Yann's Essentials* in the context menu
     - select *Restart Visual Studio as Administrator*
-    - ![Restart Visual Studio as Administrator (from code)][restart-vs-admin-code]
+    - ![Restart Visual Studio as Administrator (context)][restart-vs-admin-context]
 
-Visual Studio restarts an elevated session 
-and automatically re-opens the solution that you were previously working on.
+Visual Studio restarts an elevated session
+and automatically re-opens the project that you were working on.
 
 ---
 
 #### Edit Solution
 
-Open the solution file in an xml editor.
+Open a solution's *.sln* file in an xml editor.
 
 ##### Without This Extension Installed
 
@@ -278,21 +305,21 @@ Open the solution file in an xml editor.
 
 ##### With This Extension Installed
 
-* **Solution Node**
+- **Solution Node**
     - right-click on the *Solution Name* node
     - click on *Edit Solution*
-    - ![Edit Solution (from solution node)][edit-solution-node]
-* **Menu**
+    - ![Edit Solution (solution node)][edit-solution-node]
+- **Main Menu**
     - click on the *Yann's Essentials* menu
     - select *Edit Solution*
-    - ![Edit Solution (from menu)][edit-solution-menu]
-* **Code Window**
+    - ![Edit Solution (menu)][edit-solution-menu]
+- **Context Menu**
     - right-click in any code window
     - select *Yann's Essentials* from the context menu
     - select *Edit Solution*
-    - ![Edit Solution (from code)][edit-solution-code]
+    - ![Edit Solution (context)][edit-solution-context]
 
-The solution file opens in an XML window, ready for editing.
+The solution file opens in an XML window.
 
 ---
 
@@ -309,23 +336,23 @@ Close the current solution.
 
 ##### With This Extension Installed
 
-* **Solution Node**
+- **Solution Node**
     - right-click on the *Solution Name* node
     - select *Close Solution*
-    - ![Close Solution (from solution node)][close-solution-node]
-* **Menu**
+    - ![Close Solution (solution node)][close-solution-node]
+- **Main Menu**
     - click on the *Yann's Essentials* menu
     - select *Close Solution*
-    - ![Close Solution (from menu)][close-solution-menu]
-* **Code Window**
+    - ![Close Solution (menu)][close-solution-menu]
+- **Context Menu**
     - right-click in any code window
     - select *Yann's Essentials* in the context menu
     - select *Close Solution*
-    - ![Close Solution (from code)][close-solution-code]
+    - ![Close Solution (context)][close-solution-context]
 
 ---
 
-#### Edit Project command
+#### Edit Project
 
 Open a project's *csproj* file in an xml editor.
 
@@ -341,64 +368,213 @@ Open a project's *csproj* file in an xml editor.
 
 ##### With This Extension Installed
 
-* **Project Node**
+- **Project Node**
     - right-click on the *Project* node
     - click on *Edit Project*
-    - ![Edit Project (from project node)][edit-project-node]
-* **Menu**
+    - ![Edit Project (project node)][edit-project-node]
+- **Main Menu**
     - click on the *Yann's Essentials* menu
     - select *Edit Project*
-    - ![Edit Project (from menu)][edit-project-menu]
-* **Code Window**
+    - ![Edit Project (menu)][edit-project-menu]
+- **Context Menu**
     - right-click in any code window
     - select *Yann's Essentials* in the context menu
     - select *Edit Project*
-    - ![Edit Project (from code)][edit-project-code]
+    - ![Edit Project (context)][edit-project-context]
 
-The project file opens in an XML window.
+The project file opens in an XML window, ready for editing.
+
+---
+
+#### Keyboard Options
+
+Open the *Tools* | *Options* dialog at the *Environment* | *Keyboard* node.
+
+##### Without This Extension Installed
+
+- move your mouse up to the *Tools* menu
+- click it
+- select *Options*
+- find and expand the *Environment* node
+- select *Keyboard*
+
+##### With This Extension Installed
+
+- **Toolbar**
+    - click the *Keyboard Options* dropdown on the toolbar
+    - ![Keyboard Options (toolbar)][keyboard-options-toolbar]
+- **Main Menu**
+    - click on the *Yann's Essentials* menu
+    - select *Keyboard Options*
+    - ![Keyboard Options (menu)][keyboard-options-menu]
+- **Context Menu**
+    - right-click in any code window
+    - select *Yann's Essentials* in the context menu
+    - select *Keyboard Options*
+    - ![Keyboard Options (context)][keyboard-options-context]
+
+The *Options* dialog opens with the *Keyboard* node selected.
+
+---
+
+#### Activity Log
+
+Opens the Visual Studio Activity Log that records actions/errors from any installed extensions.
+
+>The file's path is *%APPDATA%\Microsoft\VisualStudio\version\ActivityLog.xml*
+>
+>- *%APPDATA%* represents the value in the APPDATA environment variable
+>- *version* represents the current Visual Studio version (ie 14.0 for VS 2015)
+
+##### Without This Extension Installed
+
+- open a *File Explorer* window
+- navigate to *%AppData%\Roaming\Microsoft\VisualStudio\14.0*
+- locate ActivityLog.xml
+- open the file in a text editor
+
+##### With This Extension Installed
+
+- **Toolbar**
+    - click the *Developer Commands* dropdown on the toolbar
+    - click on *Activity Log*
+    - ![Activity Log (toolbar)][activity-log-toolbar]
+- **Main Menu**
+    - click on the *Yann's Essentials* menu
+    - select *Activity Log*
+    - ![Activity Log (menu)][activity-log-menu]
+- **Context Menu**
+    - right-click in any code window
+    - select *Yann's Essentials* in the context menu
+    - select *Activity Log*
+    - ![Activity Log (context)][activity-log-context]
+
+The log is opened in a Visual Studio browser window.
+
+---
+
+#### Diagnostic Log
+
+Opens the most recent MSBuild diagnostic log file.
+
+>The file is: *%LOCALAPPDATA%\Temp\MSBuild_guid.failure.txt*
+>
+>- *%LOCALAPPDATA%* represents the value in the *LOCALAPPDATA* environment variable
+>- *guid* represents a random guid value
+
+##### Without This Extension Installed
+
+- open a *File Explorer* window
+- navigate to *%LOCALAPPDATA%\Temp*
+- locate the latest MSBUILD_*.xml file
+- open the file in a text editor
+
+##### With This Extension Installed
+
+- **Toolbar**
+    - click the *Developer Commands* dropdown on the toolbar
+    - click on *Diagnostic Log*
+    - ![Diagnostic Log (toolbar)][diagnostic-log-toolbar]
+- **Main Menu**
+    - click on the *Yann's Essentials* menu
+    - select *Diagnostic Log*
+    - ![Diagnostic Log (menu)][diagnostic-log-menu]
+- **Context Menu**
+    - right-click in any code window
+    - select *Yann's Essentials* in the context menu
+    - select *Diagnostic Log*
+    - ![Diagnostic Log (context)][diagnostic-log-context]
+
+The log is opened in a Visual Studio browser window.
+
+---
+
+#### Path Variables
+
+Displays the current set of Windows paths variable values.
+
+##### Without This Extension Installed
+
+- open a *cmd* window
+- type *path*
+- press ENTER
+
+##### With This Extension Installed
+
+- **Toolbar**
+    - click the *Developer Commands* dropdown on the toolbar
+    - click on *Path Variables*
+    - ![Path Variables (toolbar)][path-variables-toolbar]
+- **Main Menu**
+    - click on the *Yann's Essentials* menu
+    - select *Path Variables*
+    - ![Path Variables (menu)][path-variables-menu]
+- **Context Menu**
+    - right-click in any code window
+    - select *Yann's Essentials* in the context menu
+    - select *Path Variables*
+    - ![Path Variables (context)][path-variables-context]
+
+The path variables are displayed in the *Output* window.
 
 ---
 
 <div style="text-align:center">
-  <img src="art/lss-vsip.png" />
+    <img src="../art/lss-vsip.png" />
 </div>
 
 [insert-guid-menu]: https://github.com/yannduran/essentials-vs/raw/master/art/insert-guid-menu.png
 [insert-guid-menu]: https://github.com/yannduran/essentials-vs/raw/master/art/insert-guid-menu.png
-[insert-guid-code]: https://github.com/yannduran/essentials-vs/raw/master/art/insert-guid-code.png
+[insert-guid-context]: https://github.com/yannduran/essentials-vs/raw/master/art/insert-guid-context.png
 
 [rebuild-solution-toolbar]: https://github.com/yannduran/essentials-vs/raw/master/art/rebuild-solution-toolbar.png
 [rebuild-solution-menu]: https://github.com/yannduran/essentials-vs/raw/master/art/rebuild-solution-menu.png
-[rebuild-solution-code]: https://github.com/yannduran/essentials-vs/raw/master/art/rebuild-solution-code.png
+[rebuild-solution-context]: https://github.com/yannduran/essentials-vs/raw/master/art/rebuild-solution-context.png
 
 [rebuild-project-toolbar]: https://github.com/yannduran/essentials-vs/raw/master/art/rebuild-project-toolbar.png
 [rebuild-project-menu]: https://github.com/yannduran/essentials-vs/raw/master/art/rebuild-project-menu.png
-[rebuild-project-code]: https://github.com/yannduran/essentials-vs/raw/master/art/rebuild-project-code.png
+[rebuild-project-context]: https://github.com/yannduran/essentials-vs/raw/master/art/rebuild-project-context.png
 
 [cancel-build-toolbar]: https://github.com/yannduran/essentials-vs/raw/master/art/cancel-build-toolbar.png
 [cancel-build-menu]: https://github.com/yannduran/essentials-vs/raw/master/art/cancel-build-menu.png
-[cancel-build-code]: https://github.com/yannduran/essentials-vs/raw/master/art/cancel-build-code.png
+[cancel-build-context]: https://github.com/yannduran/essentials-vs/raw/master/art/cancel-build-context.png
 
 [extensions-updates-toolbar]: https://github.com/yannduran/essentials-vs/raw/master/art/extensions-toolbar.png
 [extensions-updates-menu]: https://github.com/yannduran/essentials-vs/raw/master/art/extensions-menu.png
-[extensions-updates-code]: https://github.com/yannduran/essentials-vs/raw/master/art/extensions-code.png
+[extensions-updates-context]: https://github.com/yannduran/essentials-vs/raw/master/art/extensions-context.png
 
 [restart-vs-toolbar]: https://github.com/yannduran/essentials-vs/raw/master/art/restart-vs-toolbar.png
 [restart-vs-menu]: https://github.com/yannduran/essentials-vs/raw/master/art/restart-vs-menu.png
-[restart-vs-code]: https://github.com/yannduran/essentials-vs/raw/master/art/restart-vs-code.png
+[restart-vs-context]: https://github.com/yannduran/essentials-vs/raw/master/art/restart-vs-context.png
 
 [restart-vs-admin-toolbar]: https://github.com/yannduran/essentials-vs/raw/master/art/restart-vs-admin-toolbar.png
 [restart-vs-admin-menu]: https://github.com/yannduran/essentials-vs/raw/master/art/restart-vs-admin-menu.png
-[restart-vs-admin-code]: https://github.com/yannduran/essentials-vs/raw/master/art/restart-vs-admin-code.png
+[restart-vs-admin-context]: https://github.com/yannduran/essentials-vs/raw/master/art/restart-vs-admin-context.png
 
 [edit-solution-node]: https://github.com/yannduran/essentials-vs/raw/master/art/edit-solution-node.png
 [edit-solution-menu]: https://github.com/yannduran/essentials-vs/raw/master/art/edit-solution-menu.png
-[edit-solution-code]: https://github.com/yannduran/essentials-vs/raw/master/art/edit-solution-code.png
+[edit-solution-context]: https://github.com/yannduran/essentials-vs/raw/master/art/edit-solution-context.png
 
 [close-solution-node]: https://github.com/yannduran/essentials-vs/raw/master/art/close-solution-node.png
 [close-solution-menu]: https://github.com/yannduran/essentials-vs/raw/master/art/close-solution-menu.png
-[close-solution-code]: https://github.com/yannduran/essentials-vs/raw/master/art/close-solution-code.png
+[close-solution-context]: https://github.com/yannduran/essentials-vs/raw/master/art/close-solution-context.png
 
 [edit-project-node]: https://github.com/yannduran/essentials-vs/raw/master/art/edit-project-node.png
 [edit-project-menu]: https://github.com/yannduran/essentials-vs/raw/master/art/edit-project-menu.png
-[edit-project-code]: https://github.com/yannduran/essentials-vs/raw/master/art/edit-project-code.png
+[edit-project-context]: https://github.com/yannduran/essentials-vs/raw/master/art/edit-project-context.png
+
+[keyboard-options-toolbar]: https://github.com/yannduran/essentials-vs/raw/master/art/keyboard-options-toolbar.png
+[keyboard-options-menu]: https://github.com/yannduran/essentials-vs/raw/master/art/keyboard-options-menu.png
+[keyboard-options-context]: https://github.com/yannduran/essentials-vs/raw/master/art/keyboard-options-context.png
+
+[activity-log-toolbar]: https://github.com/yannduran/essentials-vs/raw/master/art/activity-log-toolbar.png
+[activity-log-menu]: https://github.com/yannduran/essentials-vs/raw/master/art/activity-log-menu.png
+[activity-log-context]: https://github.com/yannduran/essentials-vs/raw/master/art/activity-log-context.png
+
+[diagnostic-log-toolbar]: https://github.com/yannduran/essentials-vs/raw/master/art/diagnostic-log-toolbar.png
+[diagnostic-log-menu]: https://github.com/yannduran/essentials-vs/raw/master/art/diagnostic-log-menu.png
+[diagnostic-log-context]: https://github.com/yannduran/essentials-vs/raw/master/art/diagnostic-log-context.png
+
+[path-variables-toolbar]: https://github.com/yannduran/essentials-vs/raw/master/art/path-variables-toolbar.png
+[path-variables-menu]: https://github.com/yannduran/essentials-vs/raw/master/art/path-variables-menu.png
+[path-variables-context]: https://github.com/yannduran/essentials-vs/raw/master/art/path-variables-context.png

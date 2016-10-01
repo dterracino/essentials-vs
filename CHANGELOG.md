@@ -3,31 +3,37 @@ Features that have a checkmark are complete and available for
 download/test in the
 [CI build](http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/).
 
-### Sprint 2
-- [ ] Activity Log
-- [ ] Diagnostic Log
-- [ ] Path Variables
-- [ ] *Keyboard Options* command
-- [ ] *Yann's Essentials Options* command
+### Coming Next
+- [ ] Yann's Essentials Options
+- [ ] Duplicate Text
+- [ ] Duplicate File
+- [ ] Copy References
+- [ ] Paste References
 
-### Sprint 3
-- [ ] Duplicate Text command
-- [ ] Duplicate File command
-- [ ] Copy References command
-- [ ] Paste References command
-
-### Sprint 4
-- [ ] Copy Solution command
-- [ ] Delete Solution command
-- [ ] Copy Project command
-- [ ] Delete Project command
+### Also Planned
+- [ ] Copy Solution
+- [ ] Delete Solution
+- [ ] Reload Solution
+- [ ] Copy Project
+- [ ] Delete Project
+- [ ] Reload Project
+- [ ] Edit Path Variables
+- [ ] Environment Variables
 
 ---
 
 # Changelog
 
 These are the changes to each version that has been released
-on theofficial Visual Studio extension gallery.
+on the official Visual Studio extension gallery.
+
+## v0.6.0
+
+**2016-09-30**
+- [x] Added Keyboard Options
+- [x] Added Activity Log
+- [x] Added Diagnostic Log
+- [x] Added Path Variables
 
 ## v0.5.0
 

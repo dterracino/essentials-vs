@@ -1,24 +1,27 @@
 ﻿using Microsoft.VisualStudio.Shell;
 
-namespace Essentials.VS.Commands
+namespace Essentials.VS.Commands.Build
 {
     using YD.Framework.VisualStudio.Commands;
     using YD.Framework.VisualStudio.Packages;
 
-    internal sealed class ExtensionsAndUpdatesCommand : DynamicCommand
+    internal sealed class RebuildSolutionCommand : DynamicCommand
     {
         //***
         //===M
 
-        private ExtensionsAndUpdatesCommand(PackageBase package) : base(package, PackageIds.ExtensionsAndUpdatesCommand)
+        private RebuildSolutionCommand(PackageBase package) : base(package, PackageIds.RebuildSolutionCommand)
         { }
 
         //===M
 
         public static void Instantiate(PackageBase package)
-            => Instantiate(new ExtensionsAndUpdatesCommand(package));
+            => Instantiate(new RebuildSolutionCommand(package));
 
         //---
+
+        protected override bool IsActive
+            => base.IsActive && SolutionHasProjects && SolutionIsNotBuilding;
 
         protected override void OnExecute(OleMenuCommand command)
             => ExecuteCommand()
@@ -28,7 +31,7 @@ namespace Essentials.VS.Commands
         //---
 
         private CommandResult ExecuteCommand()
-            => Package?.OpenExtensionsAndUpdates();
+            => Package?.BuildSolution(rebuild: true);
 
         //***
     }

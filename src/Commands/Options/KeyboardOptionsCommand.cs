@@ -1,27 +1,24 @@
 ﻿using Microsoft.VisualStudio.Shell;
 
-namespace Essentials.VS.Commands
+namespace Essentials.VS.Commands.Options
 {
     using YD.Framework.VisualStudio.Commands;
     using YD.Framework.VisualStudio.Packages;
 
-    internal sealed class RebuildSolutionCommand : DynamicCommand
+    internal sealed class KeyboardOptionsCommand : DynamicCommand
     {
         //***
         //===M
 
-        private RebuildSolutionCommand(PackageBase package) : base(package, PackageIds.RebuildSolutionCommand)
+        private KeyboardOptionsCommand(PackageBase package) : base(package, PackageIds.KeyboardOptionsCommand)
         { }
 
         //===M
 
         public static void Instantiate(PackageBase package)
-            => Instantiate(new RebuildSolutionCommand(package));
+            => Instantiate(new KeyboardOptionsCommand(package));
 
         //---
-
-        protected override bool IsActive
-            => base.IsActive && SolutionHasProjects && SolutionIsNotBuilding;
 
         protected override void OnExecute(OleMenuCommand command)
             => ExecuteCommand()
@@ -31,7 +28,7 @@ namespace Essentials.VS.Commands
         //---
 
         private CommandResult ExecuteCommand()
-            => Package?.BuildSolution(rebuild: true);
+            => Package?.ShowOptions(CommandKeys.KeyboardOptions);
 
         //***
     }

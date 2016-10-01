@@ -1,27 +1,27 @@
 ﻿using Microsoft.VisualStudio.Shell;
 
-namespace Essentials.VS.Commands
+namespace Essentials.VS.Commands.SolutionNode
 {
     using YD.Framework.VisualStudio.Commands;
     using YD.Framework.VisualStudio.Packages;
 
-    internal sealed class RebuildProjectCommand : DynamicCommand
+    internal sealed class CloseSolutionCommand : DynamicCommand
     {
         //***
         //===M
 
-        private RebuildProjectCommand(PackageBase package) : base(package, PackageIds.RebuildProjectCommand)
+        private CloseSolutionCommand(PackageBase package) : base(package, PackageIds.CloseSolutionCommand)
         { }
 
         //===M
 
         public static void Instantiate(PackageBase package)
-            => Instantiate(new RebuildProjectCommand(package));
+            => Instantiate(new CloseSolutionCommand(package));
 
         //---
 
-        protected override bool IsActive
-            => base.IsActive && SolutionHasProjects && SolutionIsNotBuilding;// && ProjectSelected();
+        //protected override bool IsActive
+        //    => base.IsActive && ;
 
         protected override void OnExecute(OleMenuCommand command)
             => ExecuteCommand()
@@ -31,7 +31,7 @@ namespace Essentials.VS.Commands
         //---
 
         private CommandResult ExecuteCommand()
-            => Package?.BuildProject(rebuild: true);
+            => Package?.CloseSolution(problem: $"Unable to close solution");
 
         //***
     }

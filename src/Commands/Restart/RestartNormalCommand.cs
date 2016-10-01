@@ -1,31 +1,24 @@
 ﻿using Microsoft.VisualStudio.Shell;
 
-namespace Essentials.VS.Commands
+namespace Essentials.VS.Commands.Restart
 {
     using YD.Framework.VisualStudio.Commands;
     using YD.Framework.VisualStudio.Packages;
 
-    internal sealed class CloseSolutionCommand : DynamicCommand
+    internal sealed class RestartNormalCommand : DynamicCommand
     {
         //***
-
-        private static int CommandId
-            => PackageIds.CloseSolutionCommand;
-
         //===M
 
-        private CloseSolutionCommand(PackageBase package) : base(package, CommandId)
+        private RestartNormalCommand(PackageBase package) : base(package, PackageIds.RestartNormalCommand)
         { }
 
         //===M
 
         public static void Instantiate(PackageBase package)
-            => Instantiate(new CloseSolutionCommand(package));
+            => Instantiate(new RestartNormalCommand(package));
 
         //---
-
-        //protected override bool IsActive
-        //    => base.IsActive && ;
 
         protected override void OnExecute(OleMenuCommand command)
             => ExecuteCommand()
@@ -35,7 +28,7 @@ namespace Essentials.VS.Commands
         //---
 
         private CommandResult ExecuteCommand()
-            => Package?.CloseSolution(problem: $"Unable to close solution");
+            => Package?.RestartVisualStudio();
 
         //***
     }
