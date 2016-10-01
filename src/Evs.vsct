@@ -239,6 +239,7 @@
         <Icon guid="ImageCatalogGuid" id="LogError"/>
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>FixMenuController</CommandFlag>
         <Strings>
           <CommandName>ActivityLog</CommandName>
           <CanonicalName>ActivityLog</CanonicalName>
