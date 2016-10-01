@@ -236,7 +236,7 @@
 
       <Button guid="EvsCommandSet" id="ActivityLogCommand" type="Button" priority="0x0001">
         <Parent guid="EvsCommandSet" id="DeveloperCommands" />
-        <Icon guid="ImageCatalogGuid" id="Log"/>
+        <Icon guid="ImageCatalogGuid" id="LogError"/>
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
@@ -262,7 +262,7 @@
 
       <Button guid="EvsCommandSet" id="PathVariablesCommand" type="Button" priority="0x0001">
         <Parent guid="EvsCommandSet" id="DeveloperCommands" />
-        <Icon guid="ImageCatalogGuid" id="LogWarning"/>
+        <Icon guid="ImageCatalogGuid" id="DataList"/>
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
