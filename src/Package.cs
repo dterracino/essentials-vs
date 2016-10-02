@@ -12,18 +12,18 @@ namespace Essentials.VS
     /// </summary>
     internal sealed partial class PackageGuids
     {
-        public const string EvsPackageString = "6359da17-6477-4e9c-8e73-7d05ea8a33a1";
-        public const string EvsCommandSetString = "4eac4e23-4909-4dac-9d6e-819bdc861480";
-        public static Guid EvsPackage = new Guid(EvsPackageString);
-        public static Guid EvsCommandSet = new Guid(EvsCommandSetString);
+        public const string PackageString = "6359da17-6477-4e9c-8e73-7d05ea8a33a1";
+        public const string PackageCommandSetString = "4eac4e23-4909-4dac-9d6e-819bdc861480";
+        public static Guid Package = new Guid(PackageString);
+        public static Guid PackageCommandSet = new Guid(PackageCommandSetString);
     }
     /// <summary>
     /// Helper class that encapsulates all CommandIDs uses across VS Package.
     /// </summary>
     internal sealed partial class PackageIds
     {
-        public const int EvsToolbar = 0xA001;
-        public const int EvsMenu = 0xA002;
+        public const int PackageToolbar = 0xA001;
+        public const int PackageMenu = 0xA002;
         public const int CodeEditorGroup = 0xB000;
         public const int SolutionNodeGroup = 0xC000;
         public const int ProjectNodeGroup = 0xD000;

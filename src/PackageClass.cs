@@ -20,14 +20,14 @@ namespace Essentials.VS
     using static Vsix;
 
     [InstalledProductRegistration("110", "112", Version, IconResourceID = 400)]
-    [Guid(EvsPackageString)]
+    [Guid(PackageString)]
 
     [ProvideAutoLoad(NoSolution)]
     [ProvideAutoLoad(SolutionExists)]
 
-    public sealed class EvsPackage : PackageBase
+    public sealed class PackageClass : PackageBase
     {
-        public EvsPackage() : base(EvsCommandSet, Name, Description)
+        public PackageClass() : base(PackageCommandSet, Name, Description)
         { }
 
         protected override void Initialize()
