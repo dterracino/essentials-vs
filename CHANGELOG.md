@@ -4,7 +4,7 @@ download/test in the
 [CI build](http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/).
 
 ### Coming Next
-- [ ] Yann's Essentials Options
+- [ ] VS Essentials Options
 - [ ] Duplicate Text
 - [ ] Duplicate File
 - [ ] Copy References
@@ -18,7 +18,7 @@ download/test in the
 - [ ] Delete Project
 - [ ] Reload Project
 - [ ] Edit Path Variables
-- [ ] Environment Variables
+- [ ] Edit Environment Variables
 
 ---
 
@@ -47,8 +47,8 @@ on the official Visual Studio extension gallery.
 - [x] Added *Edit Solution* command
 - [x] Added *Close Solution* command
 - [x] renamed the extension
-  - from *Essentials for VS* (a non open-source extension)
-  - to *Yann's Essentials for VS* (now an open-source extension)
+  - from *Essentials* (a non open-source extension)
+  - to *VS Essentials* (now an open-source extension)
 
 ## v0.3.0
 
@@ -77,4 +77,4 @@ on the official Visual Studio extension gallery.
 - [x] rewrote the foundation of the extension from scratch
 - [x] renamed the extension
   - from *Luminous Essentials for VS* (a non open-source extension)
-  - to *Essentials for VS* (now an open-source extension)
+  - to *VS Essentials* (now an open-source extension)
