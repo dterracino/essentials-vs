@@ -301,6 +301,20 @@
 
       <!--~~~ Options ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
+      <Button guid="PackageCommandSet" id="EssentialsOptionsCommand" type="Button" priority="0x0002">
+        <Parent guid="PackageCommandSet" id="OptionsCommands" />
+        <Icon guid="ImageCatalogGuid" id="Settings"/>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>FixMenuController</CommandFlag>
+        <Strings>
+          <CommandName>EssentialsOptions</CommandName>
+          <CanonicalName>EssentialsOptions</CanonicalName>
+          <LocCanonicalName>EssentialsOptions</LocCanonicalName>
+          <ButtonText>Essentials Options</ButtonText>
+        </Strings>
+      </Button>
+
       <Button guid="PackageCommandSet" id="KeyboardOptionsCommand" type="Button" priority="0x0002">
         <Parent guid="PackageCommandSet" id="OptionsCommands" />
         <Icon guid="ImageCatalogGuid" id="Keyboard"/>
@@ -466,6 +480,17 @@
   <Symbols>
     <GuidSymbol name="Package" value="{6359DA17-6477-4E9C-8E73-7D05EA8A33A1}" />
 
+    <!--~~~ Options ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+    <!--
+    <GuidSymbol name="CustomOptionsPage" value="{1D9ECCF3-5D2F-4112-9B25-264596873DC9}" />
+    -->
+    <GuidSymbol name="GeneralDialogPage" value="{DCBBD0F7-6463-48F4-9C86-1CE95EF7C1A2}" />
+    <!--
+    <GuidSymbol name="DebugDialogPage" value="{A5FA1E04-1AF1-401A-B190-229CC5389A8D}" />
+    <GuidSymbol name="BuildDialogPage" value="{E967A459-0B9E-4222-BA52-A66496EDAEE3}" />
+    -->
+
     <GuidSymbol name="PackageCommandSet" value="{4EAC4E23-4909-4DAC-9D6E-819BDC861480}">
       <!-- don't change any of these symbol values-->
 
@@ -536,6 +561,7 @@
       <IDSymbol name="OptionsCommands" value="0x0952" />
 
       <IDSymbol name="KeyboardOptionsCommand" value="0x0955" />
+      <IDSymbol name="EssentialsOptionsCommand" value="0x0959" />
     </GuidSymbol>
   </Symbols>
 </CommandTable>

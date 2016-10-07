@@ -59,8 +59,8 @@
       <favorites>
         <Favorite>
           <name>Package</name>
-          <path>src\Evs.pkg.cs</path>
-          <absolutePath>d:\dev\yd\essentials\vs\src\Evs.pkg.cs</absolutePath>
+          <path>src\Package.class.cs</path>
+          <absolutePath>d:\dev\yd\essentials\vs\src\Package.class.cs</absolutePath>
           <position>
             <line>25</line>
             <column>13</column>
@@ -74,8 +74,8 @@
         </Favorite>
         <Favorite>
           <name>vsct</name>
-          <path>src\Evs.vsct</path>
-          <absolutePath>d:\dev\yd\essentials\vs\src\Evs.vsct</absolutePath>
+          <path>src\Package.vsct</path>
+          <absolutePath>d:\dev\yd\essentials\vs\src\Package.vsct</absolutePath>
           <position>
             <line>66</line>
             <column>52</column>

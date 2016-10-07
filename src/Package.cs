@@ -13,8 +13,10 @@ namespace Essentials.VS
     internal sealed partial class PackageGuids
     {
         public const string PackageString = "6359da17-6477-4e9c-8e73-7d05ea8a33a1";
+        public const string GeneralDialogPageString = "dcbbd0f7-6463-48f4-9c86-1ce95ef7c1a2";
         public const string PackageCommandSetString = "4eac4e23-4909-4dac-9d6e-819bdc861480";
         public static Guid Package = new Guid(PackageString);
+        public static Guid GeneralDialogPage = new Guid(GeneralDialogPageString);
         public static Guid PackageCommandSet = new Guid(PackageCommandSetString);
     }
     /// <summary>
@@ -55,5 +57,6 @@ namespace Essentials.VS
         public const int OptionsDropDown = 0x0951;
         public const int OptionsCommands = 0x0952;
         public const int KeyboardOptionsCommand = 0x0955;
+        public const int EssentialsOptionsCommand = 0x0959;
     }
 }

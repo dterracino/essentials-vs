@@ -4,7 +4,7 @@ download/test in the
 [CI build](http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/).
 
 ### Coming Next
-- [ ] VS Essentials Options
+- [x] VS Essentials Options
 - [ ] Duplicate Text
 - [ ] Duplicate File
 - [ ] Copy References
@@ -13,12 +13,16 @@ download/test in the
 ### Also Planned
 - [ ] Copy Solution
 - [ ] Delete Solution
-- [ ] Reload Solution
+- [ ] Reload Solution (last solution - ie first in MRU list)
 - [ ] Copy Project
 - [ ] Delete Project
 - [ ] Reload Project
 - [ ] Edit Path Variables
 - [ ] Edit Environment Variables
+- [ ] Clean Experimental Hive (Clean Hive and Debug for Extension Developers - John McBride)
+- [ ] Enable VSIP Logging
+- [ ] Disable VSIP Logging
+- [ ] Open Bin Folder (Open Bin Folder Extension - John McBride)
 
 ---
 
@@ -26,6 +30,11 @@ download/test in the
 
 These are the changes to each version that has been released
 on the official Visual Studio extension gallery.
+
+## v0.6.x
+
+**2016-10-dd**
+- in progress
 
 ## v0.6.0
 
