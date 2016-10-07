@@ -4,28 +4,47 @@ using Microsoft.VisualStudio.Shell;
 
 namespace Essentials.VS.Options
 {
-    using static PackageGuids;
     using static PackageConstants;
 
-    [Guid(EssentialsOptionsPageString)]
+    [Guid(PackageGuids.GeneralDialogPageString)]
     public class GeneralDialogPage : DialogPage
     {
-        [Category(Commands)]
-        [DisplayName("Enable build commands")]
-        [Description("Rebuild Project, Rebuild Solution, Cancel Build")]
-        [DefaultValue(true)]
+        //***
+
+        [Category(OneDotSpace + GeneralFeatures)]
+        [DisplayName(Vsix.Name + " Features Enabled")]
+        [Description("All features for the " + Vsix.Name + " package")]
+        public bool EssentialsPackageEnabled { get; set; } = true;
+
+        //---
+
+        [Category(TwoDotSpace + GroupFeatures)]
+        [DisplayName(BuildFeatures + " Enabled")]
+        [Description("Rebuild Solution, Rebuild Project, Cancel Build")]
         public bool BuildCommandsEnabled { get; set; } = true;
 
-        [Category(Commands)]
-        [DisplayName("Enable Visual Studio commands")]
-        [Description("")]
-        [DefaultValue(true)]
-        public bool VisualStudioCommandsEnabled { get; } = true;
+        //---
+
+        [Category(TwoDotSpace + GroupFeatures)]
+        [DisplayName(DeveloperFeatures + " Enabled")]
+        [Description("Activity Log, Disgnostics Log, Path Variables")]
+        public bool DeveloperCommandsEnabled { get; set; } = true;
+
+        //---
+
+        [Category(TwoDotSpace + GroupFeatures)]
+        [DisplayName(VisualStudio + " Features Enabled")]
+        [Description("Rebuild Project, Rebuild Solution, Cancel Build")]
+        public bool VisualStudioCommandsEnabled { get; set; } = true;
+
+        //---
 
         //protected override void OnApply(PageApplyEventArgs e)
         //{
 
         //    base.OnApply(e);
         //}
+
+        //***
     }
 }

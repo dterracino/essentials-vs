@@ -301,7 +301,7 @@
 
       <!--~~~ Options ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-      <Button guid="PackageCommandSet" id="EssentialsOptionsCommand" type="Button" priority="0x0002">
+      <Button guid="PackageCommandSet" id="EssentialsOptionsCommand" type="Button" priority="0x0001">
         <Parent guid="PackageCommandSet" id="OptionsCommands" />
         <Icon guid="ImageCatalogGuid" id="Settings"/>
         <CommandFlag>IconIsMoniker</CommandFlag>
@@ -486,9 +486,11 @@
     <GuidSymbol name="CustomOptionsPage" value="{1D9ECCF3-5D2F-4112-9B25-264596873DC9}" />
     -->
     <GuidSymbol name="GeneralDialogPage" value="{DCBBD0F7-6463-48F4-9C86-1CE95EF7C1A2}" />
+    <GuidSymbol name="BuildDialogPage" value="{E967A459-0B9E-4222-BA52-A66496EDAEE3}" />
+    <GuidSymbol name="DeveloperDialogPage" value="{7A9F803B-96DE-4D30-B1CD-590443192092}" />
+    <GuidSymbol name="VisualStudioDialogPage" value="{13C28243-07FB-4034-A035-3A44FF0330AA}" />
     <!--
     <GuidSymbol name="DebugDialogPage" value="{A5FA1E04-1AF1-401A-B190-229CC5389A8D}" />
-    <GuidSymbol name="BuildDialogPage" value="{E967A459-0B9E-4222-BA52-A66496EDAEE3}" />
     -->
 
     <GuidSymbol name="PackageCommandSet" value="{4EAC4E23-4909-4DAC-9D6E-819BDC861480}">

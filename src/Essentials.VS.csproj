@@ -68,6 +68,15 @@
     <Compile Include="Commands\Build\RebuildProjectCommand.cs" />
     <Compile Include="Commands\Restart\RestartElevatedCommand.cs" />
     <Compile Include="Commands\Restart\RestartNormalCommand.cs" />
+    <Compile Include="Options\VisualStudioDialogPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Options\DeveloperDialogPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Options\BuildDialogPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Options\GeneralDialogPage.cs">
       <SubType>Component</SubType>
     </Compile>
