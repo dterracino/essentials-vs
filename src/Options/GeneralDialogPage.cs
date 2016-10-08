@@ -10,32 +10,13 @@ namespace Essentials.VS.Options
     public class GeneralDialogPage : DialogPage
     {
         //***
+        //===M
+        //===M
 
-        [Category(OneDotSpace + GeneralFeatures)]
-        [DisplayName(Vsix.Name + " Features Enabled")]
+        [Category(Vsix.Name + " " + Features)]
+        [DisplayName(Vsix.Name + " " + Enabled)]
         [Description("All features for the " + Vsix.Name + " package")]
-        public bool EssentialsPackageEnabled { get; set; } = true;
-
-        //---
-
-        [Category(TwoDotSpace + GroupFeatures)]
-        [DisplayName(BuildFeatures + " Enabled")]
-        [Description("Rebuild Solution, Rebuild Project, Cancel Build")]
-        public bool BuildCommandsEnabled { get; set; } = true;
-
-        //---
-
-        [Category(TwoDotSpace + GroupFeatures)]
-        [DisplayName(DeveloperFeatures + " Enabled")]
-        [Description("Activity Log, Disgnostics Log, Path Variables")]
-        public bool DeveloperCommandsEnabled { get; set; } = true;
-
-        //---
-
-        [Category(TwoDotSpace + GroupFeatures)]
-        [DisplayName(VisualStudio + " Features Enabled")]
-        [Description("Rebuild Project, Rebuild Solution, Cancel Build")]
-        public bool VisualStudioCommandsEnabled { get; set; } = true;
+        public bool EssentialsEnabled { get; set; } = true;
 
         //---
 

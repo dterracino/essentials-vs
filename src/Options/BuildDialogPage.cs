@@ -10,28 +10,43 @@ namespace Essentials.VS.Options
     [Guid(BuildDialogPageString)]
     public class BuildDialogPage : DialogPage
     {
-        [Category(BuildFeatures)]
+        //***
+        //===M
+        //===M
+
+        [Category(H1 + Build + " " + Features)]
+        [DisplayName(Build + " " + FeaturesEnabled)]
+        [Description("Rebuild Solution, Rebuild Project, Cancel Build")]
+        public bool BuildCommandsEnabled { get; set; } = true;
+
+        //---
+
+        [Category(H2 + Build + " " + Commands)]
         [DisplayName("Rebuild Solution Enabled")]
         [Description("")]
         [DefaultValue(true)]
         public bool RebuildSolutionCommandEnabled { get; set; } = true;
 
-        [Category(BuildFeatures)]
+        [Category(H2 + Build + " " + Commands)]
         [DisplayName("Rebuild Project Enabled")]
         [Description("")]
         [DefaultValue(true)]
         public bool RebuildProjectCommandEnabled { get; set; } = true;
 
-        [Category(BuildFeatures)]
+        [Category(H2 + Build + " " + Commands)]
         [DisplayName("Cancel Build Enabled")]
         [Description("")]
         [DefaultValue(true)]
         public bool CancelBuildCommandEnabled { get; set; } = true;
+
+        //---
 
         //protected override void OnApply(PageApplyEventArgs e)
         //{
 
         //    base.OnApply(e);
         //}
+
+        //***
     }
 }

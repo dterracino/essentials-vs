@@ -5,7 +5,7 @@ namespace Essentials.VS.Commands.Build
     using YD.Framework.VisualStudio.Commands;
     using YD.Framework.VisualStudio.Packages;
 
-    internal sealed class RebuildProjectCommand : DynamicCommand
+    internal sealed class RebuildProjectCommand : BuildCommand
     {
         //***
         //===M
@@ -20,6 +20,9 @@ namespace Essentials.VS.Commands.Build
             => Instantiate(new RebuildProjectCommand(package));
 
         //---
+
+        protected override bool CanExecute
+        => (base.CanExecute && BuildOptions.RebuildProjectCommandEnabled);
 
         protected override bool IsActive
             => base.IsActive && SolutionHasProjects && SolutionIsNotBuilding;// && ProjectSelected();

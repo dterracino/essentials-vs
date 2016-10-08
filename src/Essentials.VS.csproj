@@ -53,6 +53,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Commands\Build\EssentialsCommand.cs" />
+    <Compile Include="Commands\Build\BuildCommand.cs" />
     <Compile Include="Commands\Developer\ActivityLogCommand.cs" />
     <Compile Include="Commands\Developer\DiagnosticLogCommand.cs" />
     <Compile Include="Commands\Developer\PathVariablesCommand.cs" />
