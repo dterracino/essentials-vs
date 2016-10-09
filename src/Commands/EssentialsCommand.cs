@@ -13,7 +13,7 @@ namespace Essentials.VS.Commands
         //***
 
         protected GeneralDialogPage EssentialsOptions
-            => _generalOptions ?? (_generalOptions = Package.GetDialogPage(typeof(GeneralDialogPage)) as GeneralDialogPage);
+            => _generalOptions ?? (_generalOptions = Package?.GetDialogPage(typeof(GeneralDialogPage)) as GeneralDialogPage);
 
         //===M
 
