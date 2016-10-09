@@ -42,6 +42,16 @@
           </position>
         </Favorite>
         <Favorite>
+          <name>index.md</name>
+          <path>docs\index.md</path>
+          <absolutePath>D:\dev\yd\essentials\vs\docs\index.md</absolutePath>
+          <position>
+            <line>1</line>
+            <column>1</column>
+            <lineHash>ThJT74XiklqUpU2roecFZV6Zqt35DU1NB8bHu2lnLw0=</lineHash>
+          </position>
+        </Favorite>
+        <Favorite>
           <name>appveyor.yml</name>
           <path>appveyor.yml</path>
           <absolutePath>D:\dev\yd\essentials\vs\appveyor.yml</absolutePath>
@@ -58,9 +68,19 @@
       <folders />
       <favorites>
         <Favorite>
-          <name>Package</name>
-          <path>src\Evs.pkg.cs</path>
-          <absolutePath>d:\dev\yd\essentials\vs\src\Evs.pkg.cs</absolutePath>
+          <name>Package.vsct</name>
+          <path>src\Package.vsct</path>
+          <absolutePath>d:\dev\yd\essentials\vs\src\Package.vsct</absolutePath>
+          <position>
+            <line>66</line>
+            <column>52</column>
+            <lineHash>nCGQUONQCXn6e1sTwZKmuDQGdtFsfs6lwDqHNnKmxB4=</lineHash>
+          </position>
+        </Favorite>
+        <Favorite>
+          <name>Package.class</name>
+          <path>src\Package.class.cs</path>
+          <absolutePath>d:\dev\yd\essentials\vs\src\Package.class.cs</absolutePath>
           <position>
             <line>25</line>
             <column>13</column>
@@ -68,19 +88,14 @@
           </position>
         </Favorite>
         <Favorite>
+          <name>Package.const</name>
+          <path>src\Package.const.cs</path>
+          <absolutePath>D:\dev\yd\essentials\vs\src\Package.const.cs</absolutePath>
+        </Favorite>
+        <Favorite>
           <name>vsixmanifest</name>
           <path>src\source.extension.vsixmanifest</path>
           <absolutePath>D:\dev\yd\essentials\vs\src\source.extension.vsixmanifest</absolutePath>
-        </Favorite>
-        <Favorite>
-          <name>vsct</name>
-          <path>src\Evs.vsct</path>
-          <absolutePath>d:\dev\yd\essentials\vs\src\Evs.vsct</absolutePath>
-          <position>
-            <line>66</line>
-            <column>52</column>
-            <lineHash>nCGQUONQCXn6e1sTwZKmuDQGdtFsfs6lwDqHNnKmxB4=</lineHash>
-          </position>
         </Favorite>
       </favorites>
     </Folder>

@@ -1,8 +1,8 @@
-# Yann's Essentials for VS
+# VS Essentials
 Each one of this extension's features can be accessed via one or more of the following methods:
-- the *Yann's Essentials* toolbar
-- the *Yann's Essentials* main menu
-- the *Yann's Essentials* context menu
+- the *VS Essentials* toolbar
+- the *VS Essentials* main menu
+- the *VS Essentials* context menu
 - a keyboard shortcut
 
 Some shortcut key combinations may have already been in use by Visual Studio
@@ -22,10 +22,15 @@ Most of the features are available via all of the methods, whereas as others may
 - Edit Solution
 - Close Solution
 - Edit Project
-- Keyboard Options
 - Activity Log
 - Diagnostics Log
 - Path Variables
+- Essentials Options
+  - General Options
+  - Build Options
+  - Developer Options
+  - Visual Studio Options
+- Keyboard Options
 
 ---
 
@@ -49,7 +54,7 @@ Insert a single guid, or multiple guids directly into your code without the use 
 ##### With This Extension Installed
 
 - **Main Menu**
-    - click on the *Yann's Essentials* menu in *Visual Studio*'s main menu bar
+    - click on the *VS Essentials* menu in *Visual Studio*'s main menu bar
     - select *Insert Guid*
     - ![Insert Guid (menu)][insert-guid-menu]
 - **Context Menu**
@@ -59,7 +64,7 @@ Insert a single guid, or multiple guids directly into your code without the use 
       - **or** select some text that you want to replace
       - **or** make a muliple-line selection of text to replace
     - right click
-    - select *Yann's Essentials*
+    - select *VS Essentials*
     - select *Insert Guid(s)*
     - ![Insert Guid (context)][insert-guid-context]
 - **Shortcut**
@@ -85,15 +90,15 @@ A convenient way to rebuild the whole solution.
 This feature is only enabled if a build/rebuild is **not** currently in progress.
 
 - **Toolbar**
-    - click the *Rebuild Solution* button on the *Yann's Essentials* toolbar
+    - click the *Rebuild Solution* button on the *VS Essentials* toolbar
     - ![Rebuild Solution (toolbar)][rebuild-solution-toolbar]
 - **Main Menu**
-    - click on the *Yann's Essentials* menu in *Visual Studio*'s main menu bar
+    - click on the *VS Essentials* menu in *Visual Studio*'s main menu bar
     - select *Rebuild Solution*
     - ![Rebuild Solution (menu)][rebuild-solution-menu]
 - **Context Menu**
     - right-click in any code window
-    - select *Yann's Essentials* in the context menu
+    - select *VS Essentials* in the context menu
     - select *Rebuild Solution*
     - ![Rebuild Solution (context)][rebuild-solution-context]
 - **Shortcut**
@@ -126,15 +131,15 @@ A convenient way to rebuild the just the current project
 This feature is only enabled if a build/rebuild is **not** currently in progress.
 
 - **Toolbar**
-    - click the *Rebuild Project* button on the *Yann's Essentials* toolbar
+    - click the *Rebuild Project* button on the *VS Essentials* toolbar
     - ![Rebuild Project (toolbar)][rebuild-project-toolbar]
 - **Main Menu**
-    - click on the *Yann's Essentials* menu in *Visual Studio*'s main menu bar
+    - click on the *VS Essentials* menu in *Visual Studio*'s main menu bar
     - select *Rebuild Project*
     - ![Rebuild Project (menu)][rebuild-project-menu]
 - **Context Menu**
     - right-click in any code window
-    - click on *Yann's Essentials* in the context menu
+    - click on *VS Essentials* in the context menu
     - click on *Rebuild Project*
     - ![Rebuild Project (context)][rebuild-project-context]
 - **Shortcut**
@@ -161,15 +166,15 @@ A convenient way to cancel a running build/rebuild.
 This feature is only enabled if a build/rebuild **is** currently in progress.
 
 - **Toolbar**
-    - click the *Cancel Build* button on the *Yann's Essentials* toolbar
+    - click the *Cancel Build* button on the *VS Essentials* toolbar
     - ![Cancel Build (toolbar)][cancel-build-toolbar]
 - **Main Menu**
-    - click on the *Yann's Essentials* menu in *Visual Studio*'s main menu bar
+    - click on the *VS Essentials* menu in *Visual Studio*'s main menu bar
     - select *Rebuild Project*
     - ![Cancel Build (menu)][cancel-build-menu]
 - **Context Menu**
     - right-click in any code window
-    - select *Yann's Essentials* in the context menu
+    - select *VS Essentials* in the context menu
     - select *Cancel Build*
     - ![Cancel Build (context)][cancel-build-context]
 - **Keyboard Shortcut**
@@ -202,15 +207,15 @@ Or found myself looking up and down the menu trying to find it in the *Tools* me
 ##### With This Extension Installed
 
 - **Toolbar**
-    - click the *Extensions and Updates* button on the *Yann's Essentials* toolbar
+    - click the *Extensions and Updates* button on the *VS Essentials* toolbar
     - ![Extensions and Updates][extensions-updates-toolbar]
 - **Main Menu**
-    - click on the *Yann's Essentials* menu in *Visual Studio*'s main menu bar
+    - click on the *VS Essentials* menu in *Visual Studio*'s main menu bar
     - select *Rebuild Project*
     - ![Extensions and Updates (menu)][extensions-updates-menu]
 - **Context Menu**
     - right-click in any code window
-    - select *Yann's Essentials* in the context menu
+    - select *VS Essentials* in the context menu
     - select *Extensions and Updates*
     - ![Extensions and Updates][extensions-updates-context]
 
@@ -244,7 +249,7 @@ after installing/uninstalling an extension, and ending up back in the same proje
     - ![Restart Visual Studio (menu)][restart-vs-menu]
 - **Context Menu**
     - right-click in any code window
-    - click on *Yann's Essentials* in the context menu
+    - click on *VS Essentials* in the context menu
     - click on *Cancel Build*
     - ![Restart Visual Studio (context)][restart-vs-context]
 
@@ -275,12 +280,12 @@ Restart Visual Studio as administrator (elevated session).
     - select *Restart Visual Studio as Administrator*
     - ![Restart Visual Studio as Administrator (toolbar)][restart-vs-admin-toolbar]
 - **Main Menu**
-    - click on the *Yann's Essentials* menu
+    - click on the *VS Essentials* menu
     - select *Restart Visual Studio as Administrator*
     - ![Restart Visual Studio as Administrator (menu)][restart-vs-admin-menu]
 - **Context Menu**
     - right-click in any code window
-    - select *Yann's Essentials* in the context menu
+    - select *VS Essentials* in the context menu
     - select *Restart Visual Studio as Administrator*
     - ![Restart Visual Studio as Administrator (context)][restart-vs-admin-context]
 
@@ -310,12 +315,12 @@ Open a solution's *.sln* file in an xml editor.
     - click on *Edit Solution*
     - ![Edit Solution (solution node)][edit-solution-node]
 - **Main Menu**
-    - click on the *Yann's Essentials* menu
+    - click on the *VS Essentials* menu
     - select *Edit Solution*
     - ![Edit Solution (menu)][edit-solution-menu]
 - **Context Menu**
     - right-click in any code window
-    - select *Yann's Essentials* from the context menu
+    - select *VS Essentials* from the context menu
     - select *Edit Solution*
     - ![Edit Solution (context)][edit-solution-context]
 
@@ -341,12 +346,12 @@ Close the current solution.
     - select *Close Solution*
     - ![Close Solution (solution node)][close-solution-node]
 - **Main Menu**
-    - click on the *Yann's Essentials* menu
+    - click on the *VS Essentials* menu
     - select *Close Solution*
     - ![Close Solution (menu)][close-solution-menu]
 - **Context Menu**
     - right-click in any code window
-    - select *Yann's Essentials* in the context menu
+    - select *VS Essentials* in the context menu
     - select *Close Solution*
     - ![Close Solution (context)][close-solution-context]
 
@@ -373,47 +378,16 @@ Open a project's *csproj* file in an xml editor.
     - click on *Edit Project*
     - ![Edit Project (project node)][edit-project-node]
 - **Main Menu**
-    - click on the *Yann's Essentials* menu
+    - click on the *VS Essentials* menu
     - select *Edit Project*
     - ![Edit Project (menu)][edit-project-menu]
 - **Context Menu**
     - right-click in any code window
-    - select *Yann's Essentials* in the context menu
+    - select *VS Essentials* in the context menu
     - select *Edit Project*
     - ![Edit Project (context)][edit-project-context]
 
 The project file opens in an XML window, ready for editing.
-
----
-
-#### Keyboard Options
-
-Open the *Tools* | *Options* dialog at the *Environment* | *Keyboard* node.
-
-##### Without This Extension Installed
-
-- move your mouse up to the *Tools* menu
-- click it
-- select *Options*
-- find and expand the *Environment* node
-- select *Keyboard*
-
-##### With This Extension Installed
-
-- **Toolbar**
-    - click the *Keyboard Options* dropdown on the toolbar
-    - ![Keyboard Options (toolbar)][keyboard-options-toolbar]
-- **Main Menu**
-    - click on the *Yann's Essentials* menu
-    - select *Keyboard Options*
-    - ![Keyboard Options (menu)][keyboard-options-menu]
-- **Context Menu**
-    - right-click in any code window
-    - select *Yann's Essentials* in the context menu
-    - select *Keyboard Options*
-    - ![Keyboard Options (context)][keyboard-options-context]
-
-The *Options* dialog opens with the *Keyboard* node selected.
 
 ---
 
@@ -424,7 +398,7 @@ Opens the Visual Studio Activity Log that records actions/errors from any instal
 >The file's path is *%APPDATA%\Microsoft\VisualStudio\version\ActivityLog.xml*
 >
 >- *%APPDATA%* represents the value in the APPDATA environment variable
->- *version* represents the current Visual Studio version (ie 14.0 for VS 2015)
+>- *version* represents the current Visual Studio version (ie 14.0 2015)
 
 ##### Without This Extension Installed
 
@@ -440,12 +414,12 @@ Opens the Visual Studio Activity Log that records actions/errors from any instal
     - click on *Activity Log*
     - ![Activity Log (toolbar)][activity-log-toolbar]
 - **Main Menu**
-    - click on the *Yann's Essentials* menu
+    - click on the *VS Essentials* menu
     - select *Activity Log*
     - ![Activity Log (menu)][activity-log-menu]
 - **Context Menu**
     - right-click in any code window
-    - select *Yann's Essentials* in the context menu
+    - select *VS Essentials* in the context menu
     - select *Activity Log*
     - ![Activity Log (context)][activity-log-context]
 
@@ -476,12 +450,12 @@ Opens the most recent MSBuild diagnostic log file.
     - click on *Diagnostic Log*
     - ![Diagnostic Log (toolbar)][diagnostic-log-toolbar]
 - **Main Menu**
-    - click on the *Yann's Essentials* menu
+    - click on the *VS Essentials* menu
     - select *Diagnostic Log*
     - ![Diagnostic Log (menu)][diagnostic-log-menu]
 - **Context Menu**
     - right-click in any code window
-    - select *Yann's Essentials* in the context menu
+    - select *VS Essentials* in the context menu
     - select *Diagnostic Log*
     - ![Diagnostic Log (context)][diagnostic-log-context]
 
@@ -506,12 +480,12 @@ Displays the current set of Windows paths variable values.
     - click on *Path Variables*
     - ![Path Variables (toolbar)][path-variables-toolbar]
 - **Main Menu**
-    - click on the *Yann's Essentials* menu
+    - click on the *VS Essentials* menu
     - select *Path Variables*
     - ![Path Variables (menu)][path-variables-menu]
 - **Context Menu**
     - right-click in any code window
-    - select *Yann's Essentials* in the context menu
+    - select *VS Essentials* in the context menu
     - select *Path Variables*
     - ![Path Variables (context)][path-variables-context]
 
@@ -519,6 +493,66 @@ The path variables are displayed in the *Output* window.
 
 ---
 
+#### Essentials Options
+
+Open the *Tools* | *Options* dialog at the *Essentials* node.
+
+##### Without This Extension Installed
+
+- move your mouse up to the *Tools* menu
+- click it
+- select *Options*
+- find and expand the *Essentials* node
+
+##### With This Extension Installed
+
+- **Toolbar**
+    - click the *Essentials Options* button on the toolbar
+    - ![Essentials Options (toolbar)][essentials-options-toolbar]
+- **Main Menu**
+    - click on the *VS Essentials* menu
+    - select *Essentials Options*
+    - ![Essentials Options (menu)][essentials-options-menu]
+- **Context Menu**
+    - right-click in any code window
+    - select *VS Essentials* in the context menu
+    - select *Essentials Options*
+    - ![Essentials Options (context)][essentials-options-context]
+
+The *Options* dialog opens with the *Essentials* node selected.
+
+---
+
+#### Keyboard Options
+
+Open the *Tools* | *Options* dialog at the *Environment* | *Keyboard* node.
+
+##### Without This Extension Installed
+
+- move your mouse up to the *Tools* menu
+- click it
+- select *Options*
+- find and expand the *Environment* node
+- select *Keyboard*
+
+##### With This Extension Installed
+
+- **Toolbar**
+    - click the *Keyboard Options* dropdown on the toolbar
+    - ![Keyboard Options (toolbar)][keyboard-options-toolbar]
+- **Main Menu**
+    - click on the *VS Essentials* menu
+    - select *Keyboard Options*
+    - ![Keyboard Options (menu)][keyboard-options-menu]
+- **Context Menu**
+    - right-click in any code window
+    - select *VS Essentials* in the context menu
+    - select *Keyboard Options*
+    - ![Keyboard Options (context)][keyboard-options-context]
+
+The *Options* dialog opens with the *Keyboard* node selected.
+
+---
 <div style="text-align:center">
     <img src="../art/lss-vsip.png" />
 </div>

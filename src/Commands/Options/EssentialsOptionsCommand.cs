@@ -1,30 +1,25 @@
 ﻿using Microsoft.VisualStudio.Shell;
 
-namespace Essentials.VS.Commands.Build
+namespace Essentials.VS.Commands.Options
 {
     using YD.Framework.VisualStudio.Commands;
     using YD.Framework.VisualStudio.Packages;
+    using VS.Options;
 
-    internal sealed class CancelBuildCommand : BuildCommand
+    internal sealed class EssentialsOptionsCommand : DynamicCommand
     {
         //***
         //===M
 
-        private CancelBuildCommand(PackageBase package) : base(package, PackageIds.CancelBuildCommand)
+        private EssentialsOptionsCommand(PackageBase package) : base(package, PackageIds.EssentialsOptionsCommand)
         { }
 
         //===M
 
         public static void Instantiate(PackageBase package)
-            => Instantiate(new CancelBuildCommand(package));
+            => Instantiate(new EssentialsOptionsCommand(package));
 
         //---
-
-        protected override bool CanExecute
-        => (base.CanExecute && BuildOptions.CancelBuildCommandEnabled);
-
-        protected override bool IsActive
-            => base.IsActive && BuildingOrDebugging;
 
         protected override void OnExecute(OleMenuCommand command)
             => ExecuteCommand()
@@ -34,7 +29,7 @@ namespace Essentials.VS.Commands.Build
         //---
 
         private CommandResult ExecuteCommand()
-            => Package?.CancelBuild();
+            => Package?.ShowOptionsPage<GeneralDialogPage>();
 
         //***
     }

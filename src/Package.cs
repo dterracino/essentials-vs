@@ -12,18 +12,26 @@ namespace Essentials.VS
     /// </summary>
     internal sealed partial class PackageGuids
     {
-        public const string EvsPackageString = "6359da17-6477-4e9c-8e73-7d05ea8a33a1";
-        public const string EvsCommandSetString = "4eac4e23-4909-4dac-9d6e-819bdc861480";
-        public static Guid EvsPackage = new Guid(EvsPackageString);
-        public static Guid EvsCommandSet = new Guid(EvsCommandSetString);
+        public const string PackageString = "6359da17-6477-4e9c-8e73-7d05ea8a33a1";
+        public const string GeneralDialogPageString = "dcbbd0f7-6463-48f4-9c86-1ce95ef7c1a2";
+        public const string BuildDialogPageString = "e967a459-0b9e-4222-ba52-a66496edaee3";
+        public const string DeveloperDialogPageString = "7a9f803b-96de-4d30-b1cd-590443192092";
+        public const string VisualStudioDialogPageString = "13c28243-07fb-4034-a035-3a44ff0330aa";
+        public const string PackageCommandSetString = "4eac4e23-4909-4dac-9d6e-819bdc861480";
+        public static Guid Package = new Guid(PackageString);
+        public static Guid GeneralDialogPage = new Guid(GeneralDialogPageString);
+        public static Guid BuildDialogPage = new Guid(BuildDialogPageString);
+        public static Guid DeveloperDialogPage = new Guid(DeveloperDialogPageString);
+        public static Guid VisualStudioDialogPage = new Guid(VisualStudioDialogPageString);
+        public static Guid PackageCommandSet = new Guid(PackageCommandSetString);
     }
     /// <summary>
     /// Helper class that encapsulates all CommandIDs uses across VS Package.
     /// </summary>
     internal sealed partial class PackageIds
     {
-        public const int EvsToolbar = 0xA001;
-        public const int EvsMenu = 0xA002;
+        public const int PackageToolbar = 0xA001;
+        public const int PackageMenu = 0xA002;
         public const int CodeEditorGroup = 0xB000;
         public const int SolutionNodeGroup = 0xC000;
         public const int ProjectNodeGroup = 0xD000;
@@ -55,5 +63,6 @@ namespace Essentials.VS
         public const int OptionsDropDown = 0x0951;
         public const int OptionsCommands = 0x0952;
         public const int KeyboardOptionsCommand = 0x0955;
+        public const int EssentialsOptionsCommand = 0x0959;
     }
 }

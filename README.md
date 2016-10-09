@@ -1,43 +1,46 @@
-# Yann's Essentials for VS
+# VS Essentials
 
 [![Build status](https://ci.appveyor.com/api/projects/status/la50f40vw7qys7b3?svg=true)](https://ci.appveyor.com/project/YannDuran/essentials-vs)
 
 Download this extension from the [VS Gallery](https://visualstudiogallery.msdn.microsoft.com/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd)
 or get the [CI build](http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/).
 
-See the [changelog](https://github.com/yannduran/essentials-vs/blob/master/CHANGELOG.md) for changes and the roadmap for the future.
+See the [changelog](https://github.com/yannduran/essentials-vs/blob/master/CHANGELOG.md)
+for changes and the roadmap for the future.
 
 ---
 
-- *If you **like** this extension, please come back and add add a **rating**, so people will know what users think of it.*
+- If you **like** this extension, please show your support by giving a quick review.
+It only takes a couple of seconds seconds.
 
-- *If for some reason you **didn't like** it, or have any **suggestions** for improving it, just let me know via the **Q&A** section.*
+- *If for some reason you **didn't like** it, or have any **suggestions** for improving it,
+just let me know via the **Q&A** section.*
 
 ---
 
-### *Yann's Essentials* Toolbar
+### *VS Essentials* Toolbar
 This extension adds a new toolbar.
 Because it's usually far easier to click a toolbar button than to have to go hunting for
 the command you want in a menu somewhere,
 the most convenient commands have been added to the toolbar.
 
 To make the toolbar visible, right-click in a blank spot on the toolbar area,
-and select *Yann's Essentials*.
+and select *VS Essentials*.
 
 Like all other Visual Studio toolbars, you can remove any commands that you feel you don't need,
 or even add new commands to it.
 
-### *Yann's Essentials* Menu
+### *VS Essentials* Menu
 For those people who prefer a menu to a toolbar this extension also adds a new menu to
 Visual Studio's main menu bar. All commands are available via this menu.
 
 ### Context Menus
 Most features are also available via another menu that's been added to the
 right-click context menu of any code window, and to some nodes in *Solution Explorer*.
-This allows you to access nearly all of the *Yann's Essentials* features
+This allows you to access nearly all of the *VS Essentials* features
 without moving your mouse from the code you're working on.
 
-The commands have been grouped into their own *Yann's Essentials* menu because most context menus
+The commands have been grouped into their own *VS Essentials* menu because most context menus
 are already pretty clogged up. And they're growing all the time,
 as Microsoft or 3rd-party extensions add more and more commands to them.
 
@@ -47,7 +50,7 @@ than having to search through one gigantic menu of different commands.
 
 ### Keyboard Shortcuts
 Some of the features that tend to be used frequently have also been assigned a keyboard shortcut.
-And of course you can add your own keyboard shortcut to any of the *Yann's Essentials* commands.
+And of course you can add your own keyboard shortcut to any of the *VS Essentials* commands.
 
 ---
 
@@ -147,13 +150,6 @@ toolbar | main menu | context menu | project node
 :---:   | :---:     | :---:        | :---:
 yes     | yes       | yes          | yes
 
-#### Keyboard Options
-Open the *Tools* | *Options* dialog at the *Environment* | *Keyboard* node.
-
-toolbar | main menu | context menu
-:---:   | :---:     | :---:
-yes     | yes       | yes
-
 #### Activity Log
 Open the Visual Studio activity monitor log.
 
@@ -166,7 +162,7 @@ as the XML file that makes it easy to read in a browser.
 >The file's path is *%APPDATA%\Microsoft\VisualStudio\version\ActivityLog.xml*
 >
 >- *%APPDATA%* represents the value in the APPDATA environment variable
->- *version* represents the current Visual Studio version (ie 14.0 for VS 2015)
+>- *version* represents the current Visual Studio version (ie 14.0 2015)
 
 toolbar | main menu | context menu
 :---:   | :---:     | :---:
@@ -186,6 +182,20 @@ yes     | yes       | yes
 
 #### Path Variables
 Display the current set of Windows paths variable values.
+
+toolbar | main menu | context menu
+:---:   | :---:     | :---:
+yes     | yes       | yes
+
+#### Essentials Options
+Open the *Tools* | *Options* dialog at the *Essentials* node.
+
+toolbar | main menu | context menu
+:---:   | :---:     | :---:
+yes     | yes       | yes
+
+#### Keyboard Options
+Open the *Tools* | *Options* dialog at the *Environment* | *Keyboard* node.
 
 toolbar | main menu | context menu
 :---:   | :---:     | :---:
