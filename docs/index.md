@@ -22,10 +22,15 @@ Most of the features are available via all of the methods, whereas as others may
 - Edit Solution
 - Close Solution
 - Edit Project
-- Keyboard Options
 - Activity Log
 - Diagnostics Log
 - Path Variables
+- Essentials Options
+  - General Options
+  - Build Options
+  - Developer Options
+  - Visual Studio Options
+- Keyboard Options
 
 ---
 
@@ -386,37 +391,6 @@ The project file opens in an XML window, ready for editing.
 
 ---
 
-#### Keyboard Options
-
-Open the *Tools* | *Options* dialog at the *Environment* | *Keyboard* node.
-
-##### Without This Extension Installed
-
-- move your mouse up to the *Tools* menu
-- click it
-- select *Options*
-- find and expand the *Environment* node
-- select *Keyboard*
-
-##### With This Extension Installed
-
-- **Toolbar**
-    - click the *Keyboard Options* dropdown on the toolbar
-    - ![Keyboard Options (toolbar)][keyboard-options-toolbar]
-- **Main Menu**
-    - click on the *VS Essentials* menu
-    - select *Keyboard Options*
-    - ![Keyboard Options (menu)][keyboard-options-menu]
-- **Context Menu**
-    - right-click in any code window
-    - select *VS Essentials* in the context menu
-    - select *Keyboard Options*
-    - ![Keyboard Options (context)][keyboard-options-context]
-
-The *Options* dialog opens with the *Keyboard* node selected.
-
----
-
 #### Activity Log
 
 Opens the Visual Studio Activity Log that records actions/errors from any installed extensions.
@@ -517,6 +491,66 @@ Displays the current set of Windows paths variable values.
 
 The path variables are displayed in the *Output* window.
 
+---
+
+#### Essentials Options
+
+Open the *Tools* | *Options* dialog at the *Essentials* node.
+
+##### Without This Extension Installed
+
+- move your mouse up to the *Tools* menu
+- click it
+- select *Options*
+- find and expand the *Essentials* node
+
+##### With This Extension Installed
+
+- **Toolbar**
+    - click the *Essentials Options* button on the toolbar
+    - ![Essentials Options (toolbar)][essentials-options-toolbar]
+- **Main Menu**
+    - click on the *VS Essentials* menu
+    - select *Essentials Options*
+    - ![Essentials Options (menu)][essentials-options-menu]
+- **Context Menu**
+    - right-click in any code window
+    - select *VS Essentials* in the context menu
+    - select *Essentials Options*
+    - ![Essentials Options (context)][essentials-options-context]
+
+The *Options* dialog opens with the *Essentials* node selected.
+
+---
+
+#### Keyboard Options
+
+Open the *Tools* | *Options* dialog at the *Environment* | *Keyboard* node.
+
+##### Without This Extension Installed
+
+- move your mouse up to the *Tools* menu
+- click it
+- select *Options*
+- find and expand the *Environment* node
+- select *Keyboard*
+
+##### With This Extension Installed
+
+- **Toolbar**
+    - click the *Keyboard Options* dropdown on the toolbar
+    - ![Keyboard Options (toolbar)][keyboard-options-toolbar]
+- **Main Menu**
+    - click on the *VS Essentials* menu
+    - select *Keyboard Options*
+    - ![Keyboard Options (menu)][keyboard-options-menu]
+- **Context Menu**
+    - right-click in any code window
+    - select *VS Essentials* in the context menu
+    - select *Keyboard Options*
+    - ![Keyboard Options (context)][keyboard-options-context]
+
+The *Options* dialog opens with the *Keyboard* node selected.
 
 ---
 <div style="text-align:center">

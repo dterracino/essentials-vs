@@ -4,7 +4,6 @@ download/test in the
 [CI build](http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/).
 
 ### Coming Next
-- [x] VS Essentials Options
 - [ ] Duplicate Text
 - [ ] Duplicate File
 - [ ] Copy References
@@ -31,38 +30,42 @@ download/test in the
 These are the changes to each version that has been released
 on the official Visual Studio extension gallery.
 
-## v0.6.x
+## v0.7.0
 
-**2016-10-dd**
-- in progress
+**2016-10-10**
+- [x] Added *Essentials Options* dialog page (Tools | Options | Essentials)
+  - [x] Added *General Options* node
+  - [x] Added *Build Options* node
+  - [x] Added *Developer Options* node
+  - [x] Added *Visual Studio Options* node
 
 ## v0.6.0
 
 **2016-09-30**
-- [x] Added Keyboard Options
-- [x] Added Activity Log
-- [x] Added Diagnostic Log
-- [x] Added Path Variables
+- [x] Added *Keyboard Options* dialog page
+- [x] Added *Activity Log*
+- [x] Added *Diagnostic Log*
+- [x] Added *Path Variables*
 
 ## v0.5.0
 
 **2016-09-02**
-- [x] Added *Edit Project* command
-- [x] Added *Insert Guid* command
+- [x] Added *Edit Project*
+- [x] Added *Insert Guid*
 
 ## v0.4.0
 
 **2016-09-02**
-- [x] Added *Edit Solution* command
-- [x] Added *Close Solution* command
+- [x] Added *Edit Solution*
+- [x] Added *Close Solution*
 - [x] renamed the extension
-  - from *Essentials* (a non open-source extension)
+  - from *Luminous Essentials* (a non open-source extension)
   - to *VS Essentials* (now an open-source extension)
 
 ## v0.3.0
 
 **2016-08-30**
-- [x] Added Extensions And Updates command
+- [x] Added *Extensions And Updates*
 
 ## v0.2.1
 
@@ -72,11 +75,11 @@ on the official Visual Studio extension gallery.
 ## v0.2.0
 
 **2016-08-29**
-- [x] Added Rebuild Project command
-- [x] Added Rebuild Solution command
-- [x] Added Cancel Build command
-- [x] Added Restart Visual Studio command
-- [x] Added Restart VisualStudio as Admin command
+- [x] Added *Rebuild Project*
+- [x] Added *Rebuild Solution*
+- [x] Added *Cancel Build*
+- [x] Added *Restart Visual Studio*
+- [x] Added *Restart VisualStudio as Admin*
 
 ## v0.1.0
 

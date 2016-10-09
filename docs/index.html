@@ -21,10 +21,18 @@
 <li>Edit Solution</li>
 <li>Close Solution</li>
 <li>Edit Project</li>
-<li>Keyboard Options</li>
 <li>Activity Log</li>
 <li>Diagnostics Log</li>
 <li>Path Variables</li>
+<li>Essentials Options
+<ul>
+<li>General Options</li>
+<li>Build Options</li>
+<li>Developer Options</li>
+<li>Visual Studio Options</li>
+</ul>
+</li>
+<li>Keyboard Options</li>
 </ul>
 <hr />
 <h4 id="insert-guids">Insert Guid(s)</h4>
@@ -454,42 +462,6 @@ and automatically re-opens the project that you were working on.</p>
 </ul>
 <p>The project file opens in an XML window, ready for editing.</p>
 <hr />
-<h4 id="keyboard-options">Keyboard Options</h4>
-<p>Open the <em>Tools</em> | <em>Options</em> dialog at the <em>Environment</em> | <em>Keyboard</em> node.</p>
-<h5 id="without-this-extension-installed-10">Without This Extension Installed</h5>
-<ul>
-<li>move your mouse up to the <em>Tools</em> menu</li>
-<li>click it</li>
-<li>select <em>Options</em></li>
-<li>find and expand the <em>Environment</em> node</li>
-<li>select <em>Keyboard</em></li>
-</ul>
-<h5 id="with-this-extension-installed-10">With This Extension Installed</h5>
-<ul>
-<li><strong>Toolbar</strong>
-<ul>
-<li>click the <em>Keyboard Options</em> dropdown on the toolbar</li>
-<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/keyboard-options-toolbar.png" alt="Keyboard Options (toolbar)" /></li>
-</ul>
-</li>
-<li><strong>Main Menu</strong>
-<ul>
-<li>click on the <em>VS Essentials</em> menu</li>
-<li>select <em>Keyboard Options</em></li>
-<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/keyboard-options-menu.png" alt="Keyboard Options (menu)" /></li>
-</ul>
-</li>
-<li><strong>Context Menu</strong>
-<ul>
-<li>right-click in any code window</li>
-<li>select <em>VS Essentials</em> in the context menu</li>
-<li>select <em>Keyboard Options</em></li>
-<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/keyboard-options-context.png" alt="Keyboard Options (context)" /></li>
-</ul>
-</li>
-</ul>
-<p>The <em>Options</em> dialog opens with the <em>Keyboard</em> node selected.</p>
-<hr />
 <h4 id="activity-log">Activity Log</h4>
 <p>Opens the Visual Studio Activity Log that records actions/errors from any installed extensions.</p>
 <blockquote>
@@ -499,14 +471,14 @@ and automatically re-opens the project that you were working on.</p>
 <li><em>version</em> represents the current Visual Studio version (ie 14.0 2015)</li>
 </ul>
 </blockquote>
-<h5 id="without-this-extension-installed-11">Without This Extension Installed</h5>
+<h5 id="without-this-extension-installed-10">Without This Extension Installed</h5>
 <ul>
 <li>open a <em>File Explorer</em> window</li>
 <li>navigate to <em>%AppData%\Roaming\Microsoft\VisualStudio\14.0</em></li>
 <li>locate ActivityLog.xml</li>
 <li>open the file in a text editor</li>
 </ul>
-<h5 id="with-this-extension-installed-11">With This Extension Installed</h5>
+<h5 id="with-this-extension-installed-10">With This Extension Installed</h5>
 <ul>
 <li><strong>Toolbar</strong>
 <ul>
@@ -542,14 +514,14 @@ and automatically re-opens the project that you were working on.</p>
 <li><em>guid</em> represents a random guid value</li>
 </ul>
 </blockquote>
-<h5 id="without-this-extension-installed-12">Without This Extension Installed</h5>
+<h5 id="without-this-extension-installed-11">Without This Extension Installed</h5>
 <ul>
 <li>open a <em>File Explorer</em> window</li>
 <li>navigate to <em>%LOCALAPPDATA%\Temp</em></li>
 <li>locate the latest MSBUILD_*.xml file</li>
 <li>open the file in a text editor</li>
 </ul>
-<h5 id="with-this-extension-installed-12">With This Extension Installed</h5>
+<h5 id="with-this-extension-installed-11">With This Extension Installed</h5>
 <ul>
 <li><strong>Toolbar</strong>
 <ul>
@@ -578,13 +550,13 @@ and automatically re-opens the project that you were working on.</p>
 <hr />
 <h4 id="path-variables">Path Variables</h4>
 <p>Displays the current set of Windows paths variable values.</p>
-<h5 id="without-this-extension-installed-13">Without This Extension Installed</h5>
+<h5 id="without-this-extension-installed-12">Without This Extension Installed</h5>
 <ul>
 <li>open a <em>cmd</em> window</li>
 <li>type <em>path</em></li>
 <li>press ENTER</li>
 </ul>
-<h5 id="with-this-extension-installed-13">With This Extension Installed</h5>
+<h5 id="with-this-extension-installed-12">With This Extension Installed</h5>
 <ul>
 <li><strong>Toolbar</strong>
 <ul>
@@ -610,6 +582,77 @@ and automatically re-opens the project that you were working on.</p>
 </li>
 </ul>
 <p>The path variables are displayed in the <em>Output</em> window.</p>
+<hr />
+<h4 id="essentials-options">Essentials Options</h4>
+<p>Open the <em>Tools</em> | <em>Options</em> dialog at the <em>Essentials</em> node.</p>
+<h5 id="without-this-extension-installed-13">Without This Extension Installed</h5>
+<ul>
+<li>move your mouse up to the <em>Tools</em> menu</li>
+<li>click it</li>
+<li>select <em>Options</em></li>
+<li>find and expand the <em>Essentials</em> node</li>
+</ul>
+<h5 id="with-this-extension-installed-13">With This Extension Installed</h5>
+<ul>
+<li><strong>Toolbar</strong>
+<ul>
+<li>click the <em>Essentials Options</em> button on the toolbar</li>
+<li>![Essentials Options (toolbar)][essentials-options-toolbar]</li>
+</ul>
+</li>
+<li><strong>Main Menu</strong>
+<ul>
+<li>click on the <em>VS Essentials</em> menu</li>
+<li>select <em>Essentials Options</em></li>
+<li>![Essentials Options (menu)][essentials-options-menu]</li>
+</ul>
+</li>
+<li><strong>Context Menu</strong>
+<ul>
+<li>right-click in any code window</li>
+<li>select <em>VS Essentials</em> in the context menu</li>
+<li>select <em>Essentials Options</em></li>
+<li>![Essentials Options (context)][essentials-options-context]</li>
+</ul>
+</li>
+</ul>
+<p>The <em>Options</em> dialog opens with the <em>Essentials</em> node selected.</p>
+<hr />
+<h4 id="keyboard-options">Keyboard Options</h4>
+<p>Open the <em>Tools</em> | <em>Options</em> dialog at the <em>Environment</em> | <em>Keyboard</em> node.</p>
+<h5 id="without-this-extension-installed-14">Without This Extension Installed</h5>
+<ul>
+<li>move your mouse up to the <em>Tools</em> menu</li>
+<li>click it</li>
+<li>select <em>Options</em></li>
+<li>find and expand the <em>Environment</em> node</li>
+<li>select <em>Keyboard</em></li>
+</ul>
+<h5 id="with-this-extension-installed-14">With This Extension Installed</h5>
+<ul>
+<li><strong>Toolbar</strong>
+<ul>
+<li>click the <em>Keyboard Options</em> dropdown on the toolbar</li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/keyboard-options-toolbar.png" alt="Keyboard Options (toolbar)" /></li>
+</ul>
+</li>
+<li><strong>Main Menu</strong>
+<ul>
+<li>click on the <em>VS Essentials</em> menu</li>
+<li>select <em>Keyboard Options</em></li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/keyboard-options-menu.png" alt="Keyboard Options (menu)" /></li>
+</ul>
+</li>
+<li><strong>Context Menu</strong>
+<ul>
+<li>right-click in any code window</li>
+<li>select <em>VS Essentials</em> in the context menu</li>
+<li>select <em>Keyboard Options</em></li>
+<li><img src="https://github.com/yannduran/essentials-vs/raw/master/art/keyboard-options-context.png" alt="Keyboard Options (context)" /></li>
+</ul>
+</li>
+</ul>
+<p>The <em>Options</em> dialog opens with the <em>Keyboard</em> node selected.</p>
 <hr />
 <div style="text-align:center">
     <img src="../art/lss-vsip.png" />
