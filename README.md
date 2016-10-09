@@ -150,13 +150,6 @@ toolbar | main menu | context menu | project node
 :---:   | :---:     | :---:        | :---:
 yes     | yes       | yes          | yes
 
-#### Keyboard Options
-Open the *Tools* | *Options* dialog at the *Environment* | *Keyboard* node.
-
-toolbar | main menu | context menu
-:---:   | :---:     | :---:
-yes     | yes       | yes
-
 #### Activity Log
 Open the Visual Studio activity monitor log.
 
@@ -189,6 +182,20 @@ yes     | yes       | yes
 
 #### Path Variables
 Display the current set of Windows paths variable values.
+
+toolbar | main menu | context menu
+:---:   | :---:     | :---:
+yes     | yes       | yes
+
+#### Essentials Options
+Open the *Tools* | *Options* dialog at the *Essentials* node.
+
+toolbar | main menu | context menu
+:---:   | :---:     | :---:
+yes     | yes       | yes
+
+#### Keyboard Options
+Open the *Tools* | *Options* dialog at the *Environment* | *Keyboard* node.
 
 toolbar | main menu | context menu
 :---:   | :---:     | :---:
