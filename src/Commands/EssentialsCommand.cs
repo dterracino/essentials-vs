@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.Shell;
+﻿using System;
 
 namespace Essentials.VS.Commands
 {
@@ -6,12 +6,14 @@ namespace Essentials.VS.Commands
     using YD.Framework.VisualStudio.Commands;
     using YD.Framework.VisualStudio.Packages;
 
-    internal abstract class EssentialsCommand : DynamicCommand
+    internal abstract class EssentialsCommand : DynamicCommand, IDisposable
     {
+        private GeneralDialogPage _generalOptions;
+
         //***
 
         protected GeneralDialogPage EssentialsOptions
-            => Package.GetDialogPage(typeof(GeneralDialogPage)) as GeneralDialogPage;
+            => _generalOptions ?? (_generalOptions = Package.GetDialogPage(typeof(GeneralDialogPage)) as GeneralDialogPage);
 
         //===M
 
@@ -22,6 +24,35 @@ namespace Essentials.VS.Commands
 
         protected override bool CanExecute
             => EssentialsOptions.EssentialsEnabled;
+
+        //===
+
+        #region IDisposable Support
+
+        private bool disposedValue = false;
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposedValue)
+            {
+                if (disposing)
+                {
+                    _generalOptions.Dispose();
+                    _generalOptions = null;
+                }
+
+                disposedValue = true;
+            }
+        }
+
+        //---
+
+        public void Dispose()
+        {
+            Dispose(true);
+        }
+
+        #endregion
 
         //***
     }
